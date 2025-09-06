@@ -311,8 +311,6 @@ nano .env  # 添加您的 API 密钥和数据库设置
 
 ### 🚀 启动应用
 
-<div align="center">
-
 **方式 1: 使用启动脚本**
 
 ```bash
@@ -342,8 +340,6 @@ npm run dev
 npm run build
 python -m uvicorn core.main:app --host 0.0.0.0 --port 8000
 ```
-
-</div>
 
 ### 🔗 访问入口
 
@@ -488,7 +484,7 @@ when.trade/                         # 📁 项目根目录
 
 ## ⭐ Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=foldedcode/when.trade&type=Date)](https://star-history.com/#foldedcode/when.trade&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=foldedcode/WhenTrade&type=Date)](https://star-history.com/#foldedcode/WhenTrade&Date)
 
 ## 🙏 致谢
 
