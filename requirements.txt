@@ -28,7 +28,7 @@ websockets>=11.0,<13.0
 # Development
 pytest==7.4.4
 pytest-asyncio==0.23.3
-black==23.12.1
+black==24.3.0
 flake8==7.0.0
 mypy==1.8.0
 
