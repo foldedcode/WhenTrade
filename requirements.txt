@@ -45,7 +45,7 @@ pendulum==3.0.0
 orjson>=3.10.1
 psutil==7.0.0
 aiofiles==23.2.1
-Pillow==10.2.0
+Pillow==10.3.0
 
 # LLM & AI  
 openai>=1.40.0
