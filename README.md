@@ -386,12 +386,12 @@ npm test  # Frontend tests
 </tr>
 </table>
 
-### 🎬 Product Demo Videos
+### 🎬 Product Features
 
-| English Demo Video |
-|:------------------:|
-| [📹 Watch Demo](docs/media/videos/video1.mp4) |
-| English Interface Demonstration |
+- **Real-time Multi-Agent Analysis** - Collaborative AI agents working together
+- **Professional Investment Insights** - Bull vs Bear research debates  
+- **Comprehensive Risk Assessment** - Multi-perspective scenario analysis
+- **Modern Web Interface** - Vue.js 3 with responsive design
 
 </div>
 
