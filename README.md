@@ -311,8 +311,6 @@ nano .env  # Add your API keys and database settings
 
 ### 🚀 Launch Application
 
-<div align="center">
-
 **Option 1: Using Start Scripts**
 
 ```bash
@@ -342,8 +340,6 @@ npm run dev
 npm run build
 python -m uvicorn core.main:app --host 0.0.0.0 --port 8000
 ```
-
-</div>
 
 ### 🔗 Access Points
 
@@ -488,7 +484,7 @@ For optimal development experience, use symbol-based navigation for these files:
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=foldedcode/when.trade&type=Date)](https://star-history.com/#foldedcode/when.trade&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=foldedcode/WhenTrade&type=Date)](https://star-history.com/#foldedcode/WhenTrade&Date)
 
 ## 🙏 Acknowledgments
 
