@@ -1,0 +1,126 @@
+{
+  "$schema": "./web3auth.schema.json",
+  "lastUpdated": "2025-07-24",
+  "dashboardUrl": "https://dashboard.web3auth.io",
+  "network": "sapphire_devnet",
+  "loginMethods": {
+    "social": [
+      {
+        "id": "google",
+        "name": "Google",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/google/ffffff",
+        "description": "使用 Google 账号登录"
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "enabled": false,
+        "icon": "https://cdn.simpleicons.org/facebook/ffffff",
+        "description": "使用 Facebook 账号登录"
+      },
+      {
+        "id": "twitter",
+        "name": "Twitter",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/x/ffffff",
+        "description": "使用 Twitter 账号登录"
+      },
+      {
+        "id": "discord",
+        "name": "Discord",
+        "enabled": false,
+        "icon": "https://cdn.simpleicons.org/discord/ffffff",
+        "description": "使用 Discord 账号登录"
+      },
+      {
+        "id": "github",
+        "name": "GitHub",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/github/ffffff",
+        "description": "使用 GitHub 账号登录"
+      },
+      {
+        "id": "apple",
+        "name": "Apple",
+        "enabled": false,
+        "icon": "https://cdn.simpleicons.org/apple/ffffff",
+        "description": "使用 Apple ID 登录"
+      },
+      {
+        "id": "linkedin",
+        "name": "LinkedIn",
+        "enabled": false,
+        "icon": "https://cdn.simpleicons.org/linkedin/ffffff",
+        "description": "使用 LinkedIn 账号登录"
+      },
+      {
+        "id": "reddit",
+        "name": "Reddit",
+        "enabled": false,
+        "icon": "https://cdn.simpleicons.org/reddit/ffffff",
+        "description": "使用 Reddit 账号登录"
+      },
+      {
+        "id": "twitch",
+        "name": "Twitch",
+        "enabled": false,
+        "icon": "https://cdn.simpleicons.org/twitch/ffffff",
+        "description": "使用 Twitch 账号登录"
+      }
+    ],
+    "email": [
+      {
+        "id": "email_passwordless",
+        "name": "邮箱登录",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/gmail/ffffff",
+        "description": "使用邮箱验证码登录"
+      }
+    ],
+    "wallet": [
+      {
+        "id": "metamask",
+        "name": "MetaMask",
+        "enabled": true,
+        "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyBmaWxsPSIjZmZmZmZmIj4KICAgIDwhLS0g6ICz5py1IC0tPgogICAgPHBhdGggZD0iTTEwIDhMNCAyTDYgMTBMMTAgOFoiLz4KICAgIDxwYXRoIGQ9Ik0zMCA4TDM2IDJMZFMGMTBMMZBYOFPIC8+CiAgICA8IS0tIOWktOmDqOS4u+S9kyAtLT4KICAgIDxwYXRoIGQ9Ik0yMCA1QzEyIDUgOCAxMiA4IDIwQzggMjggMTIgMzUgMjAgMzVDMjggMzUgMzIgMjggMzIgMjBDMzIgMTIgMjggNSAyMCA1WiIvPgogICAgPCEtLSDnnLznnbvvvIjlj43oibLvvIkgLS0+CiAgICA8Y2lyY2xlIGN4PSIxNSIgY3k9IjE4IiByPSIzIiBmaWxsPSIjMWExYTFhIi8+CiAgICA8Y2lyY2xlIGN4PSIyNSIgY3k9IjE4IiByPSIzIiBmaWxsPSIjMWExYTFhIi8+CiAgICA8IS0tIOm8u+WtkCAtLT4KICAgIDxwYXRoIGQ9Ik0yMCAyMkwxOCAyNEwyMCAyNkwyMiAyNEwyMCAyMloiIGZpbGw9IiMxYTFhMWEiLz4KICA8L2c+Cjwvc3ZnPg==",
+        "description": "连接 MetaMask 钱包"
+},
+      {
+        "id": "wallet_connect_v2",
+        "name": "WalletConnect",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/walletconnect/ffffff",
+        "description": "使用 WalletConnect 连接"
+      },
+      {
+        "id": "coinbase",
+        "name": "Coinbase Wallet",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/coinbase/ffffff",
+        "description": "连接 Coinbase 钱包"
+      },
+      {
+        "id": "okx",
+        "name": "OKX Wallet",
+        "enabled": true,
+        "icon": "https://cdn.simpleicons.org/okx/ffffff",
+        "description": "连接 OKX 钱包"
+      }
+    ]
+  },
+  "uiPreferences": {
+    "displayOrder": [
+      "social",
+      "email",
+      "wallet"
+    ],
+    "socialDisplayMode": "list",
+    "walletDisplayMode": "grid",
+    "showDisabledMethods": false,
+    "detectInstalledWallets": true,
+    "highlightInstalledWallets": true,
+    "hideUninstalledWallets": false,
+    "showWalletDownloadLinks": true
+  }
+}

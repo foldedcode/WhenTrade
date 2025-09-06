@@ -1,0 +1,435 @@
+/* When.Trade 主样式文件 */
+
+/* 导入设计系统 */
+@import './styles/design-tokens.css';
+@import './styles/design-system.css';
+@import './styles/theme.css';
+@import './styles/theme-override.css';
+
+/* 导入 Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   全局基础样式 - Global Base Styles
+   ======================================== */
+
+/* 重置和基础样式 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  font-weight: var(--font-normal);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* 链接样式 */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-interactive-primary);
+}
+
+/* 按钮重置 */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* 输入框样式 */
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* 图片优化 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 文本选中样式 */
+::selection {
+  background-color: var(--ft-primary);
+  color: var(--ft-background);
+}
+
+::-moz-selection {
+  background-color: var(--ft-primary);
+  color: var(--ft-background);
+}
+
+/* ========================================
+   滚动条样式 - Scrollbar Styles
+   ======================================== */
+
+/* 全局滚动条 - Global Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-primary);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-focus);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--color-bg-secondary);
+}
+
+/* Firefox 滚动条 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-primary) var(--color-bg-secondary);
+}
+
+/* ========================================
+   选择样式 - Selection Styles
+   ======================================== */
+
+::selection {
+  background: var(--color-interactive-primary);
+  color: var(--color-text-inverse);
+}
+
+::-moz-selection {
+  background: var(--color-interactive-primary);
+  color: var(--color-text-inverse);
+}
+
+/* ========================================
+   焦点样式 - Focus Styles
+   ======================================== */
+
+/* 全局焦点样式 */
+:focus {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   打印样式 - Print Styles
+   ======================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* ========================================
+   响应式优化 - Responsive Optimizations
+   ======================================== */
+
+/* 移动端触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+  /* 移除 hover 效果在触摸设备上 */
+  .hover\:transform:hover {
+    transform: none;
+  }
+
+  /* 增加触摸目标大小 */
+  .btn,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* 小屏幕优化 */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: var(--text-sm);
+  }
+
+  /* 减小间距 */
+  .container {
+    padding-left: var(--space-small);
+    padding-right: var(--space-small);
+  }
+}
+
+/* 大屏幕优化 */
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* ========================================
+   辅助功能 - Accessibility
+   ======================================== */
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+  :root {
+    --color-border-primary: var(--neutral-300);
+    --color-border-secondary: var(--neutral-400);
+    --color-text-secondary: var(--neutral-200);
+  }
+
+  .dark {
+    --color-border-primary: var(--neutral-400);
+    --color-border-secondary: var(--neutral-300);
+    --color-text-secondary: var(--neutral-300);
+  }
+}
+
+/* 减少动画模式 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 强制色彩模式 */
+@media (forced-colors: active) {
+  :root {
+    --color-interactive-primary: ButtonText;
+    --color-bg-primary: ButtonFace;
+    --color-text-primary: ButtonText;
+    --color-border-primary: ButtonText;
+  }
+}
+
+/* ========================================
+   实用样式覆盖 - Utility Overrides
+   ======================================== */
+
+/* Tailwind 组件层 */
+@layer components {
+  /* 全局容器样式 */
+  .main-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* 页面布局 */
+  .page-layout {
+    @apply min-h-screen bg-neutral-900 text-neutral-50;
+  }
+
+  /* 导航栏样式 */
+  .navbar {
+    @apply bg-neutral-800 border-b border-neutral-700;
+  }
+
+  /* 卡片样式增强 */
+  .enhanced-card {
+    @apply bg-neutral-800 border border-neutral-700 rounded-2xl p-6 shadow-sm;
+    @apply transition-all duration-200;
+    @apply hover:border-primary-500 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  /* 按钮样式增强 */
+  .enhanced-btn {
+    @apply inline-flex items-center justify-center font-medium rounded-lg;
+    @apply transition-all duration-150 focus-visible:outline-none focus-visible:ring-2;
+    @apply focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .enhanced-btn-primary {
+    @apply enhanced-btn bg-primary-500 text-white shadow-blue;
+    @apply hover:bg-primary-600 hover:shadow-lg hover:-translate-y-px;
+    @apply active:bg-primary-700 active:translate-y-0 active:shadow-md;
+  }
+
+  .enhanced-btn-secondary {
+    @apply enhanced-btn bg-neutral-600 text-neutral-50 border border-neutral-500;
+    @apply hover:bg-neutral-500 hover:border-primary-500 hover:-translate-y-px;
+    @apply hover:shadow-md;
+  }
+}
+
+/* Tailwind 实用工具层 */
+@layer utilities {
+  /* 文本截断实用工具 */
+  .text-truncate {
+    @apply overflow-hidden whitespace-nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* 渐变文本 */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-interactive-primary), var(--brand-green-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* 玻璃态效果 */
+  .glass-effect {
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+  }
+
+  /* 动画实用工具 */
+  .animate-fade-in-up {
+    animation: fade-in 0.5s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in 0.3s ease-out;
+  }
+
+  .animate-bounce-in {
+    animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  /* 隐藏滚动条但保持功能 */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 安全区域适配 */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ========================================
+   开发者工具 - Developer Tools
+   ======================================== */
+
+/* 开发模式网格 */
+.debug-grid {
+  background-image: 
+    linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* 开发模式轮廓 */
+.debug-outline * {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+/* ========================================
+   主题特定样式 - Theme Specific Styles
+   ======================================== */
+
+/* 暗色主题默认样式（已在设计令牌中定义） */
+.dark {
+  color-scheme: dark;
+}
+
+/* 明亮主题样式 */
+.light {
+  color-scheme: light;
+}
+
+/* 系统主题跟随 */
+@media (prefers-color-scheme: light) {
+  .system {
+    --color-bg-primary: var(--neutral-50);
+    --color-bg-secondary: var(--neutral-100);
+    --color-text-primary: var(--neutral-900);
+    --color-text-secondary: var(--neutral-700);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .system {
+    --color-bg-primary: var(--neutral-900);
+    --color-bg-secondary: var(--neutral-800);
+    --color-text-primary: var(--neutral-50);
+    --color-text-secondary: var(--neutral-300);
+  }
+} 

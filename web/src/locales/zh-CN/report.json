@@ -1,0 +1,306 @@
+{
+  "title": "分析报告",
+  "analysisReport": "分析报告",
+  "executiveSummary": "执行摘要",
+  "currentPrice": "当前价格",
+  "targetPrice": "目标价格",
+  "stopLoss": "止损价格",
+  "confidence": "置信度",
+  "recommendation": "投资建议",
+  "potentialReturn": "潜在收益",
+  "riskLevel": "风险等级",
+  "timeHorizon": "投资期限",
+
+  "sections": {
+    "coreViewpoint": "核心观点",
+    "executiveSummary": "执行摘要",
+    "analysisInsights": "分析洞察",
+    "riskAssessment": "风险评估",
+    "agentCollaboration": "智能体协作分析",
+    "investmentAdvice": "投资建议",
+    "analysisMetadata": "分析元数据",
+    "technical": "技术面分析",
+    "technicalIndicators": "技术指标",
+    "priceInfo": "价格信息",
+    "fundamental": "基本面分析",
+    "sentiment": "情绪面分析"
+  },
+
+  "fields": {
+    "investmentRecommendation": "投资建议",
+    "confidence": "信心度",
+    "analysisTime": "分析时间",
+    "marketType": "市场类型",
+    "currentPrice": "当前价格",
+    "targetPrice": "目标价格",
+    "stopLoss": "止损价格",
+    "riskLevel": "风险等级",
+    "mainRiskFactors": "主要风险因素",
+    "coreAdvice": "核心建议",
+    "keyPoints": "关键要点",
+    "analysisId": "分析ID",
+    "analysisDuration": "分析耗时",
+    "analysisCost": "分析成本",
+    "analysisDepth": "分析深度",
+    "agentCount": "智能体数量",
+    "metric": "指标",
+    "value": "数值"
+  },
+
+  "recommendations": {
+    "buy": "买入",
+    "sell": "卖出",
+    "hold": "持有",
+    "buyAdvice": "建议买入",
+    "sellAdvice": "建议卖出",
+    "holdAdvice": "建议持有"
+  },
+
+  "marketTypes": {
+    "crypto": "加密货币"
+  },
+
+  "riskLevels": {
+    "low": "低风险",
+    "medium": "中等风险",
+    "high": "高风险"
+  },
+
+  "technicalIndicators": {
+    "rsi": "RSI",
+    "macd": "MACD",
+    "ma20": "MA(20)",
+    "ma50": "MA(50)",
+    "overbought": "超买",
+    "oversold": "超卖",
+    "neutral": "中性",
+    "bullish": "看涨信号",
+    "bearish": "看跌信号"
+  },
+
+  "trends": {
+    "bullish": "看涨趋势",
+    "bearish": "看跌趋势",
+    "neutral": "震荡趋势"
+  },
+
+  "priceLabels": {
+    "supportLevel": "支撑位",
+    "resistanceLevel": "阻力位",
+    "trendAnalysis": "趋势分析",
+    "asOfTime": "截至{time}获取"
+  },
+
+  "agentSummary": {
+    "analysisInvolved": "本次分析动用了{count}个专业智能体",
+    "insightsGenerated": "共产生{count}个关键洞察"
+  },
+
+  "defaults": {
+    "unknown": "UNKNOWN",
+    "unknownMarket": "unknown",
+    "pending": "待获取",
+    "noData": "暂无数据",
+    "noRelevantHistory": "无相关历史案例",
+    "agentDefault": "智能体"
+  },
+
+  "emojis": {
+    "buy": "📈",
+    "sell": "📉",
+    "hold": "⚖️",
+    "unknown": "❓",
+    "lowRisk": "🟢",
+    "mediumRisk": "🟡",
+    "highRisk": "🔴",
+    "unknownRisk": "⚪",
+    "crypto": "₿",
+    "default": "💼"
+  },
+
+  "formatting": {
+    "confidenceFormat": "{value}%",
+    "priceFormat": "${value}",
+    "changeFormat": "({value}%)",
+    "secondsFormat": "{value}秒",
+    "minutesSecondsFormat": "{minutes}分{seconds}秒"
+  },
+
+  "tableHeaders": {
+    "metric": "指标",
+    "value": "数值"
+  },
+
+  "technicalAnalysis": {
+    "title": "技术分析",
+    "trend": "趋势分析",
+    "support": "支撑位",
+    "resistance": "阻力位",
+    "indicators": "技术指标",
+    "patterns": "图表形态",
+    "volume": "成交量分析",
+    "momentum": "动量指标",
+    "signal": "交易信号"
+  },
+  "fundamentalAnalysis": {
+    "title": "基本面分析",
+    "valuation": "估值分析",
+    "financials": "财务状况",
+    "growth": "增长前景",
+    "competitive": "竞争优势",
+    "risks": "基本面风险",
+    "catalysts": "催化因素"
+  },
+  "sentimentAnalysis": {
+    "title": "情绪分析",
+    "overall": "整体情绪",
+    "social": "社交媒体",
+    "news": "新闻情绪",
+    "fearGreed": "恐惧贪婪指数",
+    "institutional": "机构情绪",
+    "retail": "散户情绪"
+  },
+  "riskAssessment": {
+    "title": "风险评估",
+    "overall": "整体风险",
+    "market": "市场风险",
+    "liquidity": "流动性风险",
+    "volatility": "波动性风险",
+    "regulatory": "监管风险",
+    "technical": "技术风险",
+    "mitigation": "风险缓释"
+  },
+  "agentInsights": {
+    "title": "智能体洞察",
+    "consensus": "一致性意见",
+    "divergence": "分歧观点",
+    "confidence": "置信水平",
+    "reasoning": "推理过程",
+    "keyPoints": "关键要点"
+  },
+  "export": {
+    "title": "导出报告",
+    "pdf": "PDF报告",
+    "word": "Word文档",
+    "html": "网页版本",
+    "json": "数据格式",
+    "generating": "正在生成...",
+    "success": "导出成功",
+    "failed": "导出失败"
+  },
+  "share": {
+    "title": "分享报告",
+    "link": "分享链接",
+    "qrCode": "二维码",
+    "email": "邮件分享",
+    "social": "社交媒体",
+    "embed": "嵌入代码",
+    "public": "公开分享",
+    "private": "私密分享",
+    "expiry": "过期时间"
+  },
+  "performance": {
+    "title": "表现追踪",
+    "accuracy": "预测准确率",
+    "returnRate": "实际收益率",
+    "timeFrame": "追踪周期",
+    "comparison": "基准对比",
+    "attribution": "收益归因"
+  },
+  "metadata": {
+    "generatedAt": "生成时间",
+    "analysisId": "分析ID",
+    "version": "版本",
+    "model": "使用模型",
+    "duration": "分析时长",
+    "cost": "分析成本"
+  },
+
+  "basicInfo": "基本信息",
+  "analysisProcess": "完整分析过程",
+  "step": "步骤",
+  "time": "时间",
+  "project": "项目",
+  "value": "值",
+  "generationInfo": "报告生成信息",
+  "autoGenerated": "此报告由 **when.trade** 自动生成",
+  "generatedAt": "生成时间",
+  "noDataFound": "未找到分析数据",
+  "reportTitle": "分析报告",
+  "duration": {
+    "unknown": "未知",
+    "seconds": "{seconds}秒",
+    "minutesSeconds": "{minutes}分{seconds}秒"
+  },
+  "keyFindings": "关键发现",
+  "risks": "风险",
+  "priceChart": "价格图表",
+  "chartPlaceholder": "图表占位符",
+  "volatility": "波动率",
+  "annualizedVolatility": "年化波动率",
+  "maxDrawdown": "最大回撤",
+  "historicalMaxDrawdown": "历史最大回撤",
+  "marketSentiment": "市场情绪",
+  "socialSentiment": "社交情绪",
+  "fearGreedIndex": "恐慌贪婪指数",
+  "extremeGreed": "极度贪婪",
+  "greed": "贪婪",
+  "neutral": "中性",
+  "fear": "恐惧",
+  "extremeFear": "极度恐惧",
+  "agentDebate": "智能体辩论记录",
+  "disclaimer": "免责声明",
+  "disclaimerText": "本报告仅供参考，不构成投资建议。投资有风险，入市需谨慎。",
+  "buy": "买入",
+  "sell": "卖出",
+  "hold": "持有",
+  "unknown": "未知",
+  "sampleData": {
+    "executiveSummary": "基于技术分析、基本面分析和市场情绪综合评估，BTC/USDT呈现明显的看涨信号。技术指标显示突破关键阻力位，成交量配合良好，建议逢低买入。",
+    "technicalFindings": [
+      "突破50日均线，形成黄金交叉",
+      "RSI指标显示超买信号减弱",
+      "成交量放大，支撑价格上涨"
+    ],
+    "technicalRecommendation": "建议在42000-43000区间逢低买入，目标价位48000，止损38000",
+    "technicalRisks": [
+      "短期可能面临获利回吐压力",
+      "需关注关键阻力位45000的突破情况"
+    ],
+    "fundamentalFindings": [
+      "机构持续增持，长期看好",
+      "监管环境逐步明朗",
+      "采用率持续提升"
+    ],
+    "fundamentalRecommendation": "长期持有，适合定投策略",
+    "fundamentalRisks": ["宏观经济不确定性", "监管政策变化风险"],
+    "sentimentFindings": [
+      "社交媒体情绪偏向乐观",
+      "恐慌贪婪指数显示中性",
+      "大户持仓稳定"
+    ],
+    "sentimentRecommendation": "市场情绪支持上涨，但需谨慎过度乐观",
+    "sentimentRisks": ["情绪反转风险", "FOMO情绪可能导致过度买入"],
+    "riskFindings": ["波动率处于历史中位数", "相关性风险可控", "流动性充足"],
+    "riskRecommendation": "风险可控，建议仓位控制在总资产的10-15%",
+    "riskRisks": ["系统性风险", "流动性风险"],
+    "debates": [
+      {
+        "agent": "technical",
+        "content": "从技术面看，BTC已经突破了关键阻力位，成交量配合良好，这是一个强烈的买入信号。"
+      },
+      {
+        "agent": "risk",
+        "content": "我同意技术面的看法，但需要注意风险控制。建议仓位不要超过总资产的15%。"
+      },
+      {
+        "agent": "fundamental",
+        "content": "长期来看，机构持续增持，这为价格提供了强有力的支撑。但短期可能面临获利回吐。"
+      },
+      {
+        "agent": "sentiment",
+        "content": "市场情绪整体乐观，但需要警惕过度乐观导致的回调风险。"
+      }
+    ]
+  }
+}

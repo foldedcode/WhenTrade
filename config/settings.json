@@ -1,0 +1,18 @@
+{
+  "default_provider": "dashscope",
+  "default_model": "qwen-turbo",
+  "enable_cost_tracking": true,
+  "cost_alert_threshold": 100.0,
+  "currency_preference": "CNY",
+  "auto_save_usage": true,
+  "max_usage_records": 10000,
+  "data_dir": "/Users/yufengjiao/Documents/WhenTrade/data",
+  "cache_dir": "/Users/yufengjiao/Documents/WhenTrade/data/cache",
+  "results_dir": "/Users/yufengjiao/Documents/WhenTrade/results",
+  "auto_create_dirs": true,
+  "log_level": "INFO",
+  "finnhub_api_key": "d1mdvl9r01qvvurlpmq0d1mdvl9r01qvvurlpmqg",
+  "reddit_client_id": "3ry-p1MMVvth5tZxZFjzLg",
+  "reddit_client_secret": "tzi_XdSMrSUBwFHUiKiVouXpy7BEyQ",
+  "reddit_user_agent": "whentrade/1.0"
+}

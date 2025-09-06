@@ -1,0 +1,7 @@
+{
+  "dropdown": {
+    "placeholder": "Please select",
+    "searchPlaceholder": "Search options...",
+    "emptyText": "No matching options"
+  }
+}

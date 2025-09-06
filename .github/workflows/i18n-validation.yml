@@ -1,0 +1,269 @@
+name: Translation Validation
+
+# Linus原则：自动化一切可以自动化的东西
+# "Talk is cheap. Show me the code." - 用CI确保翻译质量
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'web/src/locales/**'
+      - 'web/src/services/*i18n*'
+      - 'web/src/services/*translation*'
+      - 'web/src/services/dynamic-content.service.ts'
+      - 'web/src/scripts/validate-translations.js'
+      - '.github/workflows/i18n-validation.yml'
+  
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'web/src/locales/**'
+      - 'web/src/services/*i18n*'
+      - 'web/src/services/*translation*'
+      - 'web/src/services/dynamic-content.service.ts'
+      - 'web/src/scripts/validate-translations.js'
+      - '.github/workflows/i18n-validation.yml'
+  
+  # 允许手动触发
+  workflow_dispatch:
+    inputs:
+      strict_mode:
+        description: 'Run in strict mode (treat warnings as errors)'
+        required: false
+        default: 'true'
+        type: boolean
+      languages:
+        description: 'Languages to validate (comma-separated)'
+        required: false
+        default: 'zh-CN,en-US'
+        type: string
+
+jobs:
+  validate-translations:
+    name: Validate Translation Files
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: 'web/package-lock.json'
+    
+    - name: Install dependencies
+      working-directory: ./web
+      run: npm ci
+    
+    - name: Run TypeScript type check
+      working-directory: ./web
+      run: npm run type-check
+      continue-on-error: true
+    
+    - name: Validate translations (standard mode)
+      if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && !inputs.strict_mode)
+      working-directory: ./web
+      run: |
+        LANGUAGES="${{ github.event.inputs.languages || 'zh-CN,en-US' }}"
+        node src/scripts/validate-translations.js --languages "$LANGUAGES" --format json --output translation-report.json
+    
+    - name: Validate translations (strict mode)
+      if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && inputs.strict_mode)
+      working-directory: ./web
+      run: |
+        LANGUAGES="${{ github.event.inputs.languages || 'zh-CN,en-US' }}"
+        node src/scripts/validate-translations.js --strict --languages "$LANGUAGES" --format json --output translation-report.json
+    
+    - name: Generate HTML report
+      if: always()
+      working-directory: ./web
+      run: |
+        LANGUAGES="${{ github.event.inputs.languages || 'zh-CN,en-US' }}"
+        node src/scripts/validate-translations.js --languages "$LANGUAGES" --format html --output translation-report.html
+      continue-on-error: true
+    
+    - name: Upload translation reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: translation-reports-node-${{ matrix.node-version }}
+        path: |
+          web/translation-report.json
+          web/translation-report.html
+        retention-days: 30
+    
+    - name: Comment PR with validation results
+      if: github.event_name == 'pull_request' && always()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          try {
+            const reportPath = path.join(process.cwd(), 'web', 'translation-report.json');
+            if (fs.existsSync(reportPath)) {
+              const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+              
+              const status = report.isValid ? '✅ PASSED' : '❌ FAILED';
+              const errorCount = report.errors?.length || 0;
+              const warningCount = report.warnings?.length || 0;
+              
+              let comment = `## 🌐 Translation Validation Report\n\n`;
+              comment += `**Status:** ${status}\n`;
+              comment += `**Errors:** ${errorCount}\n`;
+              comment += `**Warnings:** ${warningCount}\n\n`;
+              
+              if (report.statistics) {
+                comment += `### 📊 Statistics\n\n`;
+                comment += `- **Total Keys:** ${report.statistics.totalKeys}\n`;
+                comment += `- **Languages:** ${report.statistics.languages?.join(', ') || 'N/A'}\n`;
+                comment += `- **Namespaces:** ${report.statistics.namespaces?.join(', ') || 'N/A'}\n\n`;
+                
+                comment += `### 📈 Completion Rates\n\n`;
+                for (const [lang, rate] of Object.entries(report.statistics.completionRate || {})) {
+                  const translated = report.statistics.translatedKeys?.[lang] || 0;
+                  comment += `- **${lang}:** ${rate.toFixed(1)}% (${translated}/${report.statistics.totalKeys})\n`;
+                }
+                comment += `\n`;
+              }
+              
+              if (errorCount > 0) {
+                comment += `### ❌ Errors (${errorCount})\n\n`;
+                const errors = report.errors.slice(0, 10); // 限制显示数量
+                for (const error of errors) {
+                  comment += `- \`${error.namespace}.${error.key}\` (${error.language}): ${error.message}\n`;
+                }
+                if (report.errors.length > 10) {
+                  comment += `- ... and ${report.errors.length - 10} more errors\n`;
+                }
+                comment += `\n`;
+              }
+              
+              if (warningCount > 0) {
+                comment += `### ⚠️ Warnings (${warningCount})\n\n`;
+                const warnings = report.warnings.slice(0, 5); // 限制显示数量
+                for (const warning of warnings) {
+                  comment += `- \`${warning.namespace}.${warning.key}\` (${warning.language}): ${warning.message}\n`;
+                }
+                if (report.warnings.length > 5) {
+                  comment += `- ... and ${report.warnings.length - 5} more warnings\n`;
+                }
+                comment += `\n`;
+              }
+              
+              comment += `---\n`;
+              comment += `📄 Full reports are available in the [workflow artifacts](${context.payload.pull_request.html_url}/checks).\n`;
+              
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            }
+          } catch (error) {
+            console.error('Failed to post comment:', error);
+          }
+
+  # 检查翻译文件的格式和语法
+  lint-translation-files:
+    name: Lint Translation Files
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+    
+    - name: Validate JSON syntax
+      run: |
+        echo "🔍 Checking JSON syntax in translation files..."
+        find web/src/locales -name "*.json" -type f | while read file; do
+          echo "Checking: $file"
+          if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+            echo "❌ Invalid JSON syntax in: $file"
+            exit 1
+          fi
+        done
+        echo "✅ All JSON files have valid syntax"
+    
+    - name: Check for duplicate keys
+      run: |
+        echo "🔍 Checking for duplicate keys in translation files..."
+        find web/src/locales -name "*.json" -type f | while read file; do
+          echo "Checking duplicates in: $file"
+          # 使用Python检查重复键
+          python3 -c "
+        import json
+        import sys
+        
+        def check_duplicates(obj, path='', seen_keys=None):
+            if seen_keys is None:
+                seen_keys = set()
+            
+            if isinstance(obj, dict):
+                for key, value in obj.items():
+                    full_key = f'{path}.{key}' if path else key
+                    if full_key in seen_keys:
+                        print(f'❌ Duplicate key found: {full_key}')
+                        sys.exit(1)
+                    seen_keys.add(full_key)
+                    check_duplicates(value, full_key, seen_keys)
+        
+        try:
+            with open('$file', 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            check_duplicates(data)
+        except Exception as e:
+            print(f'❌ Error checking $file: {e}')
+            sys.exit(1)
+        "
+        done
+        echo "✅ No duplicate keys found"
+
+  # 性能测试：检查翻译文件大小
+  check-translation-size:
+    name: Check Translation File Sizes
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Check file sizes
+      run: |
+        echo "📏 Checking translation file sizes..."
+        
+        MAX_SIZE_KB=100  # 最大100KB
+        TOTAL_SIZE=0
+        
+        find web/src/locales -name "*.json" -type f | while read file; do
+          SIZE_BYTES=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null || echo 0)
+          SIZE_KB=$((SIZE_BYTES / 1024))
+          TOTAL_SIZE=$((TOTAL_SIZE + SIZE_BYTES))
+          
+          echo "$file: ${SIZE_KB}KB"
+          
+          if [ $SIZE_KB -gt $MAX_SIZE_KB ]; then
+            echo "⚠️  Warning: $file is ${SIZE_KB}KB (exceeds ${MAX_SIZE_KB}KB limit)"
+          fi
+        done
+        
+        TOTAL_SIZE_KB=$((TOTAL_SIZE / 1024))
+        echo "📊 Total translation files size: ${TOTAL_SIZE_KB}KB"
+        
+        if [ $TOTAL_SIZE_KB -gt 500 ]; then
+          echo "⚠️  Warning: Total translation size is ${TOTAL_SIZE_KB}KB (consider optimization)"
+        fi

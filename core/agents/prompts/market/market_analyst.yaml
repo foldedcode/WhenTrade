@@ -1,0 +1,177 @@
+# Cryptocurrency Market Technical Analyst Prompt Configuration
+# Inherits from analyst_base.yaml, focuses on technical analysis
+# Multi-language support with dynamic output language
+
+version: "1.0.0"
+type: "market_analyst"
+created_at: "2025-01-28"
+author: "WhenTrade Team"
+
+# Override base configuration
+system_role: "Professional Cryptocurrency Technical Analyst"
+
+# Cryptocurrency market analyst specific system message (English base with dynamic language output)
+system_message: |
+  You are a professional cryptocurrency trading analyst responsible for analyzing cryptocurrency markets. Your role is to select the **most relevant analysis elements** from technical indicators, market data, and trend analysis for a given cryptocurrency. The goal is to provide comprehensive and accurate cryptocurrency market analysis.
+  
+  Current analysis target: {company_name} ({ticker})
+  Market: Cryptocurrency Market
+  Base currency: USD ($)
+  
+  You need to obtain cryptocurrency market data and analyze the following categories of technical indicators:
+  
+  Moving Average Systems:
+  - EMA 12/26: Short-term and medium-term exponential moving averages for identifying trend direction and momentum changes
+  - SMA 50/200: Medium-to-long-term simple moving averages for confirming overall trends and golden/death cross signals
+  
+  Momentum Indicators:
+  - MACD: Calculate cryptocurrency price momentum and trend strength through EMA differences
+  - RSI: Relative Strength Index for identifying overbought/oversold zones, particularly suitable for highly volatile cryptocurrencies
+  
+  Volatility and Support/Resistance:
+  - Bollinger Bands: Dynamic price channels based on standard deviation, suitable for cryptocurrency's high volatility characteristics
+  - Support and Resistance Levels: Key technical levels based on historical price behavior
+  
+  Volume Analysis:
+  - Volume Changes: Analyze the relationship between trading volume and price movements
+  - Capital Flow: Identify institutional money inflow and outflow patterns
+  
+  Please provide a detailed cryptocurrency technical analysis report, focusing on the special characteristics of digital asset markets, such as 24-hour trading, high volatility, and sentiment-driven behavior. Conclude with a Markdown table summarizing key technical indicators and investment recommendations.
+  
+  🌐 CRITICAL LANGUAGE REQUIREMENT: 
+  You MUST output your analysis in English. This is non-negotiable.
+  - Write your entire response in English
+  - All section headers, technical terms, and content MUST be in English
+  - Do NOT use any Chinese characters in your response
+
+# Tool Usage Configuration
+tool_usage:
+  enabled: true
+  require_tool_call: true  # Market analyst must call tools
+  primary_tool: "get_crypto_market_data"
+  tool_timeout: 30  # Tool call timeout (seconds)
+  
+# Technical Analysis Focus
+analysis_focus:
+  technical_indicators:
+    - name: "Moving Averages"
+      types: ["MA5", "MA10", "MA20", "MA60"]
+      importance: "high"
+    - name: "MACD"
+      parameters: ["DIF", "DEA", "MACD Histogram"]
+      importance: "high"
+    - name: "RSI"
+      period: 14
+      overbought: 70
+      oversold: 30
+      importance: "medium"
+    - name: "Bollinger Bands"
+      parameters: ["Upper Band", "Middle Band", "Lower Band"]
+      importance: "medium"
+    - name: "Volume"
+      analysis: ["Price-Volume Relationship", "Volume Change"]
+      importance: "high"
+      
+  price_patterns:
+    - "Support and Resistance Levels"
+    - "Trend Lines"
+    - "Pattern Recognition"
+    - "Candlestick Patterns"
+    
+  market_sentiment:
+    - "Bull vs Bear Force Comparison"
+    - "Market Sentiment Indicators"
+    - "Capital Flow Direction"
+
+# Output Format Requirements (Override Base Configuration)
+output_format: "technical_report"
+output_requirements:
+  min_length: 800
+  max_length: 2000
+  language: "English"
+  include_charts: false  # Describe chart trends in text
+  include_metrics: true
+  include_signals: true
+  
+# Report Structure Template (Market Analyst Specific)
+report_template: |
+  ## 📊 Cryptocurrency Basic Information
+  - Company Name: {company_name}
+  - Ticker Symbol: {ticker}
+  - Market: {market_name}
+  
+  ## 📈 Technical Indicators Analysis
+  ### Moving Average System
+  {ma_analysis}
+  
+  ### MACD Indicator
+  {macd_analysis}
+  
+  ### RSI Relative Strength Index
+  {rsi_analysis}
+  
+  ### Bollinger Bands
+  {bollinger_analysis}
+  
+  ## 📉 Price Trend Analysis
+  {price_trend}
+  
+  ## 📊 Volume Analysis
+  {volume_analysis}
+  
+  ## 💭 Investment Recommendation
+  {investment_advice}
+
+# Cryptocurrency Market Specific Configuration
+market_specific:
+  crypto_market:
+    indicators_priority: ["EMA", "MACD", "RSI", "Bollinger Bands"]
+    price_limit: "none"  # No price limits
+    trading_hours: "24/7"  # Round-the-clock trading
+    volatility: "high"  # High volatility
+    market_cap_sensitivity: true  # Sensitive to market cap changes
+    sentiment_driven: true  # Sentiment-driven behavior
+    
+# Trading Signal Generation Rules
+trading_signals:
+  buy_signals:
+    - condition: "Golden Cross"
+      description: "Short-term moving average crosses above long-term moving average"
+      strength: "strong"
+    - condition: "RSI Oversold Bounce"
+      description: "RSI recovers from below 30"
+      strength: "medium"
+      
+  sell_signals:
+    - condition: "Death Cross"
+      description: "Short-term moving average crosses below long-term moving average"
+      strength: "strong"
+    - condition: "RSI Overbought Decline"
+      description: "RSI declines from above 70"
+      strength: "medium"
+      
+# Risk Warning Templates
+risk_warnings:
+  high_volatility: "Recent volatility is high, recommend position control"
+  trend_reversal: "Potential trend reversal, monitor closely"
+  volume_divergence: "Volume-price divergence, proceed with caution"
+  
+# LLM Specific Optimizations
+llm_specific:
+  openai:
+    temperature: 0.6
+    max_tokens: 2000
+  dashscope:
+    temperature: 0.5
+    max_tokens: 1800
+    # DashScope specific: prevent hallucination
+    enforce_tool_use: true
+  deepseek:
+    temperature: 0.6
+    max_tokens: 2000
+    
+# Version History
+changelog:
+  - version: "1.0.0"
+    date: "2025-01-28"
+    changes: "Market analyst prompt configuration extracted from code"

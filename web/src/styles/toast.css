@@ -1,0 +1,102 @@
+/* Vue Toastification 自定义样式 */
+
+/* 覆盖默认样式以匹配 OrbiterDashboard 主题 */
+.Vue-Toastification__container {
+  font-family: 'Proto Mono', monospace;
+}
+
+.Vue-Toastification__toast {
+  background: var(--od-surface-secondary);
+  color: var(--od-text-primary);
+  border: 1px solid var(--od-border);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  min-height: 64px;
+}
+
+/* 成功消息 */
+.Vue-Toastification__toast--success {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: var(--od-success);
+}
+
+.Vue-Toastification__toast--success .Vue-Toastification__icon {
+  fill: var(--od-success);
+}
+
+/* 错误消息 */
+.Vue-Toastification__toast--error {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: var(--od-error);
+}
+
+.Vue-Toastification__toast--error .Vue-Toastification__icon {
+  fill: var(--od-error);
+}
+
+/* 警告消息 */
+.Vue-Toastification__toast--warning {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: var(--od-warning);
+}
+
+.Vue-Toastification__toast--warning .Vue-Toastification__icon {
+  fill: var(--od-warning);
+}
+
+/* 信息消息 */
+.Vue-Toastification__toast--info {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: var(--od-info);
+}
+
+.Vue-Toastification__toast--info .Vue-Toastification__icon {
+  fill: var(--od-info);
+}
+
+/* 进度条 */
+.Vue-Toastification__progress-bar {
+  height: 3px;
+  opacity: 0.7;
+}
+
+.Vue-Toastification__toast--success .Vue-Toastification__progress-bar {
+  background: var(--od-success);
+}
+
+.Vue-Toastification__toast--error .Vue-Toastification__progress-bar {
+  background: var(--od-error);
+}
+
+.Vue-Toastification__toast--warning .Vue-Toastification__progress-bar {
+  background: var(--od-warning);
+}
+
+.Vue-Toastification__toast--info .Vue-Toastification__progress-bar {
+  background: var(--od-info);
+}
+
+/* 关闭按钮 */
+.Vue-Toastification__close-button {
+  color: var(--od-text-muted);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.Vue-Toastification__close-button:hover {
+  opacity: 1;
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .Vue-Toastification__toast {
+    background: var(--od-surface-secondary);
+    border-color: var(--od-border);
+  }
+}

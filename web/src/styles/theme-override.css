@@ -1,0 +1,134 @@
+/* 主题切换覆盖样式 - 最高优先级 */
+
+/* 基础主题变量 */
+:root {
+  /* 深色主题默认值 */
+  --od-background: #1a1a1a;
+  --od-background-alt: #222222;
+  --od-background-light: #2a2a2a;
+  --od-text-primary: #ffffff;
+  --od-text-secondary: #b0b0b0;
+  --od-text-muted: #888888;
+  --od-border: #333333;
+  --od-primary: var(--ft-primary, #4ade80);
+  --od-success: var(--ft-success, #00c851);
+  --od-warning: var(--ft-warning, #ff6f00);
+  --od-error: var(--ft-error, #d32f2f);
+  --od-info: var(--ft-info, #1976d2);
+  
+  /* 金融终端主题 */
+  --ft-background: #1a1a1a;
+  --ft-background-alt: #222222;
+  --ft-text-primary: #ffffff;
+  --ft-text-secondary: #b0b0b0;
+  --ft-border: #333333;
+  --ft-primary: #4ade80;
+}
+
+/* 深色主题（明确指定） */
+[data-theme="dark"] {
+  --od-background: #1a1a1a !important;
+  --od-background-alt: #222222 !important;
+  --od-background-light: #2a2a2a !important;
+  --od-text-primary: #ffffff !important;
+  --od-text-secondary: #b0b0b0 !important;
+  --od-text-muted: #888888 !important;
+  --od-border: #333333 !important;
+  --od-primary: var(--ft-primary, #4ade80) !important;
+  --od-success: var(--ft-success, #00c851) !important;
+  --od-warning: var(--ft-warning, #ff6f00) !important;
+  --od-error: var(--ft-error, #d32f2f) !important;
+  --od-info: var(--ft-info, #1976d2) !important;
+  
+  --ft-background: #1a1a1a !important;
+  --ft-background-alt: #222222 !important;
+  --ft-text-primary: #ffffff !important;
+  --ft-text-secondary: #b0b0b0 !important;
+  --ft-border: #333333 !important;
+  --ft-primary: #4ade80 !important;
+}
+
+/* 浅色主题 */
+[data-theme="light"] {
+  --od-background: #ffffff !important;
+  --od-background-alt: #f5f5f5 !important;
+  --od-background-light: #fafafa !important;
+  --od-text-primary: #000000 !important;
+  --od-text-secondary: #424242 !important;
+  --od-text-muted: #666666 !important;
+  --od-border: #e0e0e0 !important;
+  --od-primary: var(--ft-primary, #4ade80) !important;
+  --od-success: var(--ft-success, #00a843) !important;
+  --od-warning: var(--ft-warning, #ff6f00) !important;
+  --od-error: var(--ft-error, #c62828) !important;
+  --od-info: var(--ft-info, #1565c0) !important;
+  
+  --ft-background: #ffffff !important;
+  --ft-background-alt: #f5f5f5 !important;
+  --ft-text-primary: #000000 !important;
+  --ft-text-secondary: #424242 !important;
+  --ft-border: #e0e0e0 !important;
+  --ft-primary: #4ade80 !important;
+}
+
+/* 确保body和主要容器使用主题色 */
+html[data-theme="light"] body,
+html[data-theme="light"] #app {
+  background-color: var(--od-background) !important;
+  color: var(--od-text-primary) !important;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] #app {
+  background-color: var(--od-background) !important;
+  color: var(--od-text-primary) !important;
+}
+
+/* 导航栏主题适配 */
+html[data-theme="light"] nav {
+  background: rgba(245, 245, 245, 0.95) !important;
+  border-color: var(--od-border) !important;
+}
+
+html[data-theme="dark"] nav {
+  background: rgba(30, 30, 30, 0.95) !important;
+  border-color: var(--od-border) !important;
+}
+
+/* 卡片主题适配 */
+html[data-theme="light"] .card--od--refined {
+  background: var(--od-background-alt) !important;
+  border-color: var(--od-border) !important;
+}
+
+html[data-theme="dark"] .card--od--refined {
+  background: var(--od-background-alt) !important;
+  border-color: var(--od-border) !important;
+}
+
+/* 输入框主题适配 */
+html[data-theme="light"] .input--od {
+  background: var(--od-background) !important;
+  border-color: var(--od-border) !important;
+  color: var(--od-text-primary) !important;
+}
+
+html[data-theme="dark"] .input--od {
+  background: var(--od-background-alt) !important;
+  border-color: var(--od-border) !important;
+  color: var(--od-text-primary) !important;
+}
+
+/* 下拉菜单主题适配 */
+html[data-theme="light"] .dropdown--od {
+  background: var(--od-background-alt) !important;
+  border-color: var(--od-border) !important;
+  color: var(--od-text-primary) !important;
+}
+
+html[data-theme="dark"] .dropdown--od {
+  background: var(--od-background-alt) !important;
+  border-color: var(--od-border) !important;
+  color: var(--od-text-primary) !important;
+}
+

@@ -1,0 +1,49 @@
+{
+  "title": "使用量统计",
+  "periods": {
+    "today": "今天",
+    "week": "本周",
+    "month": "本月",
+    "year": "今年",
+    "custom": "自定义"
+  },
+  "totalCalls": "总调用次数",
+  "totalTokens": "总Token数",
+  "totalCost": "总费用",
+  "successRate": "成功率",
+  "averageResponseTime": "平均响应时间",
+  "comparedToLast": "环比",
+  "quotaStatus": "配额状态",
+  "quotaTypes": {
+    "apiCalls": "API调用",
+    "tokens": "Token额度",
+    "storage": "存储空间",
+    "compute": "计算资源"
+  },
+  "resetsIn": "重置时间",
+  "tabs": {
+    "byTool": "按工具",
+    "byTime": "按时间",
+    "details": "详细记录",
+    "optimization": "优化建议"
+  },
+  "calls": "次调用",
+  "tokens": "Token数",
+  "avgDuration": "平均耗时",
+  "time": "时间",
+  "tool": "工具",
+  "operation": "操作",
+  "cost": "费用",
+  "status": "状态",
+  "statuses": {
+    "success": "成功",
+    "failed": "失败",
+    "partial": "部分成功"
+  },
+  "potentialSavings": "潜在节省",
+  "month": "月",
+  "learnMore": "了解更多",
+  "hours": "小时",
+  "days": "天",
+  "loadError": "加载使用数据失败，请稍后重试"
+}

@@ -1,0 +1,123 @@
+{
+  "pageTitle": "工具管理",
+  "title": "工具管理",
+  "description": "管理和连接您的工具",
+  "installed": "已安装",
+  "connected": "已连接",
+  "notConnected": "未连接",
+  "provider": "提供商",
+  "lastUsed": "最后使用",
+  "justNow": "刚刚",
+  "hoursAgo": "{count}小时前",
+  "daysAgo": "{count}天前",
+  "noTools": "暂无工具",
+  "noToolsDescription": "您还没有安装任何工具，去工具市场看看吧",
+  "browseMarket": "浏览工具市场",
+  "tabs": {
+    "myTools": "我的工具",
+    "mcpConnections": "MCP连接",
+    "marketplace": "工具市场"
+  },
+  "filter": {
+    "all": "全部",
+    "builtin": "内置工具",
+    "mcp": "MCP工具",
+    "custom": "自定义工具",
+    "marketplace": "市场工具"
+  },
+  "status": {
+    "connected": "已连接",
+    "disconnected": "未连接",
+    "error": "错误",
+    "connecting": "连接中"
+  },
+  "tool": {
+    "name": "工具名称",
+    "type": "类型",
+    "status": "状态",
+    "lastUsed": "最后使用",
+    "version": "版本",
+    "permissions": "权限",
+    "configuration": "配置",
+    "statistics": "统计",
+    "connect": "连接",
+    "disconnect": "断开",
+    "configure": "配置",
+    "update": "更新",
+    "viewDetails": "查看详情"
+  },
+  "permissions": {
+    "read": "读取",
+    "write": "写入",
+    "execute": "执行",
+    "admin": "管理"
+  },
+  "statistics": {
+    "usageCount": "使用次数",
+    "totalCost": "总成本",
+    "avgResponseTime": "平均响应时间",
+    "lastUsed": "最后使用"
+  },
+  "mcp": {
+    "title": "MCP服务器连接",
+    "server": "服务器",
+    "url": "服务器地址",
+    "availableTools": "可用工具",
+    "lastSync": "上次同步",
+    "sync": "同步",
+    "connect": "连接服务器",
+    "disconnect": "断开连接",
+    "addServer": "添加服务器"
+  },
+  "marketplace": {
+    "recommendations": "推荐工具",
+    "basedOn": "基于您的使用习惯",
+    "rating": "评分",
+    "installs": "安装量",
+    "price": "价格",
+    "free": "免费",
+    "viewInMarket": "在市场中查看",
+    "install": "安装"
+  },
+  "actions": {
+    "add": "添加工具",
+    "remove": "移除",
+    "edit": "编辑",
+    "test": "测试连接"
+  },
+  "success": {
+    "connected": "工具连接成功",
+    "disconnected": "工具已断开",
+    "configured": "配置更新成功",
+    "permissionsUpdated": "权限更新成功",
+    "mcpConnected": "MCP服务器连接成功",
+    "mcpDisconnected": "MCP服务器已断开",
+    "syncCompleted": "同步完成，发现 {count} 个工具"
+  },
+  "errors": {
+    "connectionFailed": "连接失败",
+    "configFailed": "配置失败",
+    "permissionDenied": "权限不足",
+    "toolNotFound": "工具不存在",
+    "mcpConnectionFailed": "MCP服务器连接失败",
+    "syncFailed": "同步失败"
+  },
+  "empty": {
+    "tools": "还没有添加任何工具",
+    "mcp": "还没有连接任何MCP服务器",
+    "addFirst": "添加您的第一个工具"
+  },
+  "names": {
+    "finnhub_news": "FinnHub新闻",
+    "reddit_sentiment": "Reddit情绪分析",
+    "sentiment_batch": "批量情绪分析",
+    "crypto_price": "加密货币价格",
+    "indicators": "技术指标",
+    "market_data": "市场数据",
+    "historical_data": "历史数据",
+    "market_metrics": "市场指标",
+    "trending": "热门币种",
+    "fear_greed": "恐惧贪婪指数",
+    "batch_execution": "批量执行"
+  }
+}

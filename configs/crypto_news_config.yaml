@@ -1,0 +1,186 @@
+# 加密货币新闻配置文件
+# Crypto News Configuration
+
+# Swarm服务配置
+swarm:
+  enabled: true
+  service: "duckduckgo"  # 使用DuckDuckGo作为唯一数据源
+  
+  # 搜索配置
+  search:
+    max_results_per_query: 10  # 每个查询的最大结果数
+    max_total_results: 15      # 总的最大结果数
+    timeout: 30                # 搜索超时时间（秒）
+    retry_delay: 1.0           # 重试延迟（秒）
+    max_retries: 3             # 最大重试次数
+    
+    # 搜索查询模板
+    query_templates:
+      - "{symbol} cryptocurrency news"
+      - "{symbol} price analysis"
+      - "{symbol} market update"
+      - "{symbol} trading"
+  
+  # 分析配置
+  analysis:
+    sentiment_weight:
+      positive: 1.0
+      negative: -1.0
+      neutral: 0.0
+    
+    # 情感阈值
+    sentiment_threshold:
+      positive: 0.2   # 积极情感阈值
+      negative: -0.2  # 消极情感阈值
+    
+    # 主题提取
+    max_topics: 10      # 最多提取主题数
+    max_events: 5       # 最多重大事件数
+    max_price_mentions: 5  # 最多价格提及数
+  
+  # 总结配置
+  summary:
+    include_sentiment: true
+    include_topics: true
+    include_events: true
+    include_price_mentions: true
+    max_report_length: 2000  # 报告最大字符数
+
+# 支持的加密货币配置
+cryptocurrencies:
+  BTC:
+    names: ["Bitcoin", "BTC", "比特币"]
+    category: "主流币"
+    priority: 1
+  
+  ETH:
+    names: ["Ethereum", "ETH", "以太坊"]
+    category: "主流币"
+    priority: 1
+  
+  SOL:
+    names: ["Solana", "SOL"]
+    category: "主流币"
+    priority: 2
+  
+  BNB:
+    names: ["Binance", "BNB", "币安币", "Binance Coin"]
+    category: "平台币"
+    priority: 2
+  
+  XRP:
+    names: ["Ripple", "XRP", "瑞波币"]
+    category: "主流币"
+    priority: 2
+  
+  ADA:
+    names: ["Cardano", "ADA"]
+    category: "主流币"
+    priority: 3
+  
+  DOGE:
+    names: ["Dogecoin", "DOGE", "狗狗币"]
+    category: "MEME币"
+    priority: 3
+  
+  DOT:
+    names: ["Polkadot", "DOT"]
+    category: "主流币"
+    priority: 3
+
+# 情感关键词配置
+sentiment_keywords:
+  positive:
+    strong:
+      - "surge"
+      - "soar"
+      - "moon"
+      - "breakthrough"
+      - "record high"
+      - "massive gain"
+    moderate:
+      - "bullish"
+      - "rally"
+      - "gain"
+      - "rise"
+      - "growth"
+      - "adoption"
+      - "partnership"
+    weak:
+      - "stable"
+      - "support"
+      - "recover"
+      - "rebound"
+  
+  negative:
+    strong:
+      - "crash"
+      - "plunge"
+      - "collapse"
+      - "hack"
+      - "exploit"
+      - "ban"
+    moderate:
+      - "bearish"
+      - "fall"
+      - "drop"
+      - "decline"
+      - "concern"
+      - "warning"
+    weak:
+      - "resistance"
+      - "pressure"
+      - "weak"
+      - "struggle"
+  
+  neutral:
+    - "update"
+    - "announce"
+    - "report"
+    - "discuss"
+    - "consider"
+    - "review"
+    - "monitor"
+    - "observe"
+
+# 主题分类配置
+topic_categories:
+  price_action:
+    keywords: ["price", "trading", "chart", "technical", "support", "resistance", "breakout"]
+    importance: "high"
+  
+  regulation:
+    keywords: ["regulation", "sec", "government", "law", "compliance", "legal", "policy"]
+    importance: "high"
+  
+  adoption:
+    keywords: ["adoption", "institutional", "company", "accept", "integrate", "use", "payment"]
+    importance: "high"
+  
+  technology:
+    keywords: ["upgrade", "development", "protocol", "network", "blockchain", "defi", "smart contract"]
+    importance: "medium"
+  
+  market:
+    keywords: ["market", "volume", "liquidity", "exchange", "trading", "volatility"]
+    importance: "medium"
+  
+  partnership:
+    keywords: ["partner", "collaboration", "alliance", "deal", "agreement", "cooperation"]
+    importance: "medium"
+  
+  competition:
+    keywords: ["competitor", "versus", "compare", "alternative", "rival", "compete"]
+    importance: "low"
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/crypto_news.log"
+
+# 缓存配置
+cache:
+  enabled: true
+  ttl: 300  # 缓存生存时间（秒）
+  max_size: 100  # 最大缓存条目数

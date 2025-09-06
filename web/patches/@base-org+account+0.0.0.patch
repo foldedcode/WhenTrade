@@ -1,0 +1,13 @@
+diff --git a/node_modules/@base-org/account/dist/core/constants.js b/node_modules/@base-org/account/dist/core/constants.js
+index 1234567..abcdefg 100644
+--- a/node_modules/@base-org/account/dist/core/constants.js
++++ b/node_modules/@base-org/account/dist/core/constants.js
+@@ -1,5 +1,8 @@
+-import pkg from '../../package.json' with { type: 'json' };
++// Patched to fix import with syntax issue
++const pkg = { name: '@base-org/account', version: '0.0.0' };
++
+ export const CB_KEYS_URL = 'https://keys.coinbase.com/connect';
+ export const CB_WALLET_RPC_URL = 'https://rpc.wallet.coinbase.com';
+ export const PACKAGE_NAME = pkg.name;
+ export const PACKAGE_VERSION = pkg.version;

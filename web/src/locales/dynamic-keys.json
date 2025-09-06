@@ -1,0 +1,76 @@
+{
+  "description": "This file contains patterns for dynamically used i18n keys that may not be detected by static analysis",
+  "version": "1.0",
+  "whitelist": [
+    {
+      "pattern": "common.colorSchemes.*",
+      "description": "Color scheme names used in ColorSchemeSwitcher component",
+      "usage": "t(`common.colorSchemes.${scheme.id}`)",
+      "location": "web/src/components/common/ColorSchemeSwitcher.vue"
+    },
+    {
+      "pattern": "common.marketTypes.*", 
+      "description": "Market type names used throughout analysis components",
+      "usage": "t(`common.marketTypes.${marketType}`)",
+      "location": "Multiple analysis components"
+    },
+    {
+      "pattern": "cost.optimization.difficulty.*",
+      "description": "Difficulty levels for optimization suggestions",
+      "usage": "t(`cost.optimization.difficulty.${suggestion.difficulty}`)",
+      "location": "web/src/components/cost/CostOptimizationPanel.vue"
+    },
+    {
+      "pattern": "cost.optimization.impacts.*",
+      "description": "Impact levels for optimization suggestions",
+      "usage": "t(`cost.optimization.impacts.${getDifficultyAsImpact(suggestion.difficulty)}`)",
+      "location": "web/src/components/cost/CostOptimizationPanel.vue"
+    },
+    {
+      "pattern": "cost.optimization.categories.*",
+      "description": "Category names for optimization suggestions",
+      "usage": "categoryMap[id] || t('cost.optimization.categories.general')",
+      "location": "web/src/components/cost/CostOptimizationPanel.vue"
+    },
+    {
+      "pattern": "cost.optimization.steps.*",
+      "description": "Implementation steps for optimization suggestions",
+      "usage": "stepsMap[id] || [t('cost.optimization.steps.default')]",
+      "location": "web/src/components/cost/CostOptimizationPanel.vue"
+    },
+    {
+      "pattern": "analysis.domains.*",
+      "description": "Analysis domain names and descriptions",
+      "usage": "{ id: 'technical', name: t('analysis.domains.technical'), description: t('analysis.domains.technicalDesc') }",
+      "location": "web/src/components/analysis/DynamicDomainSelector.vue"
+    },
+    {
+      "pattern": "common.analysisSteps.*",
+      "description": "Analysis step names used in progress display",
+      "usage": "steps[currentStep.value - 1] || t('common.analysisSteps.preparing')",
+      "location": "web/src/views/Home.vue"
+    },
+    {
+      "pattern": "common.analysts.*",
+      "description": "Analyst names and descriptions",
+      "usage": "name: t('common.analysts.technical.name')",
+      "location": "web/src/views/Home.vue"
+    },
+    {
+      "pattern": "analysis.scopes.*",
+      "description": "Analysis scope configurations",
+      "usage": "t(scope.name) and t(scope.description)",
+      "location": "web/src/components/analysis/AnalysisScopeSelector.vue"
+    }
+  ],
+  "notes": [
+    "Keys matching these patterns should not be removed during cleanup",
+    "This list should be updated when new dynamic key usage is added",
+    "Use this file as reference for i18n scanning tools to avoid false positives"
+  ],
+  "maintenance": {
+    "lastUpdated": "2025-01-28",
+    "reviewSchedule": "Monthly",
+    "owner": "i18n-maintenance-team"
+  }
+}

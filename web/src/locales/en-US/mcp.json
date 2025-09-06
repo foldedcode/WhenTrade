@@ -1,0 +1,62 @@
+{
+  "management": {
+    "title": "MCP Protocol Management",
+    "pageTitle": "MCP Management - When.Trade",
+    "description": "Manage and configure connections to external AI services, tools, and resources"
+  },
+  "stats": {
+    "totalServers": "Total Servers",
+    "connectedServers": "Connected",
+    "availableTools": "Available Tools",
+    "availableResources": "Available Resources"
+  },
+  "tabs": {
+    "servers": "Servers",
+    "tools": "Tools",
+    "resources": "Resources"
+  },
+  "status": {
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "connecting": "Connecting",
+    "error": "Error"
+  },
+  "server": {
+    "transport": "Transport Protocol",
+    "url": "Server URL",
+    "capabilities": "Capabilities",
+    "tools": "Tools Count",
+    "resources": "Resources Count"
+  },
+  "action": {
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "connecting": "Connecting..."
+  },
+  "tools": {
+    "searchPlaceholder": "Search tools...",
+    "noDescription": "No description available",
+    "test": "Test",
+    "testTitle": "Test Tool",
+    "parameters": "Parameters",
+    "parametersPlaceholder": "Enter parameters in JSON format",
+    "run": "Run",
+    "running": "Running...",
+    "result": "Execution Result"
+  },
+  "resources": {
+    "searchPlaceholder": "Search resources...",
+    "noDescription": "No description available"
+  },
+  "error": {
+    "loadServersFailed": "Failed to load server status",
+    "connectFailed": "Failed to connect to server {name}",
+    "disconnectFailed": "Failed to disconnect from server {name}",
+    "toolExecutionFailed": "Tool execution failed"
+  },
+  "success": {
+    "serverConnected": "Server {name} connected successfully",
+    "serverDisconnected": "Server {name} disconnected",
+    "toolExecuted": "Tool executed successfully"
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "brand": "When.Trade",
+  "subtitle": "AI Investment Research",
+  "default": "Default",
+  "remaining": "Remaining",
+  "system": "System",
+  "agent": "Agent",
+  "tool": "Tool",
+  "error": "Error",
+  "recentAnalysis": "Recent Analysis",
+  "tabs": {
+    "analysis": "Analysis",
+    "chat": "Chat Mode",
+    "history": "History",
+    "cost": "Cost",
+    "debug": "Debug",
+    "tools": "Tools",
+    "toolMarket": "Tool Market",
+    "sharing": "Share",
+    "themes": "Color Schemes",
+    "monitor": "System Monitor"
+  },
+  "status": {
+    "online": "Online",
+    "offline": "Offline",
+    "connecting": "Connecting",
+    "error": "Error",
+    "completed": "Completed",
+    "running": "Running",
+    "pending": "Pending"
+  },
+  "loading": "Loading...",
+  "error": "Error",
+  "success": "Success",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "save": "Save",
+  "saving": "Saving...",
+  "edit": "Edit",
+  "delete": "Delete",
+  "close": "Close",
+  "notSet": "Not Set",
+  "previous": "Previous",
+  "start": "Start",
+  "stop": "Stop",
+  "enabled": "Enabled",
+  "disabled": "Disabled",
+  "back": "Back",
+  "backToHome": "Back to Home",
+  "next": "Next",
+  "and": "and",
+  "notSelected": "Not Selected",
+  "hide": "Hide",
+  "show": "Show",
+  "configure": "Configure",
+  "mcpServices": "MCP Services",
+  "tools": "Tools",
+  "settings": "Settings",
+  "priority": "Priority",
+  "priorityLevels": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "timeout": "Timeout",
+  "or": "or",
+  "login": "Login",
+  "pause": "Pause",
+  "preview": "Preview",
+  "data": "Data",
+  "mode": {
+    "research": {
+      "title": "Research Mode",
+      "description": "Professional parameterized research analysis"
+    },
+    "chat": {
+      "title": "Chat Mode",
+      "description": "Natural language interactive analysis"
+    },
+    "switch": {
+      "success": "Switched to {mode}"
+    }
+  },
+  "previous": "Previous",
+  "submit": "Submit",
+  "reset": "Reset",
+  "search": "Search",
+  "filter": "Filter",
+  "sort": "Sort",
+  "export": "Export",
+  "import": "Import",
+  "refresh": "Refresh",
+  "more": "More",
+  "less": "Less",
+  "expand": "Expand",
+  "collapse": "Collapse",
+  "yes": "Yes",
+  "no": "No",
+  "progress": "Progress",
+  "theme": {
+    "toggle": "Toggle Theme",
+    "colorScheme": "Color Scheme"
+  },
+  "colorSchemes": {
+    "professional": "Champagne Gold",
+    "standard": "Cobalt Blue",
+    "success": "Emerald Green",
+    "tech": "Amethyst Purple",
+    "alert": "Cinnabar Red",
+    "cyan": "Tiffany Blue",
+    "orange": "Hermes Orange",
+    "rose": "Rose Gold",
+    "silver": "Moonlight Silver",
+    "emerald": "Malachite Green",
+    "sapphire": "Royal Sapphire",
+    "amber": "Amber",
+    "obsidian": "Obsidian Black"
+  },
+  "analystTeam": "Analyst Team",
+  "irreversible": "This operation cannot be undone",
+  "language": {
+    "chinese": "中文",
+    "english": "English",
+    "selectLanguage": "Select Language",
+    "autoDetect": "Auto Detect Language",
+    "switch": "Switch Language"
+  },
+  "analysis": {
+    "configuration": "Analysis Configuration",
+    "progress": "Analysis Progress",
+    "target": "Analysis Target",
+    "marketType": "Market Type",
+    "customTarget": "Custom Target",
+    "selectPreset": "Select Preset",
+    "selectMarketType": "Select Market Type",
+    "selectPresetHint": "Select preset target or enter custom code",
+    "llmProvider": "LLM Provider",
+    "model": "Model",
+    "selectLLMProvider": "Select Provider",
+    "selectModel": "Select Model",
+    "analysisDepth": "Analysis Depth",
+    "analystTeam": "Analyst Team",
+    "analyzing": "Analyzing...",
+    "startAnalysis": "Start Analysis",
+    "stopAnalysis": "Stop Analysis",
+    "readyToStart": "Ready to Start Analysis",
+    "configureAndStart": "Configure parameters and click 'Start Analysis'",
+    "inProgress": "Analysis in Progress",
+    "analyzingSymbol": "Analyzing {symbol}...",
+    "results": "Analysis Results",
+    "copyResult": "Copy Result",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "percentComplete": "{percent}% Complete",
+    "wizard": {
+      "currentSelection": "Current Selection",
+      "analysis": " Analysis",
+      "estimatedTime": "Estimated Analysis Time",
+      "minutes": " minutes",
+      "powerfulAnalysis": "Powerful Analysis Capability",
+      "analysts": "analysts",
+      "professionalAnalysis": "Professional Analysis",
+      "specialties": {
+        "technical_analyst": "Chart Pattern Recognition • K-line Analysis",
+        "fundamental_analyst": "Financial Data • Value Assessment",
+        "sentiment_analyst": "Market Sentiment • Public Opinion Monitoring",
+        "risk_analyst": "Risk Control • Fund Management"
+      },
+      "marketTips": {
+        "crypto": "Cryptocurrency market supports mainstream trading pairs, such as BTC/USDT, ETH/USDT, etc."
+      }
+    },
+    "process": {
+      "agentNetwork": "Agent Network",
+      "overallProgress": "Overall Progress",
+      "activeAgents": "Active Agents",
+      "totalCost": "Total Cost",
+      "estimatedCompletion": "Estimated Completion",
+      "realtimeLogs": "Real-time Logs",
+      "autoScroll": "Auto Scroll",
+      "manualScroll": "Manual Scroll",
+      "preparing": "Preparing",
+      "initializingAnalysis": "Initializing analysis process",
+      "steps": {
+        "prepare": "Prepare",
+        "prepareDesc": "Initialize analysis environment",
+        "dataCollection": "Data Collection",
+        "dataCollectionDesc": "Gather market data",
+        "technicalAnalysis": "Technical Analysis",
+        "technicalAnalysisDesc": "Technical indicator analysis",
+        "fundamentalAnalysis": "Fundamental Analysis",
+        "fundamentalAnalysisDesc": "Fundamental assessment",
+        "sentimentAnalysis": "Sentiment Analysis",
+        "sentimentAnalysisDesc": "Market sentiment analysis",
+        "riskAssessment": "Risk Assessment",
+        "riskAssessmentDesc": "Risk assessment analysis",
+        "collaboration": "Collaboration",
+        "collaborationDesc": "Integrate analysis results",
+        "reportGeneration": "Report Generation",
+        "reportGenerationDesc": "Generate final report"
+      },
+      "logs": {
+        "analyzingMACD": "Analyzing MACD indicators...",
+        "financialDataCollected": "Financial data collection completed",
+        "highVolatilityDetected": "High volatility risk detected",
+        "analyzingData": "Analyzing data...",
+        "calculatingIndicators": "Calculating technical indicators",
+        "evaluatingRisk": "Evaluating market risk",
+        "generatingReport": "Generating analysis report",
+        "checkingDataIntegrity": "Checking data integrity"
+      }
+    }
+  },
+  "marketTypes": {
+    "crypto": "Cryptocurrency"
+  },
+  "depthOptions": {
+    "quick": "Quick",
+    "standard": "Standard",
+    "deep": "Deep",
+    "expert": "Expert",
+    "comprehensive": "Ultimate"
+  },
+  "depthDescriptions": {
+    "quick": "Quick Analysis - 1 round debate, basic viewpoint collection",
+    "standard": "Standard Analysis - 2 rounds debate, full viewpoint exchange",
+    "deep": "Deep Analysis - 3 rounds debate, in-depth argumentation",
+    "expert": "Expert Analysis - 4 rounds debate, comprehensive professional assessment",
+    "comprehensive": "Ultimate Analysis - 5 rounds debate, extreme depth analysis"
+  },
+  "commodities": {
+    "gold": "Gold Futures (GC=F)",
+    "oil": "Crude Oil Futures (CL=F)",
+    "silver": "Silver Futures (SI=F)"
+  },
+  "aiProviders": {
+    "openai": {
+      "description": "AI Research"
+    },
+    "anthropic": {
+      "description": "AI Safety"
+    },
+    "claude": {
+      "description": "AI Assistant"
+    },
+    "google": {
+      "description": "Google AI"
+    },
+    "gemini": {
+      "description": "Multimodal"
+    },
+    "deepseek": {
+      "description": "DeepSeek"
+    },
+    "qwen": {
+      "description": "Alibaba AI"
+    },
+    "meta": {
+      "description": "Meta AI"
+    },
+    "microsoft": {
+      "description": "Microsoft AI"
+    },
+    "local": {
+      "name": "Local Model",
+      "description": "Self-hosted"
+    }
+  },
+  "modelDescriptions": {
+    "gpt-4o-mini": "Fast & affordable",
+    "gpt-4o": "Latest flagship",
+    "gpt-4-turbo": "High performance",
+    "claude-3-sonnet": "Balanced",
+    "claude-3-5-sonnet": "Balanced",
+    "claude-3-haiku": "Fast & light",
+    "claude-3-5-haiku": "Fast & light",
+    "claude-3-opus": "Most capable",
+    "gemini-1.5-flash": "Fast & cheap",
+    "gemini-1.5-pro": "Professional",
+    "llama-3.1-8b": "Open source",
+    "llama-3.1-70b": "Large model",
+    "mixtral-8x7b": "Large model",
+    "mistral-7b": "Light & fast",
+    "phi-3": "Light & fast",
+    "default": "AI Model"
+  },
+  "speedIndicators": {
+    "fast": "Fast",
+    "medium": "Medium",
+    "veryFast": "Very Fast",
+    "unknown": "?"
+  },
+  "analysts": {
+    "technical": {
+      "name": "Technical Analyst",
+      "description": "Focus on technical indicators and chart analysis"
+    },
+    "fundamental": {
+      "name": "Fundamental Analyst",
+      "description": "In-depth research on company financials and fundamentals"
+    },
+    "sentiment": {
+      "name": "Sentiment Analyst",
+      "description": "Analyze market sentiment and news impact"
+    },
+    "risk": {
+      "name": "Risk Analyst",
+      "description": "Evaluate investment risks and volatility"
+    },
+    "market": {
+      "name": "Market Analyst",
+      "description": "Macro market trend analysis"
+    },
+    "initials": {
+      "technical": "T",
+      "fundamental": "F",
+      "sentiment": "S",
+      "risk": "R",
+      "market": "M",
+      "technical_analyst": "Tech",
+      "fundamental_analyst": "Fund",
+      "sentiment_analyst": "Sent",
+      "risk_analyst": "Risk"
+    },
+    "generic": "Analyst",
+    "capabilities": {
+      "technicalIndicators": "Technical Indicators",
+      "chartAnalysis": "Chart Analysis",
+      "trendIdentification": "Trend Identification",
+      "supportResistance": "Support & Resistance",
+      "financialAnalysis": "Financial Analysis",
+      "valuationModeling": "Valuation Modeling",
+      "industryResearch": "Industry Research",
+      "earningsAnalysis": "Earnings Analysis",
+      "sentimentAnalysis": "Sentiment Analysis",
+      "publicOpinion": "Public Opinion",
+      "newsInterpretation": "News Interpretation",
+      "socialAnalysis": "Social Analysis",
+      "riskAssessment": "Risk Assessment",
+      "positionManagement": "Position Management",
+      "stopLossStrategy": "Stop Loss Strategy",
+      "portfolio": "Portfolio",
+      "macroAnalysis": "Macro Analysis",
+      "marketTrends": "Market Trends",
+      "policyInterpretation": "Policy Interpretation",
+      "institutionalMovements": "Institutional Movements"
+    },
+    "collaboration": {
+      "analyst": {
+        "name": "Investment Analyst",
+        "initials": "AN"
+      },
+      "researcher": {
+        "name": "Market Researcher",
+        "initials": "RE"
+      },
+      "risk_manager": {
+        "name": "Risk Manager",
+        "initials": "RM"
+      },
+      "strategist": {
+        "name": "Investment Strategist",
+        "initials": "ST"
+      }
+    }
+  },
+  "agents": {
+    "status": {
+      "idle": "Idle",
+      "thinking": "Analyzing",
+      "working": "Processing",
+      "communicating": "Collaborating",
+      "completed": "Completed",
+      "error": "Error"
+    },
+    "labels": {
+      "status": "Status",
+      "currentTask": "Current Task",
+      "progress": "Progress",
+      "estimatedCompletion": "Estimated Completion",
+      "lastActivity": "Last Activity",
+      "coreCapabilities": "Core Capabilities"
+    },
+    "noAgents": "No agents available"
+  },
+  "analysisSteps": {
+    "dataCollection": "Data Collection",
+    "technicalAnalysis": "Technical Analysis",
+    "fundamentalAnalysis": "Fundamental Analysis",
+    "sentimentAnalysis": "Sentiment Analysis",
+    "riskAssessment": "Risk Assessment",
+    "comprehensiveEvaluation": "Comprehensive Evaluation",
+    "reportGeneration": "Report Generation",
+    "preparing": "Preparing"
+  },
+  "analysisStatus": {
+    "running": "Running",
+    "copySuccess": "Analysis result copied to clipboard"
+  },
+  "timeRange": {
+    "past24h": "Past 24 hours",
+    "label": "Time Range",
+    "presets": {
+      "1d": "1 Day",
+      "1w": "1 Week",
+      "1m": "1 Month",
+      "1y": "1 Year",
+      "custom": "Custom"
+    },
+    "labels": {
+      "past24h": "Past 24 hours",
+      "past7d": "Past 7 days",
+      "past30d": "Past 30 days",
+      "past365d": "Past 365 days",
+      "custom": "Custom"
+    },
+    "customRange": {
+      "start": "Start",
+      "end": "End",
+      "customFormat": "Custom: {start} - {end}"
+    },
+    "pleaseSelect": "Please Select"
+  },
+  "providerCapabilities": {
+    "openai": "General AI models",
+    "anthropic": "Safe & accurate AI",
+    "google": "Multimodal AI",
+    "gemini": "Multimodal AI",
+    "local": "Local models",
+    "unknown": "Unknown"
+  },
+  "error": {
+    "title": "Error",
+    "description": "Something went wrong. Please try refreshing or go home.",
+    "details": "Details",
+    "retry": "Retry",
+    "goHome": "Home",
+    "report": "Report"
+  },
+  "notification": {
+    "title": "Notification",
+    "message": "Message",
+    "close": "Close",
+    "markAsRead": "Mark Read",
+    "markAllAsRead": "Mark All Read",
+    "clear": "Clear",
+    "settings": "Settings"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "total": "Total",
+    "items": "items",
+    "showing": "Showing",
+    "to": "to",
+    "perPage": "per page",
+    "goToPage": "Go to page",
+    "first": "First",
+    "last": "Last"
+  },
+  "validation": {
+    "required": "Required",
+    "invalid": "Invalid",
+    "tooShort": "Too short",
+    "tooLong": "Too long",
+    "invalidFormat": "Invalid format",
+    "mustBeNumber": "Must be number",
+    "mustBePositive": "Must be positive",
+    "mustBeEmail": "Must be email",
+    "mustBeUrl": "Must be URL",
+    "passwordTooWeak": "Password too weak",
+    "passwordMismatch": "Passwords don't match",
+    "fileTooBig": "File too big",
+    "fileTypeNotAllowed": "File type not allowed",
+    "networkError": "Network error",
+    "serverError": "Server error",
+    "timeout": "Timeout",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "notFound": "Not found",
+    "conflict": "Conflict",
+    "rateLimited": "Rate limited",
+    "maintenance": "Under maintenance"
+  },
+  "cost": {
+    "title": "Cost Control",
+    "monitoring": "Cost Monitoring",
+    "realtimeTracking": "Real-time Cost Tracking",
+    "currentSession": "Current Session",
+    "totalCost": "Total Cost",
+    "dailyCost": "Daily Cost",
+    "monthlyCost": "Monthly Cost",
+    "efficiencyScore": "Efficiency Score",
+    "dailyBudget": "Daily Budget",
+    "monthlyBudget": "Monthly Budget",
+    "editBudget": "Edit Budget",
+    "used": "Used",
+    "remaining": "Remaining",
+    "recentAnalysis": "Recent Analysis",
+    "depth": "Depth",
+    "budget": "Budget",
+    "usage": "Usage Rate",
+    "costTrend": "Cost Trend",
+    "costHistory": "Cost History",
+    "clearHistory": "Clear History",
+    "clearHistoryConfirm": "Are you sure you want to clear all cost history?",
+    "analysis": "Analysis",
+    "apiCall": "API Call",
+    "tokenUsage": "Token Usage",
+    "gamification": {
+      "title": "Achievement System",
+      "level": "Level",
+      "experience": "Experience Points",
+      "streak": "Streak",
+      "currentStreak": "Current Streak",
+      "bestStreak": "Best Streak",
+      "achievements": "Achievements",
+      "unlockedAchievements": "Unlocked Achievements",
+      "recentAchievements": "Recent Achievements"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "analysis": "Analysis",
+    "history": "History",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "time": {
+    "now": "Now",
+    "minute": "minute",
+    "minutes": "minutes",
+    "hour": "hour",
+    "hours": "hours",
+    "justNow": "Just now",
+    "minutesAgo": "{count} minutes ago",
+    "hoursAgo": "{count} hours ago",
+    "daysAgo": "{count} days ago",
+    "day": "day",
+    "days": "days",
+    "week": "week",
+    "weeks": "weeks",
+    "month": "month",
+    "months": "months",
+    "year": "year",
+    "years": "years",
+    "ago": "ago",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "in": "in",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This week",
+    "lastWeek": "Last week",
+    "nextWeek": "Next week",
+    "thisMonth": "This month",
+    "lastMonth": "Last month",
+    "nextMonth": "Next month",
+    "thisYear": "This year",
+    "lastYear": "Last year",
+    "nextYear": "Next year"
+  },
+  "flowDebug": {
+    "anchors": "Anchors",
+    "refreshConnections": "Refresh Connections",
+    "connections": "Connections",
+    "svgSize": "SVG"
+  },
+  "units": {
+    "currency": {
+      "usd": "USD",
+      "eur": "EUR",
+      "cny": "CNY",
+      "jpy": "JPY",
+      "gbp": "GBP",
+      "btc": "BTC",
+      "eth": "ETH"
+    },
+    "time": {
+      "second": "s",
+      "minute": "m",
+      "hour": "h",
+      "day": "d",
+      "week": "w",
+      "month": "M",
+      "year": "Y"
+    },
+    "data": {
+      "byte": "B",
+      "kilobyte": "KB",
+      "megabyte": "MB",
+      "gigabyte": "GB",
+      "terabyte": "TB"
+    }
+  },
+  "provider": {
+    "selector": {
+      "placeholder": "Select AI Provider",
+      "searchPlaceholder": "Search providers...",
+      "primaryProviders": "Primary Providers",
+      "otherProviders": "Other Providers",
+      "modelsCount": "{{count}} models",
+      "noResults": "No matching providers found",
+      "tryDifferentKeywords": "Try using different keywords"
+    }
+  },
+  "actions": {
+    "create": "Create",
+    "read": "Read",
+    "update": "Update",
+    "delete": "Delete",
+    "copy": "Copy",
+    "paste": "Paste",
+    "cut": "Cut",
+    "undo": "Undo",
+    "redo": "Redo",
+    "select": "Select",
+    "selectAll": "Select All",
+    "deselect": "Deselect",
+    "clear": "Clear",
+    "reset": "Reset",
+    "restore": "Restore",
+    "backup": "Backup",
+    "download": "Download",
+    "upload": "Upload",
+    "share": "Share",
+    "print": "Print",
+    "preview": "Preview",
+    "fullscreen": "Fullscreen",
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "settings": "Settings",
+    "help": "Help",
+    "about": "About",
+    "contact": "Contact",
+    "feedback": "Feedback",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  },
+  "ui": {
+    "step": "Step",
+    "exportReport": "Export Report",
+    "shareReport": "Share Report",
+    "remaining": "Remaining",
+    "normal": "Normal",
+    "errorReport": "When.Trade Error Report",
+    "errorDetails": "Error Details",
+    "browserInfo": "Browser Information",
+    "systemInit": "System Initialization",
+    "loading": {
+      "analyzing": "Analyzing...",
+      "processing": "Processing...",
+      "generating": "Generating...",
+      "initializing": "Initializing..."
+    }
+  },
+  "sentiment": {
+    "bullish": "Bullish",
+    "neutral": "Neutral",
+    "bearish": "Bearish"
+  },
+  "api": {
+    "requestFailed": "API Request Failed",
+    "networkError": "Network Error",
+    "serverError": "Server Error",
+    "timeout": "Request Timeout"
+  },
+  "errors": {
+    "titles": {
+      "info": "Information",
+      "warning": "Warning",
+      "error": "Error",
+      "critical": "Critical Error"
+    },
+    "generic": {
+      "network": "Network connection error, please check your network settings",
+      "api": "Server response error, please try again later",
+      "validation": "Data validation failed, please check your input",
+      "authentication": "Authentication failed, please log in again",
+      "authorization": "Insufficient permissions, please contact administrator",
+      "business": "Business process error",
+      "system": "System error, please contact technical support",
+      "unknown": "Unknown error, please try again later"
+    },
+    "boundary": {
+      "title": "Page Error",
+      "defaultMessage": "Sorry, the page encountered some issues. We are working to fix them.",
+      "showDetails": "Show Details",
+      "reload": "Reload",
+      "retry": "Retry",
+      "report": "Report Error",
+      "suggestionsTitle": "You can try:",
+      "suggestion1": "Refresh the page or reload",
+      "suggestion2": "Check your network connection",
+      "suggestion3": "Contact technical support if the problem persists"
+    },
+    "retry": {
+      "success": "Retry Successful",
+      "successMessage": "Operation completed successfully",
+      "maxRetriesReached": "Maximum retry attempts reached"
+    }
+  },
+  "user": {
+    "accountManagement": "Account Management"
+  },
+  "account": {
+    "management": "Account Management",
+    "tabs": {
+      "profile": "Profile",
+      "settings": "Settings",
+      "tools": "My Tools",
+      "subscription": "Subscription",
+      "wallet": "Wallet"
+    }
+  },
+  "subscription": {
+    "currentPlan": "Current Plan",
+    "freePlan": "Free Plan",
+    "selectPlan": "Select Plan",
+    "current": "Current",
+    "recommended": "Recommended",
+    "month": "month",
+    "free": "Free",
+    "pro": "Professional",
+    "enterprise": "Enterprise",
+    "expiresAt": "Expires: {date}",
+    "comparison": "Feature Comparison",
+    "features": "Features",
+    "features": {
+      "basic": "Basic Features",
+      "limitedTools": "5 Tool Limit",
+      "communitySupport": "Community Support",
+      "allBasic": "All Basic Features",
+      "advancedTools": "Unlimited Advanced Tools",
+      "prioritySupport": "Priority Support",
+      "apiAccess": "API Access",
+      "allPro": "All Professional Features",
+      "customTools": "Custom Tools",
+      "dedicatedSupport": "Dedicated Support",
+      "sla": "SLA Guarantee"
+    },
+    "comparison": {
+      "tools": "Number of Tools",
+      "api": "API Access",
+      "support": "Technical Support"
+    }
+  },
+  "wallet": {
+    "myWallet": "My Wallet",
+    "address": "Wallet Address",
+    "balance": "Balance",
+    "network": "Network",
+    "copy": "Copy",
+    "copied": "Copied",
+    "viewOnExplorer": "View on Explorer",
+    "addressCopied": "Address copied to clipboard",
+    "copyFailed": "Copy failed"
+  },
+  "enabled": "Enabled",
+  "disabled": "Disabled",
+  "disable": "Disable",
+  "enable": "Enable",
+  "input": "INPUT",
+  "output": "OUTPUT",
+  "statusLabel": "STATUS",
+  "params": "PARAMS",
+  "dataFlow": "FLOW",
+  "addTool": "Add Tool",
+  "tool": "Tool",
+  "time": {
+    "day": "Day",
+    "week": "Week",
+    "24h": "24 hours",
+    "justNow": "Just now",
+    "minutesAgo": "{count} minutes ago",
+    "hoursAgo": "{count} hours ago",
+    "daysAgo": "{count} days ago",
+    "seconds": "{count}s",
+    "minutesSeconds": "{minutes}m {seconds}s",
+    "ranges": {
+      "1d": "1 Day",
+      "1w": "1 Week",
+      "1m": "1 Month",
+      "1y": "1 Year"
+    }
+  },
+  "notSelected": "Not Selected",
+  "select": {
+    "placeholder": "Please select",
+    "searchPlaceholder": "Search options...",
+    "emptyText": "No matching options"
+  },
+  "locale": {
+    "dateTime": "en-US",
+    "useCurrentLocale": false
+  },
+  "systemLabel": "System",
+  "table": {
+    "noData": "No Data",
+    "loading": "Loading...",
+    "search": "Search..."
+  },
+  "validation": {
+    "selectTarget": "Please select analysis target",
+    "selectProvider": "Please select LLM provider and model",
+    "selectDepth": "Please select analysis depth",
+    "selectScopes": "Please select at least one analysis scope"
+  }
+}

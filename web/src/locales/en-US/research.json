@@ -1,0 +1,226 @@
+{
+  "pageTitle": "Research Management - When.Trade",
+  "management": {
+    "title": "Research Management",
+    "subtitle": "AI-Powered Investment Research Platform",
+    "stats": {
+      "activeResearch": "Active Research",
+      "completed": "Completed",
+      "averageDuration": "Avg Duration",
+      "accuracy": "Accuracy"
+    },
+    "filter": {
+      "status": "Status",
+      "type": "Type",
+      "search": "Search",
+      "action": "Action",
+      "allStatus": "All Status",
+      "allTypes": "All Types",
+      "newResearch": "New Research"
+    },
+    "statusOptions": {
+      "all": "All Status",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "pending": "Pending"
+    },
+    "typeOptions": {
+      "all": "All Types",
+      "technical": "Technical Analysis",
+      "fundamental": "Fundamental Analysis",
+      "sentiment": "Sentiment Analysis"
+    },
+    "list": {
+      "createdTime": "Created Time",
+      "progress": "Progress",
+      "analysts": "Analysts",
+      "viewDetails": "View Details",
+      "editResearch": "Edit Research",
+      "deleteResearch": "Delete Research",
+      "person": "person"
+    },
+    "empty": {
+      "title": "No Research Projects",
+      "description": "Start your first research project!"
+    },
+    "modal": {
+      "editTitle": "Edit Research",
+      "createTitle": "Create New Research",
+      "detailsTitle": "Research Details",
+      "researchTitle": "Research Title",
+      "researchDescription": "Research Description",
+      "researchStatus": "Status",
+      "researchType": "Type",
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes",
+      "createResearch": "Create Research",
+      "close": "Close",
+      "edit": "Edit",
+      "noDescription": "No description",
+      "selectTools": "Select Tools",
+      "selectToolsHint": "Select analysis tools to use in this research"
+    },
+    "delete": {
+      "title": "Delete Research",
+      "message": "Are you sure you want to delete this research project?",
+      "description": "This action cannot be undone",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "samples": {
+      "appleAnalysis": "Apple Q4 Earnings Deep Analysis",
+      "appleDescription": "Based on latest earnings data, analyze Apple's future growth potential and risk factors",
+      "btcAnalysis": "BTC Technical Analysis Report",
+      "btcDescription": "Bitcoin short-term technical trend analysis, including key support and resistance levels"
+    },
+    "errors": {
+      "titleRequired": "Please enter research title"
+    },
+    "tabs": {
+      "library": "Report Library",
+      "comparison": "Comparison Analysis",
+      "sharing": "Sharing & Collaboration",
+      "tags": "Tag Management",
+      "analytics": "Analytics"
+    }
+  },
+  "card": {
+    "confidence": "Confidence",
+    "recommendation": "Recommendation",
+    "cost": "Cost",
+    "tokens": "Token Usage",
+    "time": "Analysis Time",
+    "author": "Author: {author}",
+    "share": "Share Report",
+    "download": "Download Report",
+    "delete": "Delete Report",
+    "yesterday": "Yesterday",
+    "buy": "Buy",
+    "daysAgo": "{days} days ago"
+  },
+  "recommendation": {
+    "buy": "Buy",
+    "sell": "Sell",
+    "hold": "Hold"
+  },
+  "library": {
+    "title": "Research Report Library",
+    "reportsTotal": "reports total",
+    "newReport": "New Report",
+    "search": "Search",
+    "searchPlaceholder": "Search report title, description or symbol...",
+    "status": "Status",
+    "categories": "Categories",
+    "tags": "Tags",
+    "dateRange": "Date Range",
+    "resetFilters": "Reset Filters",
+    "sortBy": {
+      "createdAt": "Created Date",
+      "updatedAt": "Updated Date",
+      "title": "Title",
+      "score": "Score",
+      "views": "Views"
+    },
+    "selectedCount": "{count} reports selected",
+    "archive": "Archive",
+    "delete": "Delete",
+    "export": "Export",
+    "cancel": "Cancel",
+    "noReports": "No Reports",
+    "noReportsDescription": "Start creating your first investment research report",
+    "title": "Title",
+    "symbol": "Symbol",
+    "score": "Score",
+    "updated": "Updated",
+    "actions": "Actions",
+    "share": "Share",
+    "loadMore": "Load More",
+    "deleteConfirm": "Are you sure you want to delete this report?",
+    "batchDeleteConfirm": "Are you sure you want to delete selected reports?"
+  },
+  "status": {
+    "draft": "Draft",
+    "published": "Published",
+    "archived": "Archived"
+  },
+  "categories": {
+    "crypto": "Cryptocurrency"
+  },
+  "comparison": {
+    "title": "Report Comparison",
+    "selectReports": "Select Reports to Compare",
+    "noReportsSelected": "No reports selected for comparison",
+    "compareMetrics": "Comparison Metrics",
+    "addMetric": "Add Metric",
+    "removeMetric": "Remove Metric",
+    "customWeight": "Custom Weight",
+    "weightedScore": "Weighted Score",
+    "comparisonResults": "Comparison Results",
+    "saveComparison": "Save Comparison",
+    "loadComparison": "Load Comparison",
+    "exportResults": "Export Results"
+  },
+  "sharing": {
+    "title": "Sharing & Collaboration",
+    "shareReport": "Share Report",
+    "generateLink": "Generate Link",
+    "setPermissions": "Set Permissions",
+    "viewOnly": "View Only",
+    "comment": "Comment",
+    "collaborate": "Collaborate",
+    "linkExpires": "Link Expires",
+    "shareHistory": "Share History",
+    "revokeAccess": "Revoke Access"
+  },
+  "tags": {
+    "title": "Tag Management",
+    "createTag": "Create Tag",
+    "editTag": "Edit Tag",
+    "deleteTag": "Delete Tag",
+    "tagName": "Tag Name",
+    "tagColor": "Tag Color",
+    "tagIcon": "Tag Icon",
+    "usageCount": "Usage Count",
+    "bulkActions": "Bulk Actions",
+    "mergeTag": "Merge Tag",
+    "deleteConfirm": "Are you sure you want to delete this tag?"
+  },
+  "analytics": {
+    "title": "Research Analytics",
+    "totalReports": "Total Reports",
+    "averageScore": "Average Score",
+    "mostActiveCategory": "Most Active Category",
+    "shareCount": "Total Shares",
+    "categoryDistribution": "Category Distribution",
+    "scoreDistribution": "Score Distribution",
+    "activityTrend": "Activity Trend",
+    "topPerformers": "Top Performers"
+  },
+  "list": {
+    "searchPlaceholder": "Search research tasks...",
+    "allStatus": "All Status",
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "failed": "Failed",
+    "newResearch": "New Research",
+    "loading": "Loading...",
+    "noResearch": "No research tasks",
+    "createFirst": "Create first research",
+    "createdAt": "Created At",
+    "depth": "Depth",
+    "analysts": "Analysts",
+    "analystsUnit": "analysts",
+    "viewReport": "View Report",
+    "deleteConfirm": "Are you sure you want to delete this research task?",
+    "deleteSuccess": "Delete successful",
+    "deleteError": "Delete failed",
+    "loadError": "Load failed"
+  },
+  "status": {
+    "pending": "Pending",
+    "in_progress": "In Progress",
+    "completed": "Completed",
+    "failed": "Failed",
+    "cancelled": "Cancelled"
+  }
+}

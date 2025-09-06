@@ -1,0 +1,32 @@
+// Base UI Components
+export { default as Button } from './Button.vue'
+export { default as Input } from './Input.vue'
+export { default as Card } from './Card.vue'
+export { default as Select } from './Select.vue'
+export { default as Checkbox } from './Checkbox.vue'
+export { default as Switch } from './Switch.vue'
+export { default as Loading } from './Loading.vue'
+export { default as Toast } from './Toast.vue'
+export { default as FadeTransition } from './FadeTransition.vue'
+export { default as LLMProviderLogo } from './LLMProviderLogo.vue'
+export { default as ProfessionalDropdown } from './ProfessionalDropdown.vue'
+export { default as Modal } from './Modal.vue'
+export { default as DataTable } from './DataTable.vue'
+export { default as EmptyState } from './EmptyState.vue'
+// export { default as ErrorBoundary } from './ErrorBoundary.vue' // TODO: Create ErrorBoundary component
+export { default as Icon } from './Icon.vue'
+export { default as PixelIcon } from './PixelIcon.vue'
+export { default as ThemeToggle } from './ThemeToggle.vue'
+export { default as ProviderSelector } from './ProviderSelector.vue'
+export { default as CollapsiblePanel } from './CollapsiblePanel.vue'
+export { default as ConfirmDialog } from './ConfirmDialog.vue'
+export { default as BudgetEditDialog } from './BudgetEditDialog.vue'
+
+// Component types should be defined in separate type files
+// For now, commenting out to avoid TypeScript errors
+// export type { ButtonProps, ButtonEmits } from './Button.vue'
+// export type { InputProps, InputEmits } from './Input.vue'
+// export type { CardProps, CardEmits } from './Card.vue'
+// export type { SelectProps, SelectEmits, SelectOption } from './Select.vue'
+// export type { CheckboxProps, CheckboxEmits } from './Checkbox.vue'
+// export type { SwitchProps, SwitchEmits } from './Switch.vue' 

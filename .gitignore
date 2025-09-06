@@ -1,0 +1,135 @@
+# When.Trade Git 忽略文件
+
+# 环境变量和密钥
+.env
+.env.local
+.env.production
+.env.staging
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+logs/
+log/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache and temporary files
+*.tmp
+*.temp
+cache/
+.cache/
+tmp/
+
+# Backup files  
+*.bak
+*.backup
+*.old
+*.orig
+
+# Node.js (for frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# Nuxt.js (frontend build)
+.nuxt/
+dist/
+
+# Redis dump
+dump.rdb
+
+# Process IDs
+*.pid
+.api_pid
+.frontend_pid
+
+# When.Trade specific
+user_data/
+analysis_cache/
+cost_tracking/
+memory_store/
+
+# Local configuration
+local_config.py
+local_settings.json
+
+# Development tools and reports
+knip-report*.txt
+*.report
+*-report-*.json
+*-report-*.md
+*-check-*.txt
+
+# Backup files
+*.backup
+*.bak
+*.old
+*.orig
+
+# Claude
+# 忽略状态和本地配置，但保留配置文件
+.claude/
+.serena/
+CLAUDE.md
+AGENTS.md
+docs/DEVLOG.md
+.snap/
+Agents-Example/
+example/
+.playwright-mcp/
+.qoder/

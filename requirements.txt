@@ -1,0 +1,63 @@
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# Database
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+asyncpg==0.29.0
+alembic==1.13.1
+
+# Redis
+redis[hiredis]==5.0.1
+
+# Task Queue
+celery==5.3.4
+flower==2.0.1
+
+# HTTP Client
+httpx==0.25.2
+requests==2.32.4
+
+# WebSocket for MCP
+websockets>=11.0,<13.0
+
+# Development
+pytest==7.4.4
+pytest-asyncio==0.23.3
+black==23.12.1
+flake8==7.0.0
+mypy==1.8.0
+
+# Monitoring
+prometheus-client==0.19.0
+opentelemetry-api==1.22.0
+opentelemetry-sdk==1.22.0
+opentelemetry-instrumentation-fastapi==0.43b0
+
+# Utils
+python-dotenv==1.0.0
+python-magic==0.4.27
+pendulum==3.0.0
+orjson>=3.10.1
+psutil==7.0.0
+aiofiles==23.2.1
+Pillow==10.2.0
+
+# LLM & AI  
+openai>=1.40.0
+langchain==0.2.16
+langchain-openai==0.1.25
+langchain-community==0.2.17
+langchain-anthropic==0.1.20
+langchain-google-genai==1.0.10
+langgraph==0.2.39
+chromadb==0.4.24
+
+# Data Sources (Crypto Only)
+pandas==2.1.4
+numpy==1.26.2
+praw==7.7.1  # Reddit API

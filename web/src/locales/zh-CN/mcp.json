@@ -1,0 +1,62 @@
+{
+  "management": {
+    "title": "MCP 协议管理",
+    "pageTitle": "MCP 管理 - When.Trade",
+    "description": "管理和配置外部AI服务、工具和资源的连接"
+  },
+  "stats": {
+    "totalServers": "服务器总数",
+    "connectedServers": "已连接",
+    "availableTools": "可用工具",
+    "availableResources": "可用资源"
+  },
+  "tabs": {
+    "servers": "服务器",
+    "tools": "工具",
+    "resources": "资源"
+  },
+  "status": {
+    "connected": "已连接",
+    "disconnected": "未连接",
+    "connecting": "连接中",
+    "error": "错误"
+  },
+  "server": {
+    "transport": "传输协议",
+    "url": "服务器地址",
+    "capabilities": "服务能力",
+    "tools": "工具数量",
+    "resources": "资源数量"
+  },
+  "action": {
+    "connect": "连接",
+    "disconnect": "断开",
+    "connecting": "连接中..."
+  },
+  "tools": {
+    "searchPlaceholder": "搜索工具...",
+    "noDescription": "暂无描述",
+    "test": "测试",
+    "testTitle": "测试工具",
+    "parameters": "参数",
+    "parametersPlaceholder": "输入JSON格式的参数",
+    "run": "运行",
+    "running": "运行中...",
+    "result": "执行结果"
+  },
+  "resources": {
+    "searchPlaceholder": "搜索资源...",
+    "noDescription": "暂无描述"
+  },
+  "error": {
+    "loadServersFailed": "加载服务器状态失败",
+    "connectFailed": "连接服务器 {name} 失败",
+    "disconnectFailed": "断开服务器 {name} 失败",
+    "toolExecutionFailed": "工具执行失败"
+  },
+  "success": {
+    "serverConnected": "服务器 {name} 连接成功",
+    "serverDisconnected": "服务器 {name} 已断开",
+    "toolExecuted": "工具执行成功"
+  }
+}

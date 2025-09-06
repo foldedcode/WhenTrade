@@ -1,0 +1,49 @@
+{
+  "title": "Usage Statistics",
+  "periods": {
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "year": "This Year",
+    "custom": "Custom"
+  },
+  "totalCalls": "Total Calls",
+  "totalTokens": "Total Tokens",
+  "totalCost": "Total Cost",
+  "successRate": "Success Rate",
+  "averageResponseTime": "Average Response Time",
+  "comparedToLast": "Compared to Last",
+  "quotaStatus": "Quota Status",
+  "quotaTypes": {
+    "apiCalls": "API Calls",
+    "tokens": "Token Quota",
+    "storage": "Storage Space",
+    "compute": "Compute Resources"
+  },
+  "resetsIn": "Resets In",
+  "tabs": {
+    "byTool": "By Tool",
+    "byTime": "By Time",
+    "details": "Details",
+    "optimization": "Optimization"
+  },
+  "calls": "calls",
+  "tokens": "Tokens",
+  "avgDuration": "Avg Duration",
+  "time": "Time",
+  "tool": "Tool",
+  "operation": "Operation",
+  "cost": "Cost",
+  "status": "Status",
+  "statuses": {
+    "success": "Success",
+    "failed": "Failed",
+    "partial": "Partial Success"
+  },
+  "potentialSavings": "Potential Savings",
+  "month": "month",
+  "learnMore": "Learn More",
+  "hours": "hours",
+  "days": "days",
+  "loadError": "Failed to load usage data, please try again later"
+}

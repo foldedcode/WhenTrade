@@ -1,0 +1,253 @@
+/* 金融终端主题系统 - 专业配色 */
+@import './design-tokens.css';
+
+/* 全局主题变量 */
+:root {
+  /* 默认为专业模式（金色） */
+  --current-theme-mode: 'professional';
+  
+  /* 覆盖旧的设计令牌 */
+  --od-background: var(--ft-background);
+  --od-background-alt: var(--ft-background-alt);
+  --od-background-light: var(--ft-background-light);
+  --od-background-lighter: var(--ft-background-lighter);
+  
+  --od-surface: var(--ft-surface);
+  --od-surface-alt: var(--ft-surface-alt);
+  --od-surface-light: var(--ft-surface-light);
+  
+  --od-border: var(--ft-border);
+  --od-border-light: var(--ft-border-light);
+  --od-border-lighter: var(--ft-border-lighter);
+  
+  --od-text-primary: var(--ft-text-primary);
+  --od-text-secondary: var(--ft-text-secondary);
+  --od-text-muted: var(--ft-text-muted);
+  --od-text-disabled: var(--ft-text-disabled);
+  
+  --od-primary: var(--ft-primary);
+  --od-primary-light: var(--ft-primary-light);
+  --od-primary-dark: var(--ft-primary-dark);
+  
+  /* 动态主题色映射 */
+  --theme-accent: var(--ft-accent-color);
+  --theme-accent-hover: var(--ft-accent-hover);
+  --theme-accent-active: var(--ft-accent-active);
+  
+  --od-secondary: var(--ft-secondary);
+  --od-secondary-light: var(--ft-secondary-light);
+  --od-secondary-dark: var(--ft-secondary-dark);
+  
+  --od-success: var(--ft-success);
+  --od-success-light: var(--ft-success-light);
+  --od-success-dark: var(--ft-success-dark);
+  
+  --od-warning: var(--ft-warning);
+  --od-warning-light: var(--ft-warning-light);
+  --od-warning-dark: var(--ft-warning-dark);
+  
+  --od-error: var(--ft-error);
+  --od-error-light: var(--ft-error-light);
+  --od-error-dark: var(--ft-error-dark);
+  
+  --gradient-od-primary: var(--ft-gradient-primary);
+  --gradient-od-secondary: var(--ft-gradient-secondary);
+  --gradient-od-success: var(--ft-gradient-success);
+  --gradient-od-warning: var(--ft-gradient-warning);
+  --gradient-od-error: var(--ft-gradient-error);
+  
+  --shadow-od-sm: var(--ft-shadow-sm);
+  --shadow-od-md: var(--ft-shadow-md);
+  --shadow-od-lg: var(--ft-shadow-lg);
+  --shadow-od-xl: var(--ft-shadow-xl);
+  
+  --glow-primary: var(--ft-glow-primary);
+  --glow-success: var(--ft-glow-success);
+  --glow-warning: var(--ft-glow-warning);
+  --glow-error: var(--ft-glow-error);
+}
+
+/* 分析师团队专用颜色 */
+.analyst-tech { color: var(--ft-analyst-tech); }
+.analyst-fundamental { color: var(--ft-analyst-fundamental); }
+.analyst-sentiment { color: var(--ft-analyst-sentiment); }
+.analyst-risk { color: var(--ft-analyst-risk); }
+.analyst-market { color: var(--ft-analyst-market); }
+
+/* 状态指示器颜色 */
+.status-online { color: var(--ft-status-online); }
+.status-busy { color: var(--ft-status-busy); }
+.status-offline { color: var(--ft-status-offline); }
+.status-analyzing { color: var(--ft-status-analyzing); }
+.status-completed { color: var(--ft-status-completed); }
+.status-failed { color: var(--ft-status-failed); }
+
+/* 专业卡片样式 */
+.card--professional {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+}
+
+.card--professional:hover {
+  border-color: var(--hover-border);
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-1px);
+}
+
+/* 专业按钮样式 */
+.btn--professional {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn--primary {
+  background: var(--btn-primary-bg);
+  color: var(--ft-background);
+}
+
+.btn--primary:hover {
+  background: var(--btn-primary-hover);
+  box-shadow: var(--glow-primary);
+}
+
+.btn--secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--ft-text-primary);
+  border: 1px solid var(--ft-border);
+}
+
+.btn--secondary:hover {
+  background: var(--btn-secondary-hover);
+  border-color: var(--ft-primary);
+}
+
+/* 专业输入框样式 */
+.input--professional {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--ft-text-primary);
+  transition: all 0.2s ease;
+}
+
+.input--professional:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.2);
+}
+
+/* 专业进度条样式 */
+.progress--professional {
+  background: var(--progress-bg);
+  border-radius: 4px;
+  height: 4px;
+  overflow: hidden;
+}
+
+.progress--fill {
+  background: var(--progress-fill);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* 专业标签页样式 */
+.tabs--professional {
+  display: flex;
+  background: var(--ft-background-alt);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.tab--professional {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ft-text-secondary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tab--professional:hover {
+  background: var(--hover-bg);
+  color: var(--ft-text-primary);
+}
+
+.tab--professional.active {
+  background: var(--tab-active-bg);
+  color: var(--ft-primary);
+  border-bottom: 2px solid var(--tab-active-border);
+}
+
+/* 悬停特效优化 */
+.hover--glow {
+  transition: all 0.3s ease;
+}
+
+.hover--glow:hover {
+  box-shadow: var(--glow-primary);
+  transform: translateY(-2px);
+}
+
+.hover--scale {
+  transition: all 0.2s ease;
+}
+
+.hover--scale:hover {
+  transform: scale(1.02);
+}
+
+/* 滚动条样式优化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ft-background-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ft-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ft-border-light);
+}
+
+/* 动画效果 */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+  }
+}
+
+.animate--pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .card--professional {
+    margin: 8px;
+    padding: 16px;
+  }
+  
+  .btn--professional {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

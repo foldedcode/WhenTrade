@@ -1,0 +1,7 @@
+{
+  "servers": {},
+  "fallback": {
+    "enabled": true,
+    "servers": []
+  }
+}

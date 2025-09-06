@@ -1,0 +1,47 @@
+{
+  "name": "when-trade-frontend",
+  "version": "1.0.0",
+  "description": "When.Trade 前端应用",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "type-check": "vue-tsc --noEmit",
+    "i18n:validate": "node src/scripts/validate-translations.js",
+    "i18n:validate:strict": "node src/scripts/validate-translations.js --strict",
+    "i18n:validate:report": "node src/scripts/validate-translations.js --output translation-report.txt",
+    "i18n:validate:html": "node src/scripts/validate-translations.js --format html --output translation-report.html",
+    "i18n:validate:json": "node src/scripts/validate-translations.js --format json --output translation-report.json",
+    "prebuild": "npm run i18n:validate:strict"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "html2pdf.js": "^0.12.0",
+    "marked": "^16.1.2",
+    "pinia": "^2.1.6",
+    "vite-plugin-node-polyfills": "^0.24.0",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.14.4",
+    "vue-router": "^4.2.4",
+    "vue-toastification": "^2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.47.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "postcss": "^8.4.28",
+    "sass-embedded": "^1.90.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.6.2",
+    "vite": "^7.0.6",
+    "vue-tsc": "^3.0.4"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

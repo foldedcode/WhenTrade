@@ -1,0 +1,477 @@
+{
+  "title": "成本控制",
+  "pageTitle": "成本控制",
+  "subtitle": "智能成本监控与优化",
+  "todayCost": "今日成本",
+  "monthlyCost": "本月成本",
+  "totalTokens": "总Token数",
+  "averageCostPerToken": "平均每千Token成本",
+  "potentialSavings": "潜在节省",
+  "optimizationsPending": "项待优化",
+  "budget": "预算",
+  "tabs": {
+    "usage": "Token使用",
+    "budget": "预算管理",
+    "optimization": "优化建议",
+    "reports": "成本报表"
+  },
+  "dashboard": {
+    "title": "成本控制仪表盘",
+    "overview": "成本概览",
+    "thisMonth": "本月",
+    "lastMonth": "上月",
+    "change": "变化",
+    "totalSpent": "总支出",
+    "avgPerAnalysis": "平均每次分析",
+    "efficiency": "成本效率",
+    "savings": "本月节省",
+    "budget": "预算",
+    "used": "已使用",
+    "remaining": "剩余",
+    "overspent": "超支",
+    "onTrack": "正常",
+    "nearLimit": "接近上限"
+  },
+  "metrics": {
+    "todayCost": "今日成本",
+    "monthlyCost": "本月成本",
+    "remainingBudget": "剩余预算",
+    "efficiencyRating": "效率评级",
+    "singleAnalysisCost": "单次分析成本",
+    "budgetUsageRate": "预算使用率",
+    "costTrendAnalysis": "成本趋势分析"
+  },
+  "timePeriods": {
+    "7days": "7天",
+    "30days": "30天",
+    "90days": "90天"
+  },
+  "tokenUsage": {
+    "title": "Token使用分析",
+    "totalTokens": "总Token数",
+    "inputTokens": "输入Token",
+    "outputTokens": "输出Token",
+    "efficiency": "使用效率",
+    "vsLastPeriod": "相比上期",
+    "ofTotal": "占总数",
+    "usageTrend": "使用趋势",
+    "modelDistribution": "模型分布",
+    "efficiencyRanking": "效率排行",
+    "allModels": "所有模型",
+    "timeframes": {
+      "1h": "1小时",
+      "24h": "24小时",
+      "7d": "7天",
+      "30d": "30天"
+    }
+  },
+  "efficiencyRatings": {
+    "excellent": "优秀",
+    "good": "良好",
+    "average": "一般",
+    "poor": "较差"
+  },
+  "ui": {
+    "optimizationTips": "优化建议",
+    "recentTransactions": "最近交易",
+    "todayTransactions": "今日 {count} 笔交易",
+    "savingAmount": "节省: ${amount}"
+  },
+  "optimization": {
+    "title": "智能优化建议",
+    "totalSavingsPotential": "总节省潜力",
+    "implementAllSuggestions": "实施所有建议可节省",
+    "reduction": "成本降低",
+    "allImpacts": "所有影响",
+    "refresh": "刷新建议",
+    "impacts": {
+      "high": "高影响",
+      "medium": "中等影响",
+      "low": "低影响"
+    },
+    "difficulty": {
+      "easy": "简单",
+      "medium": "中等",
+      "hard": "困难"
+    },
+    "potentialSavings": "潜在节省",
+    "percentage": "节省比例",
+    "timeframe": "时间范围",
+    "timeframes": {
+      "daily": "每日",
+      "weekly": "每周",
+      "monthly": "每月"
+    },
+    "implementationSteps": "实施步骤",
+    "showDetails": "显示详情",
+    "hideDetails": "隐藏详情",
+    "implement": "立即实施",
+    "ignore": "忽略",
+    "share": "分享",
+    "implemented": "已实施",
+    "implementedOn": "实施于",
+    "noSuggestions": "暂无优化建议",
+    "allOptimized": "您的成本控制已经很棒了！",
+    "checkAgain": "重新检查",
+    "minutes": "分钟",
+    "hours": "小时",
+    "categories": {
+      "modelSelection": "模型选择",
+      "apiOptimization": "API优化",
+      "performance": "性能优化",
+      "general": "通用"
+    },
+    "steps": {
+      "analyzeUsage": "分析使用模式",
+      "identifySimpleTasks": "识别简单任务",
+      "updateModelStrategy": "更新模型策略",
+      "monitorPerformance": "监控性能表现",
+      "groupRequests": "分组请求",
+      "implementBatching": "实现批处理",
+      "testBatchSize": "测试批次大小",
+      "deployChanges": "部署更改",
+      "identifyCacheable": "识别可缓存内容",
+      "setupCache": "设置缓存",
+      "configureTTL": "配置TTL",
+      "verifyCaching": "验证缓存",
+      "default": "按照建议步骤进行"
+    }
+  },
+  "achievements": {
+    "title": "成就系统",
+    "level": "等级",
+    "experience": "经验",
+    "nextLevel": "下一等级",
+    "maxLevel": "已达最高等级",
+    "levelBenefits": "等级权益",
+    "completed": "已完成",
+    "badges": "徽章",
+    "currentStreak": "当前连击",
+    "totalPoints": "总积分",
+    "best": "最佳",
+    "rank": "排名",
+    "outOf": "/ {total}",
+    "categories": {
+      "all": "全部",
+      "gettingStarted": "入门",
+      "efficiency": "效率",
+      "budgetManagement": "预算管理",
+      "optimization": "优化",
+      "consistency": "坚持",
+      "modelSelection": "模型选择",
+      "apiOptimization": "API优化",
+      "performance": "性能优化",
+      "general": "常规优化"
+    },
+    "rarity": {
+      "common": "普通",
+      "rare": "稀有",
+      "epic": "史诗",
+      "legendary": "传说"
+    },
+    "progress": "进度",
+    "exp": "经验值",
+    "badge": "徽章",
+    "track": "追踪",
+    "share": "分享",
+    "completedOn": "完成于",
+    "noAchievements": "暂无成就",
+    "startAnalyzing": "开始分析以解锁成就"
+  },
+  "challenges": {
+    "title": "预算挑战",
+    "active": "进行中",
+    "completed": "已完成",
+    "joined": "已参加",
+    "participants": "人参与",
+    "join": "参加挑战",
+    "details": "查看详情",
+    "progress": "进度",
+    "timeRemaining": "剩余时间",
+    "reward": "奖励",
+    "target": "目标",
+    "ended": "已结束",
+    "endingSoon": "即将结束",
+    "difficulty": {
+      "easy": "简单",
+      "medium": "中等",
+      "hard": "困难",
+      "expert": "专家"
+    },
+    "types": {
+      "daily": "每日挑战",
+      "weekly": "每周挑战",
+      "monthly": "每月挑战",
+      "custom": "自定义"
+    }
+  },
+  "budget": {
+    "title": "预算管理",
+    "dailyLimit": "日预算限额",
+    "monthlyLimit": "月预算限额",
+    "currentUsage": "当前使用",
+    "dailyProgress": "日预算使用进度",
+    "monthlyProgress": "月预算使用进度",
+    "alertSettings": "预警设置",
+    "alertThreshold": "预警阈值",
+    "alertThresholdHint": "当达到预算的该百分比时发出预警",
+    "enableAlerts": "启用预警",
+    "enableAlertsHint": "在接近或超出预算时接收通知",
+    "updateError": "更新预算失败",
+    "saveSuccess": "设置保存成功",
+    "saveError": "保存设置失败"
+  },
+  "alerts": {
+    "title": "成本预警",
+    "dailyBudget": "日预算",
+    "monthlyBudget": "月预算",
+    "usage": "使用情况",
+    "history": "预警历史",
+    "noHistory": "暂无预警记录",
+    "rules": "预警规则",
+    "budgetExceeded": "超预算预警",
+    "budgetExceededHint": "当成本超出预算时发出预警",
+    "nearBudget": "接近预算预警",
+    "nearBudgetHint": "当成本接近预算阈值时发出预警",
+    "unusualSpike": "异常高成本预警",
+    "unusualSpikeHint": "当检测到异常高的成本使用时发出预警",
+    "dailyExceeded": "日预算已超支",
+    "dailyWarning": "日预算使用过高",
+    "dailyNormal": "日预算使用正常",
+    "monthlyExceeded": "月预算已超支",
+    "monthlyWarning": "月预算使用过高",
+    "monthlyNormal": "月预算使用正常",
+    "dailyBudgetExceededMessage": "日预算已超支：${amount} / ${budget}",
+    "dailyBudgetWarningMessage": "日预算使用率达{percentage}%",
+    "monthlyBudgetExceededMessage": "月预算已超支：${amount} / ${budget}",
+    "monthlyBudgetWarningMessage": "月预算使用率达{percentage}%"
+  },
+  "reports": {
+    "title": "成本报表",
+    "lastWeek": "过去一周",
+    "lastMonth": "过去一月",
+    "lastQuarter": "过去一季",
+    "custom": "自定义",
+    "export": "导出报表",
+    "totalCost": "总成本",
+    "totalTokens": "总Token数",
+    "avgPerDay": "日均",
+    "mostUsedModel": "最常用模型",
+    "ofUsage": "使用占比",
+    "efficiency": "效率",
+    "budgetUtilization": "预算利用率",
+    "costTrend": "成本趋势",
+    "modelDistribution": "模型使用分布",
+    "detailedData": "详细数据",
+    "date": "日期",
+    "cost": "成本",
+    "tokens": "Token数",
+    "requests": "请求次数",
+    "primaryModel": "主要模型",
+    "dailyCost": "日成本"
+  },
+  "breakdown": {
+    "title": "成本分解",
+    "today": "今天",
+    "yesterday": "昨天",
+    "thisWeek": "本周",
+    "thisMonth": "本月",
+    "byModel": "按模型分解",
+    "byFeature": "按功能分解",
+    "trend": "趋势图",
+    "requests": "请求",
+    "features": {
+      "analysis": "分析",
+      "chat": "对话",
+      "research": "研究",
+      "tools": "工具"
+    },
+    "dailyCost": "每日成本"
+  },
+  "recommendations": {
+    "title": "模型推荐",
+    "model": "模型",
+    "inputPrice": "输入价格",
+    "outputPrice": "输出价格",
+    "quality": "质量",
+    "speed": "速度",
+    "recommended": "推荐用途",
+    "current": "当前使用",
+    "complex": "复杂任务",
+    "general": "常规任务",
+    "simple": "简单任务",
+    "smartSuggestions": "智能推荐",
+    "estimatedSavings": "预估节省",
+    "month": "月",
+    "apply": "应用",
+    "selectionStrategy": "模型选择策略",
+    "strategies": {
+      "balanced": "平衡模式",
+      "balancedHint": "在成本和质量之间平衡",
+      "costFirst": "成本优先",
+      "costFirstHint": "优先选择低成本模型",
+      "qualityFirst": "质量优先",
+      "qualityFirstHint": "优先选择高质量模型"
+    },
+    "strategyUpdated": "策略已更新",
+    "switchToGPT35": "切换到GPT-3.5",
+    "switchToGPT35Desc": "对于大部分任务，GPT-3.5-Turbo提供了足够的质量，同时成本更低",
+    "optimizeUsage": "优化使用",
+    "optimizeUsageDesc": "根据任务复杂度选择合适的模型可以节省大量成本"
+  },
+  "common": {
+    "save": "保存",
+    "saving": "保存中..."
+  },
+  "leaderboard": {
+    "title": "排行榜",
+    "costEfficiency": "成本效率榜",
+    "tokenOptimization": "Token优化榜",
+    "budgetAdherence": "预算遵守榜",
+    "overallScore": "综合评分榜",
+    "rank": "排名",
+    "score": "得分",
+    "trend": "趋势",
+    "up": "上升",
+    "down": "下降",
+    "stable": "稳定",
+    "you": "您",
+    "timeframes": {
+      "daily": "今日",
+      "weekly": "本周", 
+      "monthly": "本月",
+      "allTime": "历史"
+    }
+  },
+  "badges": {
+    "title": "徽章收藏",
+    "earned": "获得徽章",
+    "locked": "未解锁",
+    "favorite": "设为展示",
+    "share": "分享徽章",
+    "earnedOn": "获得于",
+    "rarity": {
+      "common": "普通",
+      "rare": "稀有", 
+      "epic": "史诗",
+      "legendary": "传说"
+    }
+  },
+  "notifications": {
+    "achievement": "成就解锁",
+    "levelUp": "等级提升",
+    "badge": "徽章获得",
+    "challenge": "挑战完成",
+    "optimization": "优化建议",
+    "markAllRead": "全部标记已读",
+    "noNotifications": "暂无通知"
+  },
+  "gamification": {
+    "title": "游戏化系统",
+    "stats": "统计信息",
+    "settings": "设置",
+    "enableNotifications": "启用通知",
+    "enableAnimations": "启用动画",
+    "enableSounds": "启用音效",
+    "notificationSettings": "通知设置",
+    "achievementNotifications": "成就通知",
+    "badgeAnimations": "徽章动画",
+    "soundEffects": "音效",
+    "displaySettings": "显示设置",
+    "showLeaderboard": "显示排行榜",
+    "showChallenges": "显示挑战",
+    "saveSettings": "保存设置",
+    "multipliers": {
+      "experience": "经验倍率",
+      "points": "积分倍率"
+    }
+  },
+  "budgetControl": {
+    "dailyLimit": "日预算限额",
+    "monthlyLimit": "月预算限额",
+    "budgetWarning": "预算警告",
+    "dailyBudgetOver80": "日预算使用率超过80%",
+    "monthlyBudgetOver90": "月预算使用率超过90%",
+    "editDailyBudgetTitle": "编辑日预算限额",
+    "editDailyBudgetLabel": "设置每日的成本预算上限",
+    "editMonthlyBudgetTitle": "编辑月预算限额",
+    "editMonthlyBudgetLabel": "设置每月的成本预算上限"
+  },
+  "optimizationTips": {
+    "useSmallerModel": {
+      "title": "使用更小的模型",
+      "description": "对于简单分析考虑使用gpt-4o-mini"
+    },
+    "batchRequests": {
+      "title": "批量请求",
+      "description": "合并多个分析以减少API调用"
+    },
+    "optimizeDepth": {
+      "title": "优化分析深度",
+      "description": "对常规检查减少分析深度"
+    }
+  },
+  "transactionDescription": {
+    "analysis": "{model}分析: {symbol}"
+  },
+  "userLevels": {
+    "level1": {
+      "name": "新手分析师",
+      "description": "刚开始AI投资分析之旅"
+    },
+    "level2": {
+      "name": "学徒研究员",
+      "description": "掌握基本分析技巧"
+    },
+    "level3": {
+      "name": "专业分析师",
+      "description": "具备专业分析能力"
+    },
+    "level4": {
+      "name": "资深专家",
+      "description": "成本控制和效率优化专家"
+    },
+    "level5": {
+      "name": "投资大师",
+      "description": "AI投资分析领域的大师"
+    }
+  },
+  "notifications": {
+    "optimizationImplemented": {
+      "title": "优化建议已实施！",
+      "message": "您已成功实施成本优化建议"
+    },
+    "suggestionShared": {
+      "title": "成本优化建议",
+      "shareTemplate": "💡 成本优化建议: {{title}}\n潜在节省: ${{amount}} ({{percentage}}%)\n\n{{description}}\n\n#WhenTrade #CostOptimization"
+    },
+    "copiedToClipboard": {
+      "title": "已复制到剪贴板",
+      "message": "建议内容已复制，可以分享给其他人"
+    },
+    "achievementTracked": {
+      "title": "开始追踪成就",
+      "message": "该成就已加入追踪列表"
+    },
+    "achievementShared": {
+      "title": "成就分享",
+      "completed": "🎉 我刚刚解锁了成就: {{name}}！\n{{description}}\n\n#WhenTrade #Achievement",
+      "tracking": "🎯 我正在追踪成就: {{name}}\n{{description}}\n进度: {{progress}}%\n\n#WhenTrade #Achievement"
+    },
+    "settingsSaved": {
+      "title": "设置已保存",
+      "message": "您的游戏化设置已成功保存"
+    }
+  },
+  "recent": {
+    "title": "最近分析",
+    "subtitle": "实时费用追踪",
+    "depth": "深度",
+    "empty": "暂无分析记录"
+  },
+  "cards": {
+    "modelBilling": "模型计费",
+    "usedSuffix": "已使用",
+    "noApiConfigured": "未检测到可用的 API，请在后端配置相应的密钥。"
+  }
+} 

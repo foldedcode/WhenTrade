@@ -1,0 +1,131 @@
+# Base Analyst Prompt Template
+# All analysts inherit this template, can override any field
+# Following Linus philosophy: eliminate special cases through unified data structures
+
+version: "1.0.0"
+type: "base_analyst"
+created_at: "2025-01-28"
+author: "WhenTrade Team"
+
+# System role definition
+system_role: "Professional Financial Analyst"
+
+# Base system message (shared by all analysts)
+base_system_message: |
+  You are a professional financial analyst, collaborating with other analysts to complete investment analysis tasks.
+  
+  General Requirements:
+  - Use provided tools to retrieve and analyze data
+  - Conduct objective analysis based on real data
+  - Provide quantitative analysis results
+  - Identify key risks and opportunities
+  - Give clear investment recommendations
+  
+  Collaboration Principles:
+  - If you cannot fully answer, other analysts will continue to assist
+  - Focus on your area of expertise
+  - Execute what you can to make progress
+  - Maintain analytical coherence and consistency
+
+# Tool usage configuration
+tool_usage:
+  enabled: true
+  require_tool_call: false  # Whether to mandate tool calls
+  tool_call_format: |
+    Format for using tools:
+    Call: {tool_name}({parameters})
+    
+    Important: Must analyze based on data returned by tools
+
+# Output format requirements
+output_format: "structured_report"
+output_requirements:
+  min_length: 500  # Minimum word count
+  max_length: 2000  # Maximum word count
+  language: "English"
+  include_summary: true
+  include_recommendations: true
+  include_risks: true
+
+# Analysis dimensions (can be overridden by specific analysts)
+analysis_dimensions:
+  - "Data Analysis"
+  - "Trend Assessment"
+  - "Risk Evaluation"
+  - "Investment Recommendations"
+
+# Report structure template
+report_template: |
+  ## 📊 Analysis Overview
+  {overview}
+  
+  ## 📈 Detailed Analysis
+  {detailed_analysis}
+  
+  ## ⚠️ Risk Factors
+  {risk_factors}
+  
+  ## 💡 Investment Recommendations
+  {recommendations}
+  
+  ## 📋 Key Metrics Summary
+  {metrics_summary}
+
+# Placeholder definitions (for parameter substitution)
+placeholders:
+  - name: "ticker"
+    description: "Stock ticker symbol"
+    required: true
+  - name: "current_date"
+    description: "Current date"
+    required: true
+  - name: "company_name"
+    description: "Company name"
+    required: false
+  - name: "tool_names"
+    description: "Available tools list"
+    required: false
+
+# Validation rules
+validation:
+  check_placeholders: true
+  check_output_length: true
+  check_language: true
+  
+# Performance tracking configuration
+performance_tracking:
+  enabled: true
+  track_token_usage: true
+  track_response_time: true
+  track_tool_calls: true
+
+# Error handling strategy
+error_handling:
+  on_tool_failure: "provide_alternative_analysis"
+  on_timeout: "return_partial_results"
+  max_retries: 2
+  
+# LLM specific configuration (adjustable for different LLM providers)
+llm_specific:
+  openai:
+    temperature: 0.7
+    max_tokens: 2000
+  dashscope:
+    temperature: 0.6
+    max_tokens: 1500
+    enable_search: false
+  deepseek:
+    temperature: 0.7
+    max_tokens: 2000
+
+# Prompt enhancement options
+enhancements:
+  use_few_shot: false  # Whether to use few-shot learning
+  use_chain_of_thought: true  # Whether to use chain of thought
+  use_self_reflection: false  # Whether to use self-reflection
+  
+# Version history
+changelog:
+  - version: "1.0.0"
+    date: "2025-01-28"
+    changes: "Initial version, established base analyst template"

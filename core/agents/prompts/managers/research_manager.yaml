@@ -1,0 +1,212 @@
+# Research Manager Prompt Configuration
+# Responsible for comprehensive decision-making, evaluating debates and formulating investment plans
+# Standardized English output for consistency
+
+version: "1.0.0"
+type: "research_manager"
+created_at: "2025-01-28"
+author: "WhenTrade Team"
+
+# Role definition
+system_role: "Portfolio Manager and Debate Moderator"
+
+# Research manager specific system message (English base with dynamic language output)
+system_message: |
+  As a portfolio manager and debate coordinator, your role is to critically evaluate this round of debate and make a clear decision: support the bearish analyst, the bullish analyst, or choose hold only when there are strong reasons based on the arguments presented.
+  
+  Concisely summarize the key points from both sides, focusing on the most compelling evidence or reasoning. Your recommendation—buy, sell, or hold—must be clear and actionable. Avoid defaulting to hold simply because both sides have valid points; make a commitment based on the strongest arguments in the debate.
+  
+  Additionally, develop a detailed investment plan for the trader. This should include:
+  
+  Your recommendation: Clear position based on the most compelling arguments.
+  Reasoning: Explain why these arguments lead to your conclusion.
+  Strategic actions: Specific steps to implement the recommendation.
+  Consider your past mistakes in similar situations. Use these insights to refine your decision-making, ensuring you are learning and improving. Present your analysis conversationally, as if speaking naturally, without special formatting.
+  
+  Here are your past reflections on mistakes:
+  "{past_memory_str}"
+  
+  Here is the debate:
+  Debate history:
+  {history}
+  
+  🌐 CRITICAL LANGUAGE REQUIREMENT: 
+  You MUST output your analysis in English. This is non-negotiable.
+  - Write your entire response in English
+  - All section headers, technical terms, and content MUST be in English
+  - Maintain consistent professional English throughout
+
+# Decision Framework
+decision_framework:
+  evaluation_criteria:
+    - name: "Argument Strength"
+      weight: 0.30
+      factors: ["Data Support", "Logic Clarity", "Evidence Quality"]
+    - name: "Risk Assessment"
+      weight: 0.25
+      factors: ["Downside Risk", "Upside Potential", "Risk-Reward Ratio"]
+    - name: "Market Timing"
+      weight: 0.20
+      factors: ["Market Cycle", "Sector Trends", "Regulatory Environment"]
+    - name: "Valuation Reasonableness"
+      weight: 0.15
+      factors: ["Relative Valuation", "Absolute Valuation", "Historical Comparison"]
+    - name: "Execution Feasibility"
+      weight: 0.10
+      factors: ["Liquidity", "Transaction Costs", "Entry Timing"]
+
+# Investment Decision Types
+decision_types:
+  strong_buy:
+    criteria: "Overwhelming bullish argument advantage"
+    confidence: ">85%"
+    action: "Immediately establish large position"
+    
+  buy:
+    criteria: "Clear bullish argument advantage"
+    confidence: "70-85%"
+    action: "Gradually build position"
+    
+  hold:
+    criteria: "Arguments balanced or high uncertainty"
+    confidence: "40-70%"
+    action: "Maintain current position or wait"
+    
+  sell:
+    criteria: "Clear bearish argument advantage"
+    confidence: "70-85%"
+    action: "Gradually reduce position"
+    
+  strong_sell:
+    criteria: "Overwhelming bearish argument advantage"
+    confidence: ">85%"
+    action: "Immediately exit position"
+
+# Price Target Analysis Framework
+price_target_framework:
+  scenarios:
+    conservative:
+      name: "Conservative Scenario"
+      probability: "30%"
+      method: "Based on worst-case assumptions"
+      discount: "-20%"
+      
+    base:
+      name: "Base Scenario"
+      probability: "50%"
+      method: "Based on neutral assumptions"
+      discount: "0%"
+      
+    optimistic:
+      name: "Optimistic Scenario"
+      probability: "20%"
+      method: "Based on best-case assumptions"
+      premium: "+30%"
+      
+  timeframes:
+    - period: "1 month"
+      weight: "Short-term trading"
+    - period: "3 months"
+      weight: "Quarterly allocation"
+    - period: "6 months"
+      weight: "Medium-term investment"
+    - period: "12 months"
+      weight: "Long-term holding"
+      
+  valuation_methods:
+    - "Technical analysis targets"
+    - "On-chain activity analysis"
+    - "NVT ratio (Network Value to Transactions)"
+    - "Metcalfe's law valuation"
+    - "Stock-to-Flow model"
+    - "Relative crypto asset valuation"
+
+# Investment Plan Template
+investment_plan_template: |
+  ## 📊 Investment Decision
+  
+  ### 🎯 Investment Decision
+  {final_recommendation}
+  
+  ### 📈 Decision Rationale
+  {decision_rationale}
+  
+  ### 💰 Price Target Analysis
+  #### Conservative Scenario (30% probability)
+  - 1-month target: {conservative_1m}
+  - 3-month target: {conservative_3m}
+  - 6-month target: {conservative_6m}
+  
+  #### Base Scenario (50% probability)
+  - 1-month target: {base_1m}
+  - 3-month target: {base_3m}
+  - 6-month target: {base_6m}
+  
+  #### Optimistic Scenario (20% probability)
+  - 1-month target: {optimistic_1m}
+  - 3-month target: {optimistic_3m}
+  - 6-month target: {optimistic_6m}
+  
+  ### 🛡️ Risk Management
+  {risk_management}
+  
+  ### 📋 Execution Strategy
+  {execution_strategy}
+  
+  ### 🔄 Monitoring Points
+  {monitoring_points}
+  
+  ### 📝 Synopsis
+  {summary}
+
+# Risk Management Parameters
+risk_management:
+  stop_loss:
+    aggressive: "-5%"
+    moderate: "-8%"
+    conservative: "-10%"
+    
+  position_sizing:
+    high_conviction: "5-10%"
+    medium_conviction: "3-5%"
+    low_conviction: "1-3%"
+    
+  rebalancing:
+    frequency: "Monthly"
+    trigger: "Deviation exceeds 20%"
+
+# Memory and Learning
+memory_integration:
+  use_past_decisions: true
+  learn_from_outcomes: true
+  track_accuracy: true
+  improve_criteria: ["Decision Accuracy", "Risk Control", "Return Performance"]
+
+# Output Format Requirements
+output_format: "investment_decision"
+output_requirements:
+  min_length: 800
+  max_length: 2000
+  language: "English"
+  tone: "Professional, decisive, clear"
+  include_price_targets: true
+  include_risk_metrics: true
+  include_action_plan: true
+
+# LLM Specific Configuration
+llm_specific:
+  openai:
+    temperature: 0.5
+    max_tokens: 2000
+  dashscope:
+    temperature: 0.4
+    max_tokens: 1800
+  deepseek:
+    temperature: 0.5
+    max_tokens: 2000
+    
+# Version History
+changelog:
+  - version: "1.0.0"
+    date: "2025-01-28"
+    changes: "Initial research manager prompt configuration creation"

@@ -1,0 +1,864 @@
+{
+  "brand": "When.Trade",
+  "subtitle": "AI驱动的投资研究平台",
+  "tagline": "智能交易时机分析，精准把握投资机会",
+  "default": "默认",
+  "remaining": "剩余",
+  "system": "系统",
+  "agent": "智能体",
+  "tool": "工具",
+  "error": "错误",
+  "recentAnalysis": "最近分析",
+  "terms": "服务条款",
+  "privacy": "隐私政策",
+  "tabs": {
+    "analysis": "分析配置",
+    "chat": "对话模式",
+    "history": "分析历史",
+    "debug": "调试工具",
+    "tools": "工具研究",
+    "toolMarket": "工具市场",
+    "sharing": "分享结果",
+    "themes": "配色方案",
+    "mcp": "MCP管理",
+    "monitor": "系统监控"
+  },
+  "status": {
+    "online": "在线",
+    "offline": "离线",
+    "connecting": "连接中",
+    "error": "错误",
+    "completed": "已完成",
+    "running": "运行中",
+    "pending": "等待中"
+  },
+  "loading": "加载中...",
+  "error": "错误",
+  "success": "成功",
+  "cancel": "取消",
+  "confirm": "确认",
+  "save": "保存",
+  "saving": "保存中...",
+  "edit": "编辑",
+  "delete": "删除",
+  "close": "关闭",
+  "notSet": "未设置",
+  "previous": "上一步",
+  "start": "开始",
+  "stop": "停止",
+  "enabled": "已启用",
+  "disabled": "已禁用",
+  "back": "返回",
+  "backToHome": "返回主页",
+  "next": "下一步",
+  "and": "和",
+  "notSelected": "未选择",
+  "hide": "隐藏",
+  "show": "显示",
+  "configure": "配置",
+  "mcpServices": "MCP服务",
+  "tools": "工具",
+  "priority": "优先级",
+  "priorityLevels": {
+    "high": "高",
+    "medium": "中",
+    "low": "低"
+  },
+  "timeout": "超时时间",
+  "or": "或",
+  "login": "登录",
+  "pause": "暂停",
+  "preview": "预览",
+  "data": "数据",
+  "logout": "退出",
+  "connecting": "连接中...",
+  "user": "用户",
+  "profile": "个人资料",
+  "settings": "设置",
+  "myTools": "我的工具",
+  "billing": "账单",
+  "adminPanel": "管理面板",
+  "logoutSuccess": "已成功退出登录",
+  "mode": {
+    "research": {
+      "title": "研究模式",
+      "description": "专业的参数化研究分析"
+    },
+    "chat": {
+      "title": "对话模式",
+      "description": "自然语言交互式分析"
+    },
+    "switch": {
+      "success": "已切换到{mode}"
+    }
+  },
+  "previous": "上一步",
+  "submit": "提交",
+  "reset": "重置",
+  "search": "搜索",
+  "filter": "筛选",
+  "sort": "排序",
+  "export": "导出",
+  "import": "导入",
+  "refresh": "刷新",
+  "more": "更多",
+  "less": "收起",
+  "expand": "展开",
+  "collapse": "收起",
+  "yes": "是",
+  "no": "否",
+  "progress": "进度",
+  "theme": {
+    "toggle": "切换主题",
+    "colorScheme": "配色方案"
+  },
+  "colorSchemes": {
+    "professional": "香槟金",
+    "standard": "钴蓝",
+    "success": "祖母绿",
+    "tech": "紫水晶",
+    "alert": "朱砂红",
+    "cyan": "蒂芙尼蓝",
+    "orange": "爱马仕橙",
+    "rose": "玫瑰金",
+    "silver": "月光银",
+    "emerald": "孔雀石绿",
+    "sapphire": "皇家蓝宝石",
+    "amber": "琥珀",
+    "obsidian": "黑曜石"
+  },
+  "analystTeam": "分析师团队",
+  "irreversible": "此操作不可恢复",
+  "language": {
+    "chinese": "中文",
+    "english": "English",
+    "selectLanguage": "选择语言",
+    "autoDetect": "自动检测语言",
+    "switch": "切换语言"
+  },
+  "errors": {
+    "titles": {
+      "info": "提示",
+      "warning": "警告",
+      "error": "错误",
+      "critical": "严重错误"
+    },
+    "generic": {
+      "network": "网络连接异常，请检查网络设置",
+      "api": "服务器响应异常，请稍后重试",
+      "validation": "数据验证失败，请检查输入",
+      "authentication": "身份验证失败，请重新登录",
+      "authorization": "权限不足，请联系管理员",
+      "business": "业务处理异常",
+      "system": "系统异常，请联系技术支持",
+      "unknown": "未知错误，请稍后重试"
+    },
+    "boundary": {
+      "title": "页面出现错误",
+      "defaultMessage": "很抱歉，页面遇到了一些问题。我们正在努力修复。",
+      "showDetails": "显示详细信息",
+      "reload": "重新加载",
+      "retry": "重试",
+      "report": "报告错误",
+      "suggestionsTitle": "您可以尝试：",
+      "suggestion1": "刷新页面或重新加载",
+      "suggestion2": "检查网络连接是否正常",
+      "suggestion3": "如果问题持续存在，请联系技术支持"
+    },
+    "retry": {
+      "success": "重试成功",
+      "successMessage": "操作已成功完成",
+      "maxRetriesReached": "已达到最大重试次数"
+    }
+  },
+  "error": {
+    "title": "错误",
+    "description": "出现了一些问题，请尝试刷新页面或返回主页。",
+    "details": "详情",
+    "retry": "重试",
+    "goHome": "返回主页",
+    "report": "报告问题"
+  },
+  "notification": {
+    "title": "通知",
+    "message": "消息",
+    "close": "关闭",
+    "markAsRead": "标记已读",
+    "markAllAsRead": "全部标记已读",
+    "clear": "清除",
+    "settings": "设置"
+  },
+  "pagination": {
+    "previous": "上一页",
+    "next": "下一页",
+    "page": "第",
+    "of": "页，共",
+    "total": "总计",
+    "items": "项",
+    "showing": "显示",
+    "to": "到",
+    "perPage": "每页",
+    "goToPage": "跳转到",
+    "first": "首页",
+    "last": "末页"
+  },
+  "table": {
+    "noData": "暂无数据",
+    "loading": "加载中...",
+    "search": "搜索...",
+    "filter": "筛选",
+    "sort": "排序",
+    "actions": "操作",
+    "select": "选择",
+    "selectAll": "全选",
+    "selected": "已选择",
+    "export": "导出",
+    "refresh": "刷新"
+  },
+  "form": {
+    "required": "必填",
+    "optional": "可选",
+    "placeholder": "请输入",
+    "select": "请选择",
+    "upload": "上传",
+    "clear": "清除",
+    "validate": "验证"
+  },
+  "time": {
+    "now": "现在",
+    "minute": "分钟",
+    "minutes": "分钟",
+    "hour": "小时",
+    "hours": "小时",
+    "justNow": "刚刚",
+    "minutesAgo": "{count}分钟前",
+    "hoursAgo": "{count}小时前",
+    "daysAgo": "{count}天前",
+    "day": "天",
+    "days": "天",
+    "week": "周",
+    "weeks": "周",
+    "month": "月",
+    "months": "月",
+    "year": "年",
+    "years": "年",
+    "ago": "前",
+    "in": "后",
+    "today": "今天",
+    "yesterday": "昨天",
+    "tomorrow": "明天",
+    "thisWeek": "本周",
+    "lastWeek": "上周",
+    "nextWeek": "下周",
+    "thisMonth": "本月",
+    "lastMonth": "上月",
+    "nextMonth": "下月",
+    "thisYear": "今年",
+    "lastYear": "去年",
+    "nextYear": "明年"
+  },
+  "filesize": {
+    "bytes": "字节",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "tb": "TB"
+  },
+  "validation": {
+    "required": "此字段为必填项",
+    "email": "请输入有效的邮箱地址",
+    "min": "最少需要 {min} 个字符",
+    "max": "最多只能输入 {max} 个字符",
+    "pattern": "格式不正确",
+    "number": "请输入有效数字",
+    "integer": "请输入整数",
+    "url": "请输入有效的URL地址"
+  },
+  "sharing": {
+    "shareOptions": "分享选项",
+    "quickShare": "快速分享",
+    "advancedShare": "高级分享",
+    "shareReport": "分享报告",
+    "shareAnalysis": "分享分析",
+    "shareLink": "分享链接",
+    "copyLink": "复制链接",
+    "linkCopied": "链接已复制",
+    "shareSuccess": "分享成功",
+    "shareError": "分享失败"
+  },
+  "navigation": {
+    "home": "首页",
+    "analysis": "分析",
+    "history": "历史",
+    "reports": "报告",
+    "settings": "设置"
+  },
+  "ui": {
+    "step": "步骤",
+    "exportReport": "导出报告",
+    "shareReport": "分享报告",
+    "remaining": "剩余",
+    "normal": "正常",
+    "errorReport": "When.Trade 错误报告",
+    "errorDetails": "错误详情",
+    "browserInfo": "浏览器信息",
+    "systemInit": "系统初始化",
+    "loading": {
+      "analyzing": "正在分析...",
+      "processing": "处理中...",
+      "generating": "生成中...",
+      "initializing": "初始化中..."
+    }
+  },
+  "sentiment": {
+    "bullish": "看涨",
+    "neutral": "中性",
+    "bearish": "看跌"
+  },
+  "flowDebug": {
+    "anchors": "锚点",
+    "refreshConnections": "刷新连线",
+    "connections": "连线",
+    "svgSize": "SVG"
+  },
+  "units": {
+    "currency": {
+      "usd": "USD",
+      "eur": "EUR",
+      "cny": "CNY",
+      "jpy": "JPY",
+      "gbp": "GBP",
+      "btc": "BTC",
+      "eth": "ETH"
+    },
+    "time": {
+      "second": "秒",
+      "minute": "分钟",
+      "hour": "小时",
+      "day": "天",
+      "week": "周",
+      "month": "月",
+      "year": "年"
+    },
+    "data": {
+      "byte": "B",
+      "kilobyte": "KB",
+      "megabyte": "MB",
+      "gigabyte": "GB",
+      "terabyte": "TB"
+    }
+  },
+  "analysis": {
+    "configuration": "分析配置",
+    "progress": "分析进度",
+    "target": "分析标的",
+    "marketType": "市场类型",
+    "customTarget": "自定义标的",
+    "selectPreset": "选择预设",
+    "selectMarketType": "选择市场类型",
+    "selectPresetHint": "选择预设标的或输入自定义代码",
+    "llmProvider": "LLM提供商",
+    "model": "模型",
+    "selectLLMProvider": "选择LLM提供商",
+    "selectModel": "选择模型",
+    "analysisDepth": "分析深度",
+    "analystTeam": "分析师团队",
+    "analyzing": "正在分析...",
+    "startAnalysis": "开始分析",
+    "stopAnalysis": "停止分析",
+    "readyToStart": "准备开始分析",
+    "configureAndStart": "配置参数并点击\"开始分析\"",
+    "inProgress": "分析进行中",
+    "analyzingSymbol": "正在分析 {symbol}...",
+    "results": "分析结果",
+    "copyResult": "复制结果",
+    "expand": "展开",
+    "collapse": "收起",
+    "percentComplete": "{percent}% 完成",
+    "wizard": {
+      "currentSelection": "当前选择",
+      "analysis": "分析",
+      "estimatedTime": "预计分析时间",
+      "minutes": "分钟",
+      "powerfulAnalysis": "强大分析能力",
+      "analysts": "位",
+      "professionalAnalysis": "专业分析",
+      "specialties": {
+        "technical_analyst": "图表模式识别 • K线分析",
+        "fundamental_analyst": "财务数据 • 价值评估",
+        "sentiment_analyst": "市场情绪 • 舆情监控",
+        "risk_analyst": "风险控制 • 资金管理"
+      },
+      "marketTips": {
+        "crypto": "加密货币市场支持主流交易对，如 BTC/USDT, ETH/USDT 等"
+      }
+    },
+    "process": {
+      "agentNetwork": "智能体协作网络",
+      "overallProgress": "总体进度",
+      "activeAgents": "活跃智能体",
+      "totalCost": "累计成本",
+      "estimatedCompletion": "预计完成时间",
+      "realtimeLogs": "实时日志流",
+      "autoScroll": "自动滚动",
+      "manualScroll": "手动滚动",
+      "preparing": "准备中",
+      "initializingAnalysis": "正在初始化分析过程",
+      "steps": {
+        "prepare": "准备",
+        "prepareDesc": "初始化分析环境",
+        "dataCollection": "数据收集",
+        "dataCollectionDesc": "获取市场数据",
+        "technicalAnalysis": "技术分析",
+        "technicalAnalysisDesc": "技术指标分析",
+        "fundamentalAnalysis": "基本面分析",
+        "fundamentalAnalysisDesc": "基本面评估",
+        "sentimentAnalysis": "情绪分析",
+        "sentimentAnalysisDesc": "市场情绪分析",
+        "riskAssessment": "风险评估",
+        "riskAssessmentDesc": "风险评估分析",
+        "collaboration": "协作整合",
+        "collaborationDesc": "整合分析结果",
+        "reportGeneration": "生成报告",
+        "reportGenerationDesc": "生成最终报告"
+      },
+      "logs": {
+        "analyzingMACD": "正在分析MACD指标...",
+        "financialDataCollected": "收集财务数据完成",
+        "highVolatilityDetected": "检测到高波动性风险",
+        "analyzingData": "正在分析数据...",
+        "calculatingIndicators": "计算技术指标",
+        "evaluatingRisk": "评估市场风险",
+        "generatingReport": "生成分析报告",
+        "checkingDataIntegrity": "检查数据完整性"
+      }
+    }
+  },
+  "marketTypes": {
+    "crypto": "加密货币"
+  },
+  "depthOptions": {
+    "quick": "快速",
+    "standard": "标准",
+    "deep": "深度",
+    "expert": "专家",
+    "comprehensive": "极致"
+  },
+  "depthDescriptions": {
+    "quick": "快速分析 - 1轮辩论，基础观点收集",
+    "standard": "标准分析 - 2轮辩论，充分观点交换",
+    "deep": "深度分析 - 3轮辩论，深入论证分析",
+    "expert": "专业分析 - 4轮辩论，全面专业研判",
+    "comprehensive": "极致分析 - 5轮辩论，全面深度剖析"
+  },
+  "commodities": {
+    "gold": "黄金期货 (GC=F)",
+    "oil": "原油期货 (CL=F)",
+    "silver": "白银期货 (SI=F)"
+  },
+  "aiProviders": {
+    "openai": {
+      "description": "领先的AI研究公司"
+    },
+    "anthropic": {
+      "description": "AI安全研究专家"
+    },
+    "claude": {
+      "description": "Anthropic AI助手"
+    },
+    "google": {
+      "description": "谷歌AI服务"
+    },
+    "gemini": {
+      "description": "Google多模态AI"
+    },
+    "deepseek": {
+      "description": "深度求索AI"
+    },
+    "qwen": {
+      "description": "阿里巴巴通义千问"
+    },
+    "meta": {
+      "description": "Meta AI服务"
+    },
+    "microsoft": {
+      "description": "微软AI服务"
+    },
+    "local": {
+      "name": "本地模型",
+      "description": "私有部署模型"
+    }
+  },
+  "modelDescriptions": {
+    "gpt-4o-mini": "性价比优选，快速响应",
+    "gpt-4o": "最新旗舰，能力全面",
+    "gpt-4-turbo": "高效处理，性能强劲",
+    "claude-3-sonnet": "平衡之选，推理强",
+    "claude-3-5-sonnet": "平衡之选，推理强",
+    "claude-3-haiku": "轻量快速，经济实用",
+    "claude-3-5-haiku": "轻量快速，经济实用",
+    "claude-3-opus": "顶级能力，复杂任务",
+    "gemini-1.5-flash": "快速响应，经济高效",
+    "gemini-1.5-pro": "专业级，多模态强",
+    "llama-3.1-8b": "开源首选，私有部署",
+    "llama-3.1-70b": "大型模型，能力出众",
+    "mixtral-8x7b": "大型模型，能力出众",
+    "mistral-7b": "轻量开源，性能优异",
+    "phi-3": "轻量开源，性能优异",
+    "default": "高性能AI模型"
+  },
+  "speedIndicators": {
+    "fast": "快",
+    "medium": "中",
+    "veryFast": "极快",
+    "unknown": "?"
+  },
+  "analysts": {
+    "technical": {
+      "name": "技术分析师",
+      "description": "专注于技术指标和图表分析"
+    },
+    "fundamental": {
+      "name": "基本面分析师",
+      "description": "深入研究公司财务和基本面"
+    },
+    "sentiment": {
+      "name": "情绪分析师",
+      "description": "分析市场情绪和新闻影响"
+    },
+    "risk": {
+      "name": "风险分析师",
+      "description": "评估投资风险和波动性"
+    },
+    "market": {
+      "name": "市场分析师",
+      "description": "宏观市场趋势分析"
+    },
+    "initials": {
+      "technical": "技",
+      "fundamental": "基",
+      "sentiment": "情",
+      "risk": "风",
+      "market": "市",
+      "technical_analyst": "技术师",
+      "fundamental_analyst": "基本面",
+      "sentiment_analyst": "情绪师",
+      "risk_analyst": "风控师"
+    },
+    "generic": "分析师",
+    "capabilities": {
+      "technicalIndicators": "技术指标",
+      "chartAnalysis": "图表分析",
+      "trendIdentification": "趋势识别",
+      "supportResistance": "支撑阻力",
+      "financialAnalysis": "财务分析",
+      "valuationModeling": "估值建模",
+      "industryResearch": "行业研究",
+      "earningsAnalysis": "财报解读",
+      "sentimentAnalysis": "情绪分析",
+      "publicOpinion": "舆情监控",
+      "newsInterpretation": "新闻解读",
+      "socialAnalysis": "社交分析",
+      "riskAssessment": "风险评估",
+      "positionManagement": "仓位管理",
+      "stopLossStrategy": "止损策略",
+      "portfolio": "投资组合",
+      "macroAnalysis": "宏观分析",
+      "marketTrends": "市场趋势",
+      "policyInterpretation": "政策解读",
+      "institutionalMovements": "机构动向"
+    },
+    "collaboration": {
+      "analyst": {
+        "name": "投资分析师",
+        "initials": "AN"
+      },
+      "researcher": {
+        "name": "市场研究员",
+        "initials": "RE"
+      },
+      "risk_manager": {
+        "name": "风险管理师",
+        "initials": "RM"
+      },
+      "strategist": {
+        "name": "投资策略师",
+        "initials": "ST"
+      }
+    }
+  },
+  "agents": {
+    "status": {
+      "idle": "空闲",
+      "thinking": "分析中",
+      "working": "处理中",
+      "communicating": "协作中",
+      "completed": "已完成",
+      "error": "错误"
+    },
+    "labels": {
+      "status": "状态",
+      "currentTask": "当前任务",
+      "progress": "进度",
+      "estimatedCompletion": "预计完成",
+      "lastActivity": "最后活动",
+      "coreCapabilities": "核心能力"
+    },
+    "noAgents": "暂无智能体"
+  },
+  "analysisSteps": {
+    "dataCollection": "数据收集",
+    "technicalAnalysis": "技术分析",
+    "fundamentalAnalysis": "基本面分析",
+    "sentimentAnalysis": "情绪分析",
+    "riskAssessment": "风险评估",
+    "comprehensiveEvaluation": "综合评估",
+    "reportGeneration": "生成报告",
+    "preparing": "准备中"
+  },
+  "analysisStatus": {
+    "running": "运行中",
+    "copySuccess": "分析结果已复制到剪贴板"
+  },
+  "timeRange": {
+    "past24h": "过去24小时",
+    "label": "时间范围",
+    "pleaseSelect": "请选择时间范围",
+    "presets": {
+      "1d": "1天",
+      "1w": "1周",
+      "1m": "1月",
+      "1y": "1年",
+      "custom": "自定义"
+    },
+    "labels": {
+      "past24h": "过去24小时",
+      "past7d": "过去7天",
+      "past30d": "过去30天",
+      "past365d": "过去365天",
+      "custom": "自定义"
+    },
+    "customRange": {
+      "start": "开始",
+      "end": "结束",
+      "customFormat": "自定义: {{start}} - {{end}}"
+    }
+  },
+  "providerCapabilities": {
+    "openai": "强大的通用AI模型，适合复杂分析任务",
+    "anthropic": "专注于安全性和准确性的AI助手",
+    "google": "多模态AI，支持文本、图像等多种输入",
+    "gemini": "多模态AI，支持文本、图像等多种输入",
+    "local": "本地部署，保护隐私，响应快速",
+    "unknown": "未知提供商"
+  },
+  "provider": {
+    "selector": {
+      "placeholder": "选择AI提供商",
+      "searchPlaceholder": "搜索提供商...",
+      "primaryProviders": "主要提供商",
+      "otherProviders": "其他提供商",
+      "modelsCount": "{{count}} 模型",
+      "noResults": "未找到匹配的提供商",
+      "tryDifferentKeywords": "尝试使用不同的关键词搜索"
+    }
+  },
+  "cost": {
+    "title": "成本控制",
+    "monitoring": "成本监控",
+    "realtimeTracking": "实时费用追踪",
+    "currentSession": "当前会话",
+    "totalCost": "总成本",
+    "dailyCost": "今日消费",
+    "monthlyCost": "月度成本",
+    "efficiencyScore": "效率评分",
+    "dailyBudget": "日预算",
+    "monthlyBudget": "月预算",
+    "editBudget": "编辑预算",
+    "used": "已使用",
+    "remaining": "剩余",
+    "recentAnalysis": "最近分析",
+    "depth": "深度",
+    "budget": "预算",
+    "usage": "使用率",
+    "costTrend": "成本趋势",
+    "costHistory": "成本历史",
+    "clearHistory": "清除历史",
+    "clearHistoryConfirm": "确定要清除所有成本历史吗？",
+    "analysis": "分析",
+    "apiCall": "API调用",
+    "tokenUsage": "Token使用",
+    "gamification": {
+      "title": "成就系统",
+      "level": "等级",
+      "experience": "经验",
+      "streak": "连击",
+      "currentStreak": "当前连击",
+      "bestStreak": "最佳连击",
+      "achievements": "成就",
+      "unlockedAchievements": "已解锁成就",
+      "recentAchievements": "最近成就"
+    }
+  },
+  "actions": {
+    "create": "创建",
+    "read": "查看",
+    "update": "更新",
+    "delete": "删除",
+    "copy": "复制",
+    "paste": "粘贴",
+    "cut": "剪切",
+    "undo": "撤销",
+    "redo": "重做",
+    "select": "选择",
+    "selectAll": "全选",
+    "deselect": "取消选择",
+    "clear": "清除",
+    "reset": "重置",
+    "restore": "恢复",
+    "backup": "备份",
+    "download": "下载",
+    "upload": "上传",
+    "share": "分享",
+    "print": "打印",
+    "preview": "预览",
+    "fullscreen": "全屏",
+    "minimize": "最小化",
+    "maximize": "最大化",
+    "settings": "设置",
+    "help": "帮助",
+    "about": "关于",
+    "contact": "联系我们",
+    "feedback": "反馈",
+    "logout": "退出登录",
+    "login": "登录",
+    "register": "注册",
+    "create": "创建",
+    "done": "完成",
+    "saving": "保存中...",
+    "copied": "已复制"
+  },
+  "auth": {
+    "login": {
+      "title": "登录到 When.Trade",
+      "subtitle": "选择您偏好的登录方式",
+      "continueWith": "使用 {provider} 继续",
+      "or": "或",
+      "emailPlaceholder": "输入您的邮箱",
+      "continueWithEmail": "使用邮箱继续",
+      "sending": "发送中...",
+      "connectWallet": "连接钱包",
+      "error": "登录失败，请重试",
+      "terms": "继续即表示您同意我们的服务条款和隐私政策"
+    }
+  },
+  "user": {
+    "accountManagement": "账户管理"
+  },
+  "account": {
+    "management": "账户管理",
+    "tabs": {
+      "profile": "个人资料",
+      "settings": "设置",
+      "tools": "我的工具",
+      "subscription": "订阅",
+      "wallet": "钱包"
+    }
+  },
+  "subscription": {
+    "currentPlan": "当前套餐",
+    "freePlan": "免费版",
+    "selectPlan": "选择套餐",
+    "current": "当前套餐",
+    "recommended": "推荐",
+    "month": "月",
+    "free": "免费版",
+    "pro": "专业版",
+    "enterprise": "企业版",
+    "expiresAt": "到期时间：{date}",
+    "comparison": "功能对比",
+    "features": "功能",
+    "features": {
+      "basic": "基础功能",
+      "limitedTools": "5个工具限制",
+      "communitySupport": "社区支持",
+      "allBasic": "所有基础功能",
+      "advancedTools": "高级工具无限制",
+      "prioritySupport": "优先支持",
+      "apiAccess": "API访问",
+      "allPro": "所有专业版功能",
+      "customTools": "自定义工具",
+      "dedicatedSupport": "专属支持",
+      "sla": "SLA保障"
+    },
+    "comparison": {
+      "tools": "工具数量",
+      "api": "API访问",
+      "support": "技术支持"
+    }
+  },
+  "wallet": {
+    "myWallet": "我的钱包",
+    "address": "钱包地址",
+    "balance": "余额",
+    "network": "网络",
+    "copy": "复制",
+    "copied": "已复制",
+    "viewOnExplorer": "在区块浏览器查看",
+    "addressCopied": "地址已复制到剪贴板",
+    "copyFailed": "复制失败"
+  },
+  "admin": {
+    "authConfig": {
+      "title": "认证配置",
+      "socialLogins": "社交媒体登录",
+      "walletLogins": "钱包登录",
+      "otherOptions": "其他选项",
+      "emailLogin": "邮箱登录",
+      "order": "顺序",
+      "saveSuccess": "配置已保存",
+      "resetSuccess": "已重置为默认配置"
+    }
+  },
+  "input": "输入",
+  "output": "输出",
+  "statusLabel": "状态",
+  "params": "参数",
+  "dataFlow": "数据流",
+  "addTool": "添加工具",
+  "tool": "工具",
+  "time": {
+    "day": "天",
+    "week": "周",
+    "24h": "24小时",
+    "justNow": "刚刚",
+    "minutesAgo": "{count}分钟前",
+    "hoursAgo": "{count}小时前",
+    "daysAgo": "{count}天前",
+    "seconds": "{count}秒",
+    "minutesSeconds": "{minutes}分{seconds}秒",
+    "ranges": {
+      "1d": "1天",
+      "1w": "1周",
+      "1m": "1月",
+      "1y": "1年"
+    }
+  },
+  "notSelected": "未选择",
+  "select": {
+    "placeholder": "请选择",
+    "searchPlaceholder": "搜索选项...",
+    "emptyText": "暂无匹配选项"
+  },
+  "locale": {
+    "dateTime": "zh-CN",
+    "useCurrentLocale": true
+  },
+  "systemLabel": "系统",
+  "validation": {
+    "selectTarget": "请选择分析标的",
+    "selectProvider": "请选择LLM提供商和模型",
+    "selectDepth": "请选择分析深度",
+    "selectScopes": "请选择至少一个分析范围"
+  }
+}

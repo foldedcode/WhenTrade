@@ -1,0 +1,691 @@
+{
+  "selectDomains": "选择分析领域",
+  "marketType": "市场类型",
+  "marketTypes": {
+    "crypto": "加密货币"
+  },
+  "selectMarketType": "选择市场类型",
+  "analysisScope": "分析范围",
+  "selectedScopes": "已选择分析范围",
+  "selected": "已选择",
+  "timeFrames": {
+    "15m": "15分钟",
+    "1h": "1小时",
+    "4h": "4小时",
+    "1d": "1天",
+    "1w": "1周"
+  },
+  "scopes": {
+    "technical": {
+      "name": "技术分析",
+      "description": "K线图形、技术指标、趋势分析"
+    },
+    "sentiment": {
+      "name": "市场情绪",
+      "description": "社交媒体、新闻情绪、恐贪指数"
+    },
+    "event": {
+      "name": "事件分析",
+      "description": "关键事件影响、时间线分析"
+    },
+    "probability": {
+      "name": "概率评估",
+      "description": "贝叶斯推理、统计模型预测"
+    },
+    "odds": {
+      "name": "赔率分析",
+      "description": "市场定价、隐含概率、套利机会"
+    }
+  },
+  "validation": {
+    "requiredFields": "请填写所有必填字段",
+    "selectMarket": "请选择市场类型",
+    "selectScope": "请至少选择一个分析范围",
+    "enterSymbol": "请输入分析标的",
+    "tooManyScopes": "选择范围过多（最多：{max}个）"
+  },
+  "domains": {
+    "selected": "个领域",
+    "technical": "技术分析",
+    "technicalDesc": "价格趋势、指标和图表形态",
+    "fundamental": "基本面分析",
+    "fundamentalDesc": "财务数据、业绩和估值",
+    "sentiment": "情绪分析",
+    "sentimentDesc": "新闻、社交媒体和市场情绪",
+    "risk": "风险管理",
+    "riskDesc": "波动性、下行风险和对冲策略",
+    "market": "市场分析",
+    "marketDesc": "宏观环境和市场周期",
+    "valuation": "估值分析",
+    "valuationDesc": "公允价值和定价模型",
+    "sector": "行业分析",
+    "sectorDesc": "行业趋势和竞争格局",
+    "onchain": "链上分析",
+    "onchainDesc": "区块链数据和地址行为",
+    "defi": "DeFi分析",
+    "defiDesc": "去中心化金融协议和收益",
+    "event": "事件分析",
+    "eventDesc": "预测市场事件概率",
+    "probability": "概率分析",
+    "probabilityDesc": "贝叶斯推理和统计模型",
+    "odds": "赔率分析",
+    "oddsDesc": "市场定价和套利机会"
+  },
+  "recommended": "推荐",
+  "scenarioEnhancement": "场景增强",
+  "scenarioPlaceholder": "描述您的分析需求，系统将推荐专业Agents...",
+  "suggestedAgents": "建议的专业Agents",
+  "selectedDomains": "已选领域",
+  "estimatedAgents": "预计Agents",
+  "dynamicAgents": "动态Agents",
+  "startAnalysis": "开始分析",
+  "console": {
+    "labels": {
+      "market": "市场",
+      "target": "标的",
+      "model": "模型",
+      "depth": "深度",
+      "time": "时间",
+      "none": "未选择"
+    }
+  },
+  "actions": {
+    "start": "▶ 开始分析",
+    "stop": "■ 停止"
+  },
+  "status": {
+    "running": "分析中",
+    "completed": "已完成",
+    "ready": "就绪"
+  },
+  "agents": {
+    "title": "Agent状态",
+    "active": "个活跃",
+    "activeAgents": "活跃Agents"
+  },
+  "pause": "暂停",
+  "resume": "继续",
+  "stop": "停止",
+  "confirmStop": "确定要停止分析吗？",
+  "defaultTitle": "市场深度分析",
+  "progress": {
+    "title": "分析进度"
+  },
+  "thoughtStream": {
+    "title": "思考流",
+    "pauseScroll": "暂停滚动",
+    "autoScroll": "自动滚动",
+    "clear": "清空",
+    "filterByAgent": "按Agent筛选",
+    "types": {
+      "observation": "观察",
+      "analysis": "分析",
+      "conclusion": "结论",
+      "question": "疑问"
+    },
+    "confidence": "置信度",
+    "evidence": "证据",
+    "processing": "处理中...",
+    "totalThoughts": "条思考",
+    "activeAgents": "个活跃Agents"
+  },
+  "completed": {
+    "title": "分析完成",
+    "thoughts": "思考记录",
+    "agents": "参与Agents",
+    "duration": "分析时长",
+    "viewReport": "查看报告",
+    "newAnalysis": "新建分析"
+  },
+  "detail": {
+    "title": "{symbol} 分析报告",
+    "subtitle": "{type} · {date} · ID: {id}",
+    "metrics": {
+      "cost": "成本",
+      "duration": "时长",
+      "depth": "深度",
+      "analysts": "分析师",
+      "model": "模型"
+    },
+    "tabs": {
+      "summary": "摘要",
+      "detailed": "详细",
+      "raw": "原始"
+    },
+    "sections": {
+      "analysisResults": "分析结果",
+      "keyFindings": "关键发现",
+      "investmentAdvice": "投资建议",
+      "fullSummary": "完整分析摘要",
+      "technicalAnalysis": "技术分析",
+      "fundamentalAnalysis": "基本面分析",
+      "riskAssessment": "风险评估",
+      "rawAnalysisData": "原始分析数据"
+    },
+    "labels": {
+      "technical": "技术",
+      "fundamental": "基本面",
+      "risk": "风险",
+      "raw": "RAW"
+    },
+    "actions": {
+      "export": "导出",
+      "share": "分享"
+    },
+    "marketTypes": {
+      "crypto": "加密货币"
+    },
+    "analystNames": {
+      "technical_analyst": "技术分析师",
+      "fundamental_analyst": "基本面分析师",
+      "sentiment_analyst": "情绪分析师",
+      "risk_analyst": "风险分析师",
+      "market_analyst": "市场分析师"
+    },
+    "noResult": "暂无分析结果",
+    "content": {
+      "insight": "基于{depth}级深度分析，{symbol}表现出明显的技术指标背离，建议密切关注后续走势变化。",
+      "advice": "对于{symbol}，建议采取谨慎乐观的投资策略，设置合理的止损点，控制仓位风险。",
+      "technical": "技术面分析显示，当前价格处于关键支撑位附近，RSI指标显示超卖状态，MACD出现底背离信号。",
+      "fundamental": "基本面分析表明，公司财务状况良好，市盈率处于合理区间，未来增长潜力较大。营收增长稳定，现金流充裕，负债率控制在合理范围内。管理层战略清晰，市场竞争优势明显。",
+      "risk": "风险评估显示，主要风险集中在市场波动性和行业竞争加剧。建议控制仓位在总资产的5-10%，设置止损位在-15%。注意关注宏观经济政策变化和行业监管动态。",
+      "summaryTemplate": "本次对{symbol}的{depth}级深度分析历时{duration}秒，动用了{analysts}位专业分析师，成本{cost}美元。\n\n分析结论：\n1. 技术面：当前处于关键支撑位，短期有反弹可能\n2. 基本面：财务指标健康，估值合理\n3. 风险：主要关注市场系统性风险和流动性风险\n4. 建议：可考虑分批建仓，严格控制风险\n\n该分析基于多维度数据模型和AI算法，仅供参考，投资需谨慎。"
+    }
+  },
+  "configTitle": "分析配置",
+  "nodeStatus": {
+    "idle": "等待",
+    "active": "执行中",
+    "completed": "已完成",
+    "error": "错误"
+  },
+  "symbolPlaceholder": "输入标的代码",
+  "agentType": "智能体类型",
+  "agentActive": "智能体已激活",
+  "analysisDepth": "分析深度",
+  "depthHint": "将进行 {{depth}} 轮深度分析",
+  "depthIterations": "{{count}} 轮迭代",
+  "iterations": "轮迭代",
+  "depthLevels": {
+    "shallow": "浅层",
+    "deep": "深层"
+  },
+  "depthDescriptions": {
+    "minimal": "最小化分析，仅基础指标",
+    "basic": "基础分析，涵盖关键指标",
+    "standard": "标准分析，包含综合数据",
+    "comprehensive": "深度分析，含高级指标",
+    "exhaustive": "全谱分析，包含所有可用数据"
+  },
+  "selectDepthHint": "请选择分析深度级别",
+  "quickConfig": "快速配置",
+  "advancedOptions": "高级选项",
+  "enableRealtime": "启用实时数据",
+  "includeNews": "包含新闻分析",
+  "executing": "执行中",
+  "analysisResults": "分析结果",
+  "exportResults": "导出结果",
+  "analyzing": "正在分析",
+  "summary": "摘要",
+  "market": "市场",
+  "symbol": "标的",
+  "recommendation": "建议",
+  "recommendations": {
+    "buy": "买入",
+    "sell": "卖出",
+    "hold": "持有",
+    "neutral": "中性"
+  },
+  "confidence": "置信度",
+  "agentInsights": "智能体洞察",
+  "sentiments": {
+    "positive": "积极",
+    "negative": "消极",
+    "neutral": "中性"
+  },
+  "depthAnalysis": "深度分析",
+  "noResults": "暂无分析结果",
+  "startAnalysisHint": "配置参数后开始分析，结果将在此显示",
+  "config": "配置",
+  "results": "结果",
+  "process": {
+    "starting": "正在启动分析...",
+    "running": "分析进行中...",
+    "completed": "分析完成",
+    "error": "分析出错",
+    "summary": "分析摘要",
+    "totalAgents": "参与Agents",
+    "duration": "耗时",
+    "confidence": "可信度"
+  },
+  "flow": {
+    "addAgent": "添加智能体",
+    "addMCP": "添加MCP服务",
+    "addTool": "添加工具",
+    "autoLayout": "自动布局",
+    "clear": "清空画布",
+    "confirmClear": "确定要清空画布吗？所有节点和连接将被删除。",
+    "start": "开始",
+    "defaultAgent": "分析智能体",
+    "defaultMCP": "MCP服务",
+    "defaultTool": "分析工具",
+    "agentDesc": "执行特定类型的分析任务",
+    "mcpDesc": "连接外部数据和服务",
+    "toolDesc": "使用专业工具进行分析",
+    "addNodes": "添加节点",
+    "agent": "智能体",
+    "tool": "工具",
+    "startAnalysis": "开始分析",
+    "configureNode": "配置节点",
+    "basicInfo": "基本信息",
+    "nodeName": "节点名称",
+    "nodeNamePlaceholder": "输入节点名称",
+    "nodeDescription": "节点描述",
+    "nodeDescPlaceholder": "输入节点描述（可选）",
+    "agentConfig": "智能体配置",
+    "agentType": "智能体类型",
+    "analysisDepth": "分析深度",
+    "mcpConfig": "MCP配置",
+    "mcpServer": "MCP服务器",
+    "connectionParams": "连接参数",
+    "addParam": "添加参数",
+    "toolConfig": "工具配置",
+    "toolType": "工具类型",
+    "toolParams": "工具参数",
+    "customTool": "自定义工具",
+    "searchNodes": "搜索节点",
+    "actions": "操作",
+    "execute": "执行",
+    "executing": "执行中...",
+    "resources": "资源",
+    "availableResources": "可用资源",
+    "searchResources": "搜索资源...",
+    "tools": "工具",
+    "mcpServers": "MCP服务器",
+    "addToCanvas": "添加到画布",
+    "parameters": "参数",
+    "advancedOptions": "高级选项",
+    "timeout": "超时时间",
+    "timeoutHelp": "毫秒，0表示不限制",
+    "retries": "重试次数",
+    "invalidJSON": "JSON格式不正确",
+    "configPhase": "配置阶段",
+    "executionPhase": "执行阶段",
+    "resultGeneration": "结果生成",
+    "processing": "处理",
+    "dataIntegration": "数据整合",
+    "integratingDimensions": "综合{count}个维度的分析结果",
+    "analysisReport": "分析报告",
+    "generatingReport": "生成综合分析报告",
+    "estimatedTime": "预计耗时",
+    "agentsCollaborating": "个智能体协作",
+    "depthIterations": "轮深度分析",
+    "steps": {
+      "basic": {
+        "title": "基础配置",
+        "description": "设置分析标的和基本参数"
+      },
+      "scopes": {
+        "title": "分析范围",
+        "description": "选择需要分析的维度"
+      },
+      "agents": {
+        "title": "代理配置",
+        "description": "配置执行代理和资源"
+      },
+      "confirm": {
+        "title": "确认执行",
+        "description": "检查配置并开始分析"
+      }
+    },
+    "executionOrder": "执行顺序",
+    "agentCount": "个代理",
+    "usingResources": "使用资源",
+    "configurationOverview": "配置总览",
+    "basicConfiguration": "基础配置",
+    "executionPlan": "执行计划",
+    "estimatedCost": "预计成本",
+    "realtimePreview": "实时预览",
+    "technicalAnalystRole": "分析价格走势和技术指标",
+    "fundamentalAnalystRole": "评估财务状况和估值",
+    "initializeConfig": "初始化配置",
+    "loadAnalysisParams": "加载分析参数",
+    "dataFetching": "数据获取",
+    "fetchFromDataSource": "从数据源获取必要信息",
+    "generateReport": "生成报告",
+    "integrateResults": "整合分析结果",
+    "orbitTitle": "协作轨道",
+    "slow": "慢速",
+    "normal": "正常",
+    "fast": "快速",
+    "coordinationCenter": "协调中心",
+    "innerOrbit": "内轨道",
+    "middleOrbit": "中轨道",
+    "outerOrbit": "外轨道",
+    "configurator": "配置器",
+    "parameterSettings": "参数设置",
+    "accuracy": "准确率",
+    "signalStrength": "信号强度",
+    "strong": "强",
+    "valuation": "估值分析",
+    "marketSentiment": "市场情绪",
+    "riskAnalysis": "风险分析",
+    "riskAssessment": "风险评估",
+    "aggregator": "聚合器",
+    "resultIntegration": "结果整合",
+    "reportGeneration": "报告生成",
+    "outputReport": "输出报告",
+    "dataSharing": "数据共享",
+    "orbitStatus": "轨道状态",
+    "dataFlow": "数据流",
+    "activeFlows": "活跃流",
+    "collaborations": "协作",
+    "executionStats": "执行统计",
+    "circuitBoard": "电路板视图"
+  },
+  "flowEditor": {
+    "title": "流程编辑器",
+    "classicMode": "经典模式",
+    "flowMode": "流程模式",
+    "editor": "编辑器",
+    "executions": "执行记录"
+  },
+  "agents": {
+    "technical": "技术分析师",
+    "fundamental": "基本面分析师",
+    "sentiment": "情绪分析师",
+    "risk": "风险分析师"
+  },
+  "stop": "停止分析",
+  "enableScope": "启用此分析范围",
+  "depth": "深度",
+  "noData": "暂无分析数据",
+  "noCompleteData": "分析数据不完整",
+  "report": "分析报告",
+  "fields": {
+    "symbol": "标的",
+    "marketType": "市场类型",
+    "depth": "分析深度",
+    "analystCount": "分析师数量",
+    "duration": "耗时",
+    "cost": "成本",
+    "recommendation": "投资建议",
+    "confidence": "置信度",
+    "currentPrice": "当前价格",
+    "targetPrice": "目标价格",
+    "stopLoss": "止损价格",
+    "analysisTime": "分析时间"
+  },
+  "sections": {
+    "basicInfo": "基本信息",
+    "results": "分析结果"
+  },
+  "units": {
+    "seconds": "秒"
+  },
+  "agents": {
+    "technical": "技术分析师",
+    "fundamental": "基本面分析师",
+    "sentiment": "情绪分析师",
+    "risk": "风险分析师",
+    "active": "个活跃",
+    "title": "智能体状态"
+  },
+  "resources": {
+    "financialReportsApi": "财报API"
+  },
+  "nodeTypes": {
+    "agent": "智能体",
+    "tool": "工具",
+    "start": "开始",
+    "end": "结束"
+  },
+  "executionFlow": "执行流程",
+  "flowNodes": {
+    "startNode": "分析目标",
+    "marketType": "市场类型",
+    "timeRange": "时间范围",
+    "analysisDepth": "分析深度",
+    "analysisResult": "分析结果",
+    "dataSource": "数据源",
+    "analysisTool": "分析工具",
+    "priceDataSource": "价格数据源",
+    "technicalIndicators": "技术指标",
+    "financialData": "财务数据",
+    "historicalDatabase": "历史数据库",
+    "socialData": "社交数据",
+    "sentimentAnalysis": "情绪分析",
+    "blockchainData": "区块链数据",
+    "addressAnalysis": "地址分析",
+    "collaboration": "协作",
+    "modelConfig": "模型配置",
+    "agentTitles": {
+      "technical": "技术分析师",
+      "fundamental": "基本面分析师",
+      "sentiment": "情绪分析师",
+      "risk": "风险分析师",
+      "macro": "宏观分析师",
+      "default": "分析师"
+    },
+    "agentDescriptions": {
+      "technical": "K线、指标、形态分析",
+      "fundamental": "财务、估值、业绩分析",
+      "sentiment": "新闻、社交、市场情绪",
+      "risk": "风险评估、对冲策略",
+      "macro": "宏观经济、政策分析"
+    }
+  },
+  "tools": {
+    "crypto_price": "加密货币价格",
+    "indicators": "技术指标",
+    "market_data": "实时市场数据",
+    "historical_data": "历史价格数据",
+    "market_metrics": "全球市场指标",
+    "trending": "热门币种",
+    "fear_greed": "恐惧贪婪指数",
+    "finnhub_news": "FinnHub新闻",
+    "reddit_sentiment": "Reddit情绪分析",
+    "sentiment_batch": "批量情绪分析"
+  },
+  "dataSources": {
+    "yahoo_finance": "雅虎财经",
+    "coingecko": "CoinGecko",
+    "finnhub": "FinnHub",
+    "reddit": "Reddit",
+    "alternative.me": "Alternative.me"
+  },
+  "config": {
+    "unconfigured": "未配置",
+    "unselected": "未选择",
+    "tools": "工具",
+    "data": "数据",
+    "buttons": {
+      "confirm": "确定",
+      "cancel": "取消",
+      "reset": "重置",
+      "selectAll": "全选",
+      "configure": "配置{scope}"
+    }
+  },
+  "dynamicAnalysis": {
+    "title": "动态分析",
+    "pageTitle": "动态分析",
+    "description": "智能多Agent协作分析"
+  },
+  "collaboration": {
+    "pageTitle": "协作分析"
+  },
+  "console": {
+    "labels": {
+      "market": "市场",
+      "target": "标的",
+      "model": "模型",
+      "depth": "深度",
+      "time": "时间",
+      "none": "未选择"
+    },
+    "boot": {
+      "processorInit": "处理器 {model} 初始化中...",
+      "loadingParams": "加载分析参数"
+    },
+    "module": {
+      "loadingBlockchain": "加载区块链连接器",
+      "loadingPrediction": "加载预测市场 API",
+      "initProbability": "初始化概率引擎",
+      "activated": "{module} 已激活",
+      "preparing": "准备 {module}"
+    },
+    "scope": {
+      "enabled": "{scope} 已启用",
+      "disabled": "{scope} 已禁用",
+      "selected": "已选择 {count} 个分析模块"
+    },
+    "config": {
+      "opening": "打开 {scope} 配置",
+      "saved": "已保存 {scope} 配置",
+      "depthSet": "分析深度设置为 {level} 级",
+      "estimatedTime": "预计处理时间: {time}秒"
+    },
+    "tool": {
+      "opening": "打开工具/MCP选择器",
+      "selected": "已选择 {tool}"
+    },
+    "start": "启动分析序列",
+    "stop": "用户终止分析",
+    "complete": "分析完成",
+    "stats": "已处理 {count} 个数据点",
+    "report": {
+      "totalProcessed": "总处理量: {count} 单位",
+      "efficiency": "效率: {percent}%"
+    },
+    "target": {
+      "loading": "加载 {symbol}",
+      "connectingChain": "连接到区块链网络",
+      "fetchingMarket": "获取预测市场数据"
+    },
+    "ai": {
+      "initializing": "初始化 {model}",
+      "temperature": "模型温度: {temp}"
+    },
+    "system": "系统",
+    "chain": "链上",
+    "market": "市场",
+    "load": "加载",
+    "boot": "启动"
+  },
+  "messages": {
+    "ready": "When.Trade 智能分析系统已就绪",
+    "initialized": "所有分析团队已初始化",
+    "start": "开始分析",
+    "completed": "分析完成",
+    "startFailed": "启动分析失败",
+    "checkNetwork": "请检查网络连接",
+    "llmDetected": "检测到可用LLM提供商，使用 {provider} ({model}) 进行真实分析",
+    "llmError": "LLM提供商检测异常",
+    "checkConfig": "请检查LLM配置或联系管理员",
+    "noProvider": "未检测到可用的LLM提供商",
+    "configProvider": "请配置LLM提供商后重试",
+    "stopped": "分析已停止",
+    "creatingTask": "正在创建分析任务...",
+    "taskCreated": "分析任务已创建: {taskId}",
+    "stageWorking": "{stage}正在工作...",
+    "reportGenerated": "分析报告已生成，点击查看详情"
+  },
+  "report": {
+    "placeholders": {
+      "technical": "技术分析数据暂未生成...",
+      "fundamental": "基本面分析数据暂未生成...",
+      "sentiment": "情绪分析数据暂未生成...",
+      "recommendation": "建议..."
+    }
+  },
+  "tools": {
+    "messages": {
+      "configUpdated": "已更新配置",
+      "executionFailed": "执行失败",
+      "executionSuccess": "执行成功",
+      "executionCancelled": "执行取消",
+      "cacheHit": "缓存命中",
+      "retryWaiting": "重试等待中..."
+    }
+  },
+  "config": {
+    "title": "分析配置",
+    "aiTitle": "AI 配置",
+    "scopes": "分析范围",
+    "complete": "配置完成",
+    "pending": "待完成配置",
+    "labels": {
+      "marketType": "市场类型",
+      "analysisTarget": "分析标的",
+      "provider": "提供商",
+      "model": "模型",
+      "analysisDepth": "分析深度",
+      "notSet": "未设置",
+      "timeRange": "时间范围",
+      "noScopesSelected": "未选择分析范围"
+    },
+    "tools": "工具",
+    "data": "数据",
+    "unconfigured": "未配置",
+    "unselected": "未选择",
+    "checklist": {
+      "selectTarget": "• 选择分析标的",
+      "selectScopes": "• 选择分析范围",
+      "setDepth": "• 设置分析深度"
+    }
+  },
+  "stream": {
+    "expand": "展开",
+    "collapse": "收起",
+    "done": "分析已完成！",
+    "seeReport": "查看完整分析报告",
+    "thinking": "智能体正在思考",
+    "waiting": "等待分析开始...",
+    "hintStart": "选择配置并点击\"开始分析\"..."
+  },
+  "phases": {
+    "data": "数据分析",
+    "research": "投资辩论",
+    "trading": "交易策略",
+    "risk": "风险评估",
+    "portfolio": "组合管理",
+    "probability": "概率计算",
+    "strategy": "策略制定",
+    "decision": "决策执行",
+    "unknown": "未知阶段"
+  },
+  "status": {
+    "analyzing": "分析中",
+    "completed": "已完成",
+    "ready": "就绪",
+    "waiting": "等待",
+    "running": "进行中"
+  },
+  "depthNumbers": {
+    "1": "基础",
+    "2": "标准",
+    "3": "深入",
+    "4": "专业",
+    "5": "极致"
+  },
+  "timeRanges": {
+    "1d": "1天",
+    "1w": "1周",
+    "1m": "1月",
+    "1y": "1年"
+  },
+  "configMessages": {
+    "fetchConfigFailed": "获取智能体团队配置失败，使用本地配置"
+  },
+  "teams": {
+    "analyst": "分析团队",
+    "research": "研究团队",
+    "trading": "交易团队",
+    "risk": "风险管理",
+    "portfolio": "组合管理",
+    "probability": "概率团队",
+    "strategy": "策略团队",
+    "decision": "决策团队"
+  }
+}

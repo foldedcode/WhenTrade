@@ -1,0 +1,634 @@
+/* 专业金融终端设计令牌 - 金融级配色系统 */
+
+:root {
+  /* 字体系统 */
+  --font-sans: 'Proto Mono', monospace;
+  --font-mono: 'Proto Mono', monospace;
+  --od-font-mono: 'Proto Mono', monospace;
+  
+  /* 专业金融主题色 - 绿色系 */
+  --ft-primary: #4ade80;           /* 绿色 - 主要品牌色 */
+  --ft-primary-light: #86efac;     /* 浅绿色 */
+  --ft-primary-dark: #22c55e;      /* 深绿色 */
+  --ft-primary-50: #fefbf3;        /* 极浅金色 */
+  --ft-primary-100: #fef3c7;       /* 很浅金色 */
+  --ft-primary-200: #fde68a;       /* 浅金色 */
+  --ft-primary-300: #fcd34d;       /* 中浅金色 */
+  --ft-primary-400: #fbbf24;       /* 中金色 */
+  --ft-primary-500: #4ade80;       /* 标准绿色 */
+  --ft-primary-600: #22c55e;       /* 深绿色 */
+  --ft-primary-700: #92400e;       /* 很深金色 */
+  --ft-primary-800: #78350f;       /* 极深金色 */
+  --ft-primary-900: #451a03;       /* 最深金色 */
+  
+  /* 专业状态色 */
+  --ft-success: #00c851;           /* 绿色 - 盈利/成功 */
+  --ft-success-light: #33d46f;
+  --ft-success-dark: #009c40;
+  
+  --ft-warning: #ff6f00;           /* 橙色 - 警告/注意 */
+  --ft-warning-light: #ff8c33;
+  --ft-warning-dark: #cc5800;
+  
+  --ft-error: #d32f2f;             /* 红色 - 亏损/错误 */
+  --ft-error-light: #dc5c5c;
+  --ft-error-dark: #a62626;
+  
+  --ft-info: #1976d2;              /* 蓝色 - 信息/中性 */
+  --ft-info-light: #4791db;
+  --ft-info-dark: #145ca3;
+  
+  /* 专业背景色 */
+  --ft-background: #1a1a1a;        /* 深黑色背景 - 稍微提亮 */
+  --ft-background-alt: #222222;    /* 次要背景 */
+  --ft-background-light: #2a2a2a;  /* 高亮背景 */
+  --ft-background-lighter: #353535; /* 最亮背景 */
+  
+  --ft-surface: #1e1e1e;           /* 卡片表面 */
+  --ft-surface-alt: #262626;       /* 替代表面 */
+  --ft-surface-light: #2e2e2e;     /* 高亮表面 */
+  
+  /* 专业文字色 */
+  --ft-text-primary: #ffffff;      /* 主要文字 */
+  --ft-text-secondary: #b0b0b0;    /* 次要文字 */
+  --ft-text-muted: #808080;        /* 弱化文字 */
+  --ft-text-disabled: #606060;     /* 禁用文字 */
+  
+  /* 专业边框色 */
+  --ft-border: #404040;            /* 主要边框 */
+  --ft-border-light: #505050;      /* 次要边框 */
+  --ft-border-lighter: #606060;    /* 高亮边框 */
+  
+  /* 专业渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, var(--ft-primary), var(--ft-primary-dark));
+  --ft-gradient-primary-light: linear-gradient(135deg, var(--ft-primary-light), var(--ft-primary));
+  --ft-gradient-primary-subtle: linear-gradient(135deg, var(--ft-primary-200), var(--ft-primary-300));
+  --ft-gradient-secondary: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  --ft-gradient-success: linear-gradient(135deg, #00c851, #009c40);
+  --ft-gradient-warning: linear-gradient(135deg, #ff6f00, #cc5800);
+  --ft-gradient-error: linear-gradient(135deg, #d32f2f, #a62626);
+  --ft-gradient-info: linear-gradient(135deg, #1976d2, #145ca3);
+  
+  /* 专业阴影 */
+  --ft-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --ft-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --ft-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --ft-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.3);
+  
+  /* 专业发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(74, 222, 128, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(156, 220, 254, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(74, 222, 128, 0.7);
+  --ft-glow-success: 0 0 10px rgba(0, 200, 81, 0.5);
+  --ft-glow-warning: 0 0 10px rgba(255, 111, 0, 0.5);
+  --ft-glow-error: 0 0 10px rgba(211, 47, 47, 0.5);
+  --ft-glow-info: 0 0 10px rgba(25, 118, 210, 0.5);
+  
+  /* 分析师团队专用颜色 */
+  --ft-analyst-tech: #00c851;        /* 技术分析 - 绿色 */
+  --ft-analyst-fundamental: #1976d2; /* 基本面 - 蓝色 */
+  --ft-analyst-sentiment: #4ade80;   /* 情绪分析 - 绿色 */
+  --ft-analyst-risk: #d32f2f;        /* 风险分析 - 红色 */
+  --ft-analyst-market: #ff6f00;      /* 市场分析 - 橙色 */
+  
+  /* 状态指示器颜色 */
+  --ft-status-online: #00c851;       /* 在线 */
+  --ft-status-busy: #ff6f00;         /* 忙碌 */
+  --ft-status-offline: #808080;      /* 离线 */
+  --ft-status-analyzing: var(--ft-primary);    /* 分析中 - 使用蓝色 */
+  --ft-status-completed: #00c851;    /* 已完成 */
+  --ft-status-failed: #d32f2f;       /* 失败 */
+  
+  /* 交互状态颜色 */
+  --ft-interactive-hover: rgba(74, 222, 128, 0.1);
+  --ft-interactive-active: rgba(74, 222, 128, 0.2);
+  --ft-interactive-focus: rgba(74, 222, 128, 0.3);
+  --ft-interactive-disabled: rgba(128, 128, 128, 0.5);
+  
+  /* 主题模式切换变量 */
+  --ft-theme-mode: 'professional'; /* 'professional' | 'standard' */
+  --ft-accent-color: var(--ft-primary); /* 当前强调色 */
+  --ft-accent-hover: var(--ft-primary-light);
+  --ft-accent-active: var(--ft-primary-dark);
+  
+  /* 动态主题色映射 - 用于组件中的主题感知 */
+  --theme-primary: var(--ft-primary);
+  --theme-primary-light: var(--ft-primary-light);
+  --theme-primary-dark: var(--ft-primary-dark);
+  --theme-interactive-hover: var(--ft-interactive-hover);
+  --theme-interactive-active: var(--ft-interactive-active);
+  --theme-interactive-focus: var(--ft-interactive-focus);
+  
+  /* 卡片样式变量 */
+  --card-background: var(--ft-surface);
+  --card-border: var(--ft-border);
+  --card-shadow: var(--ft-shadow-sm);
+  --hover-border: var(--ft-border-light);
+  --hover-shadow: var(--ft-shadow-md);
+  --hover-bg: var(--ft-background-light);
+  
+  /* 按钮样式变量 */
+  --btn-primary-bg: var(--ft-gradient-primary);
+  --btn-primary-hover: linear-gradient(135deg, #9cdcfe, #3d7bbf);
+  --btn-secondary-bg: var(--ft-surface);
+  --btn-secondary-hover: var(--ft-background-light);
+  
+  /* 输入框样式变量 */
+  --input-bg: var(--ft-background-light);
+  --input-border: var(--ft-border);
+  --input-focus-border: var(--ft-primary);
+  
+  /* 进度条样式变量 */
+  --progress-bg: var(--ft-background-lighter);
+  --progress-fill: var(--ft-gradient-primary);
+  
+  /* 标签页样式变量 */
+  --tab-active-bg: var(--ft-background-light);
+  --tab-active-border: var(--ft-primary);
+}
+
+/* 钴蓝主题 */
+[data-color-mode="standard"] {
+  /* 深邃钴蓝主题色 */
+  --ft-primary: #0047AB;           /* 钴蓝 - 主品牌色 */
+  --ft-primary-light: #4169E1;     /* 皇室蓝 */
+  --ft-primary-dark: #002FA7;      /* 深钴蓝 */
+  
+  /* 状态颜色 - 与蓝色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #0047AB;
+  --ft-primary-50: #eff6ff;
+  --ft-primary-100: #dbeafe;
+  --ft-primary-200: #bfdbfe;
+  --ft-primary-300: #93c5fd;
+  --ft-primary-400: #60a5fa;
+  --ft-primary-500: #3b82f6;
+  --ft-primary-600: #2563eb;
+  --ft-primary-700: #1d4ed8;
+  --ft-primary-800: #1e40af;
+  --ft-primary-900: #1e3a8a;
+  
+  /* 标准模式渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #3b82f6, #2563eb);
+  --ft-gradient-primary-light: linear-gradient(135deg, #60a5fa, #3b82f6);
+  --ft-gradient-primary-subtle: linear-gradient(135deg, #bfdbfe, #93c5fd);
+  
+  /* 标准模式发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(59, 130, 246, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(96, 165, 250, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(59, 130, 246, 0.7);
+  
+  /* 标准模式交互状态 */
+  --ft-interactive-hover: rgba(59, 130, 246, 0.1);
+  --ft-interactive-active: rgba(59, 130, 246, 0.2);
+  --ft-interactive-focus: rgba(59, 130, 246, 0.3);
+  
+  /* 标准模式状态指示器 */
+  --ft-status-analyzing: #3b82f6;
+  
+  /* 主题变量更新 */
+  --ft-theme-mode: 'standard';
+  --ft-accent-color: #3b82f6;
+  --ft-accent-hover: #60a5fa;
+  --ft-accent-active: #2563eb;
+  
+  /* 动态主题色映射更新 */
+  --theme-primary: #3b82f6;
+  --theme-primary-light: #60a5fa;
+  --theme-primary-dark: #2563eb;
+  --theme-interactive-hover: rgba(59, 130, 246, 0.1);
+  --theme-interactive-active: rgba(59, 130, 246, 0.2);
+  --theme-interactive-focus: rgba(59, 130, 246, 0.3);
+}
+
+/* 主题切换工具类 */
+.theme-professional {
+  --ft-theme-mode: 'professional';
+  --ft-accent-color: var(--ft-primary);
+  --ft-accent-hover: var(--ft-primary-light);
+  --ft-accent-active: var(--ft-primary-dark);
+  --theme-primary: var(--ft-primary);
+  --theme-primary-light: var(--ft-primary-light);
+  --theme-primary-dark: var(--ft-primary-dark);
+  --theme-interactive-hover: var(--ft-interactive-hover);
+  --theme-interactive-active: var(--ft-interactive-active);
+  --theme-interactive-focus: var(--ft-interactive-focus);
+}
+
+.theme-standard {
+  --ft-theme-mode: 'standard';
+  --ft-accent-color: #3b82f6;
+  --ft-accent-hover: #60a5fa;
+  --ft-accent-active: #2563eb;
+  --theme-primary: #3b82f6;
+  --theme-primary-light: #60a5fa;
+  --theme-primary-dark: #2563eb;
+  --theme-interactive-hover: rgba(59, 130, 246, 0.1);
+  --theme-interactive-active: rgba(59, 130, 246, 0.2);
+  --theme-interactive-focus: rgba(59, 130, 246, 0.3);
+}
+
+/* 亮色主题覆盖 */
+[data-theme="light"] {
+  /* 亮色主题背景 */
+  --ft-background: #fafafa;
+  --ft-background-alt: #f5f5f5;
+  --ft-background-light: #eeeeee;
+  --ft-background-lighter: #e0e0e0;
+  
+  --ft-surface: #ffffff;
+  --ft-surface-alt: #f8f8f8;
+  --ft-surface-light: #f0f0f0;
+  
+  /* 亮色主题文字 */
+  --ft-text-primary: #1a1a1a;
+  --ft-text-secondary: #424242;
+  --ft-text-muted: #757575;
+  --ft-text-disabled: #9e9e9e;
+  
+  /* 亮色主题边框 */
+  --ft-border: #e0e0e0;
+  --ft-border-light: #bdbdbd;
+  --ft-border-lighter: #9e9e9e;
+  
+  /* 亮色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(74, 222, 128, 0.3);
+  --ft-glow-success: 0 0 10px rgba(0, 200, 81, 0.3);
+  --ft-glow-warning: 0 0 10px rgba(255, 111, 0, 0.3);
+  --ft-glow-error: 0 0 10px rgba(211, 47, 47, 0.3);
+  --ft-glow-info: 0 0 10px rgba(25, 118, 210, 0.3);
+}
+
+/* 祖母绿主题 - 典雅成功 */
+[data-color-mode="success"] {
+  /* 祖母绿主题色 */
+  --ft-primary: #50C878;           /* 祖母绿 */
+  --ft-primary-light: #7FFFD4;     /* 碧绿 */
+  --ft-primary-dark: #2E8B57;      /* 海洋绿 */
+  
+  /* 状态颜色 - 与绿色主题协调 */
+  --ft-success: #50C878;
+  --ft-warning: #fbbf24;
+  --ft-error: #f87171;
+  --ft-info: #06b6d4;
+  --ft-primary-50: #ecfdf5;
+  --ft-primary-100: #d1fae5;
+  --ft-primary-200: #a7f3d0;
+  --ft-primary-300: #6ee7b7;
+  --ft-primary-400: #34d399;
+  --ft-primary-500: #10b981;
+  --ft-primary-600: #059669;
+  --ft-primary-700: #047857;
+  --ft-primary-800: #065f46;
+  --ft-primary-900: #064e3b;
+  
+  /* 绿色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #10b981, #059669);
+  --ft-gradient-primary-light: linear-gradient(135deg, #34d399, #10b981);
+  --ft-gradient-primary-subtle: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+  
+  /* 绿色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(16, 185, 129, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(52, 211, 153, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(16, 185, 129, 0.7);
+  
+  /* 绿色主题交互状态 */
+  --ft-interactive-hover: rgba(16, 185, 129, 0.1);
+  --ft-interactive-active: rgba(16, 185, 129, 0.2);
+  --ft-interactive-focus: rgba(16, 185, 129, 0.3);
+  
+  /* 绿色主题状态指示器 */
+  --ft-status-analyzing: #10b981;
+  
+  /* 绿色主题变量更新 */
+  --ft-theme-mode: 'success';
+  --ft-accent-color: #10b981;
+  --ft-accent-hover: #34d399;
+  --ft-accent-active: #059669;
+}
+
+/* 紫水晶主题 - 神秘科技 */
+[data-color-mode="tech"] {
+  /* 紫水晶主题色 */
+  --ft-primary: #9966CC;           /* 紫水晶 */
+  --ft-primary-light: #7B68EE;     /* 中紫色 */
+  --ft-primary-dark: #663399;      /* 丽贝卡紫 */
+  
+  /* 状态颜色 - 与紫色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #9966CC;
+  --ft-primary-50: #faf5ff;
+  --ft-primary-100: #f3e8ff;
+  --ft-primary-200: #e9d5ff;
+  --ft-primary-300: #d8b4fe;
+  --ft-primary-400: #c084fc;
+  --ft-primary-500: #a855f7;
+  --ft-primary-600: #9333ea;
+  --ft-primary-700: #7c3aed;
+  --ft-primary-800: #6b21a8;
+  --ft-primary-900: #581c87;
+  
+  /* 紫色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  --ft-gradient-primary-light: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  --ft-gradient-primary-subtle: linear-gradient(135deg, #e9d5ff, #d8b4fe);
+  
+  /* 紫色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(139, 92, 246, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(167, 139, 250, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(139, 92, 246, 0.7);
+  
+  /* 紫色主题交互状态 */
+  --ft-interactive-hover: rgba(139, 92, 246, 0.1);
+  --ft-interactive-active: rgba(139, 92, 246, 0.2);
+  --ft-interactive-focus: rgba(139, 92, 246, 0.3);
+  
+  /* 紫色主题状态指示器 */
+  --ft-status-analyzing: #8b5cf6;
+  
+  /* 紫色主题变量更新 */
+  --ft-theme-mode: 'tech';
+  --ft-accent-color: #8b5cf6;
+  --ft-accent-hover: #a78bfa;
+  --ft-accent-active: #7c3aed;
+}
+
+/* 朱砂红主题 - 高贵警示 */
+[data-color-mode="alert"] {
+  /* 朱砂红主题色 */
+  --ft-primary: #DC143C;           /* 深红色 */
+  --ft-primary-light: #CD5C5C;     /* 印度红 */
+  --ft-primary-dark: #B22222;      /* 火砖红 */
+  
+  /* 状态颜色 - 与红色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #DC143C;
+  --ft-info: #3b82f6;
+  --ft-primary-50: #fef2f2;
+  --ft-primary-100: #fee2e2;
+  --ft-primary-200: #fecaca;
+  --ft-primary-300: #fca5a5;
+  --ft-primary-400: #f87171;
+  --ft-primary-500: #ef4444;
+  --ft-primary-600: #dc2626;
+  --ft-primary-700: #b91c1c;
+  --ft-primary-800: #991b1b;
+  --ft-primary-900: #7f1d1d;
+  
+  /* 红色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #ef4444, #dc2626);
+  --ft-gradient-primary-light: linear-gradient(135deg, #f87171, #ef4444);
+  --ft-gradient-primary-subtle: linear-gradient(135deg, #fecaca, #fca5a5);
+  
+  /* 红色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(239, 68, 68, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(248, 113, 113, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(239, 68, 68, 0.7);
+  
+  /* 红色主题交互状态 */
+  --ft-interactive-hover: rgba(239, 68, 68, 0.1);
+  --ft-interactive-active: rgba(239, 68, 68, 0.2);
+  --ft-interactive-focus: rgba(239, 68, 68, 0.3);
+  
+  /* 红色主题状态指示器 */
+  --ft-status-analyzing: #ef4444;
+  
+  /* 红色主题变量更新 */
+  --ft-theme-mode: 'alert';
+  --ft-accent-color: #ef4444;
+  --ft-accent-hover: #f87171;
+  --ft-accent-active: #dc2626;
+}
+
+/* 蒂芙尼蓝主题 - 优雅清新 */
+[data-color-mode="cyan"] {
+  /* 蒂芙尼蓝主题色 */
+  --ft-primary: #0ABAB5;           /* 蒂芙尼蓝 */
+  --ft-primary-light: #00CED1;     /* 深绿松石 */
+  --ft-primary-dark: #008B8B;      /* 暗青色 */
+  
+  /* 状态颜色 - 与青色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #0ABAB5;
+  --ft-primary-50: #ecfeff;
+  --ft-primary-100: #cffafe;
+  --ft-primary-200: #a5f3fc;
+  --ft-primary-300: #67e8f9;
+  --ft-primary-400: #22d3ee;
+  --ft-primary-500: #06b6d4;
+  --ft-primary-600: #0891b2;
+  --ft-primary-700: #0e7490;
+  --ft-primary-800: #155e75;
+  --ft-primary-900: #164e63;
+  
+  /* 青色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #06b6d4, #0891b2);
+  --ft-gradient-primary-light: linear-gradient(135deg, #22d3ee, #06b6d4);
+  --ft-gradient-primary-subtle: linear-gradient(135deg, #a5f3fc, #67e8f9);
+  
+  /* 青色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(6, 182, 212, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(34, 211, 238, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(6, 182, 212, 0.7);
+  
+  /* 青色主题交互状态 */
+  --ft-interactive-hover: rgba(6, 182, 212, 0.1);
+  --ft-interactive-active: rgba(6, 182, 212, 0.2);
+  --ft-interactive-focus: rgba(6, 182, 212, 0.3);
+  
+  /* 青色主题状态指示器 */
+  --ft-status-analyzing: #06b6d4;
+  
+  /* 青色主题变量更新 */
+  --ft-theme-mode: 'cyan';
+  --ft-accent-color: #06b6d4;
+  --ft-accent-hover: #22d3ee;
+  --ft-accent-active: #0891b2;
+}
+
+/* 爱马仕橙主题 - 奢华活力 */
+[data-color-mode="orange"] {
+  /* 爱马仕橙主题色 */
+  --ft-primary: #FF6600;           /* 爱马仕橙 */
+  --ft-primary-light: #FF8C00;     /* 暗橙色 */
+  --ft-primary-dark: #CC5200;      /* 深橙色 */
+  
+  /* 状态颜色 - 与橙色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #FF6600;
+  --ft-error: #ef4444;
+  --ft-info: #3b82f6;
+  --ft-primary-50: #fff7ed;
+  --ft-primary-100: #ffedd5;
+  --ft-primary-200: #fed7aa;
+  --ft-primary-300: #fdba74;
+  --ft-primary-400: #fb923c;
+  --ft-primary-500: #f97316;
+  --ft-primary-600: #ea580c;
+  --ft-primary-700: #c2410c;
+  --ft-primary-800: #9a3412;
+  --ft-primary-900: #7c2d12;
+  
+  /* 橙色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #f97316, #ea580c);
+  --ft-gradient-primary-light: linear-gradient(135deg, #fb923c, #f97316);
+  --ft-gradient-primary-subtle: linear-gradient(135deg, #fed7aa, #fdba74);
+  
+  /* 橙色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(249, 115, 22, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(251, 146, 60, 0.4);
+  --ft-glow-primary-strong: 0 0 20px rgba(249, 115, 22, 0.7);
+  
+  /* 橙色主题交互状态 */
+  --ft-interactive-hover: rgba(249, 115, 22, 0.1);
+  --ft-interactive-active: rgba(249, 115, 22, 0.2);
+  --ft-interactive-focus: rgba(249, 115, 22, 0.3);
+  
+  /* 橙色主题状态指示器 */
+  --ft-status-analyzing: #f97316;
+  
+  /* 橙色主题变量更新 */
+  --ft-theme-mode: 'orange';
+  --ft-accent-color: #f97316;
+  --ft-accent-hover: #fb923c;
+  --ft-accent-active: #ea580c;
+}
+
+/* 玫瑰金主题 */
+[data-color-mode="rose"] {
+  /* 玫瑰金主题色 */
+  --ft-primary: #B76E79;           /* 玫瑰金 */
+  --ft-primary-light: #F4C2C2;     /* 浅玫瑰 */
+  --ft-primary-dark: #985A64;      /* 深玫瑰 */
+  
+  /* 状态颜色 - 与玫瑰金主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #B76E79;
+  
+  /* 玫瑰金主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #B76E79, #985A64);
+  --ft-gradient-primary-light: linear-gradient(135deg, #F4C2C2, #B76E79);
+  
+  /* 玫瑰金主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(183, 110, 121, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(244, 194, 194, 0.4);
+}
+
+/* 月光银主题 */
+[data-color-mode="silver"] {
+  /* 月光银主题色 */
+  --ft-primary: #C0C0C0;           /* 银色 */
+  --ft-primary-light: #E5E5E5;     /* 浅银色 */
+  --ft-primary-dark: #A0A0A0;      /* 深银色 */
+  
+  /* 状态颜色 - 与银色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #6b7280;
+  
+  /* 银色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #C0C0C0, #A0A0A0);
+  --ft-gradient-primary-light: linear-gradient(135deg, #E5E5E5, #C0C0C0);
+  
+  /* 银色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(192, 192, 192, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(229, 229, 229, 0.4);
+}
+
+/* 孔雀石绿主题 */
+[data-color-mode="emerald"] {
+  /* 孔雀石绿主题色 */
+  --ft-primary: #0BDA51;           /* 孔雀石绿 */
+  --ft-primary-light: #50C878;     /* 浅孔雀石 */
+  --ft-primary-dark: #09A940;      /* 深孔雀石 */
+  
+  /* 状态颜色 - 与绿色主题协调 */
+  --ft-success: #0BDA51;
+  --ft-warning: #fbbf24;
+  --ft-error: #ef4444;
+  --ft-info: #06b6d4;
+  
+  /* 绿色主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #0BDA51, #09A940);
+  --ft-gradient-primary-light: linear-gradient(135deg, #50C878, #0BDA51);
+  
+  /* 绿色主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(11, 218, 81, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(80, 200, 120, 0.4);
+}
+
+/* 皇家蓝宝石主题 */
+[data-color-mode="sapphire"] {
+  /* 皇家蓝宝石主题色 */
+  --ft-primary: #0F52BA;           /* 蓝宝石 */
+  --ft-primary-light: #4169E1;     /* 浅蓝宝石 */
+  --ft-primary-dark: #0C4090;      /* 深蓝宝石 */
+  
+  /* 状态颜色 - 与蓝色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #0F52BA;
+  
+  /* 蓝宝石主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #0F52BA, #0C4090);
+  --ft-gradient-primary-light: linear-gradient(135deg, #4169E1, #0F52BA);
+  
+  /* 蓝宝石主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(15, 82, 186, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(65, 105, 225, 0.4);
+}
+
+/* 琥珀主题 */
+[data-color-mode="amber"] {
+  /* 琥珀主题色 */
+  --ft-primary: #FFBF00;           /* 琥珀色 */
+  --ft-primary-light: #FFC000;     /* 浅琥珀 */
+  --ft-primary-dark: #CC9900;      /* 深琥珀 */
+  
+  /* 状态颜色 - 与琥珀主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #FFBF00;
+  --ft-error: #ef4444;
+  --ft-info: #3b82f6;
+  
+  /* 琥珀主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #FFBF00, #CC9900);
+  --ft-gradient-primary-light: linear-gradient(135deg, #FFC000, #FFBF00);
+  
+  /* 琥珀主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(255, 191, 0, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(255, 192, 0, 0.4);
+}
+
+/* 黑曜石主题 */
+[data-color-mode="obsidian"] {
+  /* 黑曜石主题色 */
+  --ft-primary: #3D3D3D;           /* 黑曜石 */
+  --ft-primary-light: #5C5C5C;     /* 浅黑曜石 */
+  --ft-primary-dark: #2D2D2D;      /* 深黑曜石 */
+  
+  /* 状态颜色 - 与黑色主题协调 */
+  --ft-success: #10b981;
+  --ft-warning: #e6a23c;
+  --ft-error: #ef4444;
+  --ft-info: #6b7280;
+  
+  /* 黑曜石主题渐变 */
+  --ft-gradient-primary: linear-gradient(135deg, #3D3D3D, #2D2D2D);
+  --ft-gradient-primary-light: linear-gradient(135deg, #5C5C5C, #3D3D3D);
+  
+  /* 黑曜石主题发光效果 */
+  --ft-glow-primary: 0 0 10px rgba(61, 61, 61, 0.5);
+  --ft-glow-primary-light: 0 0 15px rgba(92, 92, 92, 0.4);
+}

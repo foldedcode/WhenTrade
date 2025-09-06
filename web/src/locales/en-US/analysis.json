@@ -1,0 +1,652 @@
+{
+  "marketType": "Market Type",
+  "marketTypes": {
+    "crypto": "Cryptocurrency"
+  },
+  "selectMarketType": "Select Market Type",
+  "analysisScope": "Analysis Scope",
+  "selectedScopes": "Selected Analysis Scopes",
+  "selected": "SELECTED",
+  "timeFrames": {
+    "15m": "15 Minutes",
+    "1h": "1 Hour",
+    "4h": "4 Hours",
+    "1d": "1 Day",
+    "1w": "1 Week"
+  },
+  "scopes": {
+    "technical": {
+      "name": "Technical",
+      "description": "Charts, indicators, trends"
+    },
+    "sentiment": {
+      "name": "Sentiment",
+      "description": "Social, news, fear & greed"
+    },
+    "event": {
+      "name": "Events",
+      "description": "Key events, timeline"
+    },
+    "probability": {
+      "name": "Probability",
+      "description": "Bayesian, statistics"
+    },
+    "odds": {
+      "name": "Odds",
+      "description": "Pricing, arbitrage"
+    }
+  },
+  "domains": {
+    "selected": "domains selected",
+    "technical": "Technical Analysis",
+    "technicalDesc": "Price trends, indicators and chart patterns",
+    "fundamental": "Fundamental Analysis",
+    "fundamentalDesc": "Financial data, performance and valuation",
+    "sentiment": "Sentiment Analysis",
+    "sentimentDesc": "News, social media and market sentiment",
+    "risk": "Risk Management",
+    "riskDesc": "Volatility, downside risk and hedging strategies",
+    "market": "Market Analysis",
+    "marketDesc": "Macro environment and market cycles",
+    "valuation": "Valuation Analysis",
+    "valuationDesc": "Fair value and pricing models",
+    "sector": "Sector Analysis",
+    "sectorDesc": "Industry trends and competitive landscape",
+    "onchain": "On-chain Analysis",
+    "onchainDesc": "Blockchain data and address behavior",
+    "defi": "DeFi Analysis",
+    "defiDesc": "Decentralized finance protocols and yields",
+    "event": "Event Analysis",
+    "eventDesc": "Predict market event probabilities",
+    "probability": "Probability Analysis",
+    "probabilityDesc": "Bayesian inference and statistical models",
+    "odds": "Odds Analysis",
+    "oddsDesc": "Market pricing and arbitrage opportunities"
+  },
+  "selectDomains": "Select Analysis Domains",
+  "recommended": "Recommended",
+  "scenarioEnhancement": "Scenario Enhancement",
+  "scenarioPlaceholder": "Describe your analysis requirements, system will recommend professional agents...",
+  "suggestedAgents": "Suggested Professional Agents",
+  "selectedDomains": "Selected Domains",
+  "estimatedAgents": "Estimated Agents",
+  "dynamicAgents": "Dynamic Agents",
+  "startAnalysis": "Start Analysis",
+  "console": {
+    "labels": {
+      "market": "Market",
+      "target": "Target",
+      "model": "Model",
+      "depth": "Depth",
+      "time": "Time",
+      "none": "Not Selected"
+    }
+  },
+  "actions": {
+    "start": "▶ Start Analysis",
+    "stop": "■ Stop"
+  },
+  "status": {
+    "running": "Analyzing",
+    "completed": "Completed",
+    "ready": "Ready"
+  },
+  "agents": {
+    "active": "active",
+    "title": "Agent Status"
+  },
+  "pause": "Pause",
+  "resume": "Resume",
+  "confirmStop": "Are you sure you want to stop the analysis?",
+  "defaultTitle": "Market Deep Analysis",
+  "progress": {
+    "title": "Analysis Progress"
+  },
+  "completed": {
+    "title": "Analysis Completed",
+    "thoughts": "Thought Records",
+    "agents": "Participating Agents",
+    "duration": "Analysis Duration",
+    "viewReport": "View Report",
+    "newAnalysis": "New Analysis"
+  },
+  "validation": {
+    "requiredFields": "Please fill in all required fields",
+    "selectMarket": "Please select a market type",
+    "selectScope": "Select at least one scope",
+    "enterSymbol": "Please enter a symbol to analyze",
+    "tooManyScopes": "Too many scopes selected (max: {max})"
+  },
+  "detail": {
+    "title": "{symbol} Analysis Report",
+    "subtitle": "{type} · {date} · ID: {id}",
+    "metrics": {
+      "cost": "Cost",
+      "duration": "Duration",
+      "depth": "Depth",
+      "analysts": "Analysts",
+      "model": "Model"
+    },
+    "tabs": {
+      "summary": "Summary",
+      "detailed": "Detailed",
+      "raw": "Raw"
+    },
+    "sections": {
+      "analysisResults": "Analysis Results",
+      "keyFindings": "Key Findings",
+      "investmentAdvice": "Investment Advice",
+      "fullSummary": "Complete Analysis Summary",
+      "technicalAnalysis": "Technical Analysis",
+      "fundamentalAnalysis": "Fundamental Analysis",
+      "riskAssessment": "Risk Assessment",
+      "rawAnalysisData": "Raw Analysis Data"
+    },
+    "labels": {
+      "technical": "Technical",
+      "fundamental": "Fundamental",
+      "risk": "Risk",
+      "raw": "RAW"
+    },
+    "actions": {
+      "export": "Export",
+      "share": "Share"
+    },
+    "marketTypes": {
+      "crypto": "Cryptocurrency"
+    },
+    "analystNames": {
+      "technical_analyst": "Technical Analyst",
+      "fundamental_analyst": "Fundamental Analyst",
+      "sentiment_analyst": "Sentiment Analyst",
+      "risk_analyst": "Risk Analyst",
+      "market_analyst": "Market Analyst"
+    },
+    "noResult": "No analysis results yet",
+    "content": {
+      "insight": "Based on Level {depth} deep analysis, {symbol} shows obvious technical indicator divergence. It is recommended to closely monitor subsequent trend changes.",
+      "advice": "For {symbol}, it is recommended to adopt a cautiously optimistic investment strategy, set reasonable stop-loss points, and control position risks.",
+      "technical": "Technical analysis shows that the current price is near key support levels, RSI indicators show oversold status, and MACD shows bottom divergence signals.",
+      "fundamental": "Fundamental analysis shows that the company is in good financial condition, P/E ratio is in a reasonable range, and future growth potential is large. Revenue growth is stable, cash flow is sufficient, and debt ratio is controlled within a reasonable range. Management strategy is clear, and market competitive advantages are obvious.",
+      "risk": "Risk assessment shows that major risks are concentrated in market volatility and intensified industry competition. It is recommended to control positions at 5-10% of total assets and set stop loss at -15%. Pay attention to macroeconomic policy changes and industry regulatory dynamics.",
+      "summaryTemplate": "This Level {depth} deep analysis of {symbol} took {duration} seconds, employed {analysts} professional analysts, and cost ${cost}.\n\nAnalysis Conclusions:\n1. Technical: Currently at key support level, short-term rebound possible\n2. Fundamentals: Healthy financial indicators, reasonable valuation\n3. Risks: Mainly focus on market systemic risk and liquidity risk\n4. Recommendation: Consider building positions in batches with strict risk control\n\nThis analysis is based on multi-dimensional data models and AI algorithms, for reference only, invest with caution."
+    }
+  },
+  "configTitle": "Analysis Configuration",
+  "nodeStatus": {
+    "idle": "Idle",
+    "active": "Active",
+    "completed": "Completed",
+    "error": "Error"
+  },
+  "symbolPlaceholder": "Enter symbol code",
+  "agentType": "Agent Type",
+  "agentActive": "Agent Activated",
+  "analysisDepth": "Analysis Depth",
+  "depthHint": "Will perform {{depth}} rounds of deep analysis",
+  "depthIterations": "{{count}} iterations",
+  "iterations": "iterations",
+  "depthLevels": {
+    "shallow": "Shallow",
+    "deep": "Deep"
+  },
+  "depthDescriptions": {
+    "minimal": "Minimal analysis with basic indicators",
+    "basic": "Basic analysis covering key metrics",
+    "standard": "Standard analysis with comprehensive data",
+    "comprehensive": "In-depth analysis with advanced metrics",
+    "exhaustive": "Full spectrum analysis with all available data"
+  },
+  "selectDepthHint": "Select analysis depth level",
+  "quickConfig": "Quick Config",
+  "advancedOptions": "Advanced Options",
+  "enableRealtime": "Enable Real-time Data",
+  "includeNews": "Include News Analysis",
+  "executing": "Executing",
+  "analysisResults": "Analysis Results",
+  "exportResults": "Export Results",
+  "analyzing": "Analyzing",
+  "summary": "Summary",
+  "market": "Market",
+  "symbol": "Symbol",
+  "recommendation": "Recommendation",
+  "recommendations": {
+    "buy": "Buy",
+    "sell": "Sell",
+    "hold": "Hold",
+    "neutral": "Neutral"
+  },
+  "confidence": "Confidence",
+  "agentInsights": "Agent Insights",
+  "sentiments": {
+    "positive": "Positive",
+    "negative": "Negative",
+    "neutral": "Neutral"
+  },
+  "depthAnalysis": "Deep Analysis",
+  "noResults": "No analysis results yet",
+  "startAnalysisHint": "Configure parameters and start analysis, results will be displayed here",
+  "config": "Config",
+  "results": "Results",
+  "marketTypes": {
+    "crypto": "Cryptocurrency"
+  },
+  "process": {
+    "starting": "Starting analysis...",
+    "running": "Analysis in progress...",
+    "completed": "Analysis completed",
+    "error": "Analysis error",
+    "summary": "Analysis Summary",
+    "totalAgents": "Total Agents",
+    "duration": "Duration",
+    "confidence": "Confidence"
+  },
+  "flow": {
+    "addAgent": "Add Agent",
+    "addMCP": "Add MCP Service",
+    "addTool": "Add Tool",
+    "autoLayout": "Auto Layout",
+    "clear": "Clear Canvas",
+    "confirmClear": "Are you sure you want to clear the canvas? All nodes and connections will be deleted.",
+    "start": "Start",
+    "defaultAgent": "Analysis Agent",
+    "defaultMCP": "MCP Service",
+    "defaultTool": "Analysis Tool",
+    "agentDesc": "Perform specific analysis tasks",
+    "mcpDesc": "Connect external data and services",
+    "toolDesc": "Use specialized tools for analysis",
+    "addNodes": "Add Nodes",
+    "agent": "Agent",
+    "tool": "Tool",
+    "startAnalysis": "Start Analysis",
+    "configureNode": "Configure Node",
+    "basicInfo": "Basic Information",
+    "nodeName": "Node Name",
+    "nodeNamePlaceholder": "Enter node name",
+    "nodeDescription": "Node Description",
+    "nodeDescPlaceholder": "Enter node description (optional)",
+    "agentConfig": "Agent Configuration",
+    "agentType": "Agent Type",
+    "analysisDepth": "Analysis Depth",
+    "mcpConfig": "MCP Configuration",
+    "mcpServer": "MCP Server",
+    "connectionParams": "Connection Parameters",
+    "addParam": "Add Parameter",
+    "toolConfig": "Tool Configuration",
+    "toolType": "Tool Type",
+    "toolParams": "Tool Parameters",
+    "customTool": "Custom Tool",
+    "searchNodes": "Search nodes",
+    "actions": "Actions",
+    "execute": "Execute",
+    "executing": "Executing...",
+    "resources": "Resources",
+    "availableResources": "Available Resources",
+    "searchResources": "Search resources...",
+    "tools": "Tools",
+    "mcpServers": "MCP Servers",
+    "addToCanvas": "Add to Canvas",
+    "parameters": "Parameters",
+    "advancedOptions": "Advanced Options",
+    "timeout": "Timeout",
+    "timeoutHelp": "In milliseconds, 0 means no limit",
+    "retries": "Retries",
+    "invalidJSON": "Invalid JSON format",
+    "configPhase": "Configuration Phase",
+    "executionPhase": "Execution Phase",
+    "resultGeneration": "Result Generation",
+    "processing": "Processing",
+    "dataIntegration": "Data Integration",
+    "integratingDimensions": "Integrating {count} dimensions of analysis results",
+    "analysisReport": "Analysis Report",
+    "generatingReport": "Generating comprehensive analysis report",
+    "estimatedTime": "Estimated Time",
+    "agentsCollaborating": "agents collaborating",
+    "depthIterations": "depth iterations",
+    "steps": {
+      "basic": {
+        "title": "Basic Configuration",
+        "description": "Set analysis target and basic parameters"
+      },
+      "scopes": {
+        "title": "Analysis Scope",
+        "description": "Select dimensions to analyze"
+      },
+      "agents": {
+        "title": "Agent Configuration",
+        "description": "Configure execution agents and resources"
+      },
+      "confirm": {
+        "title": "Confirm Execution",
+        "description": "Review configuration and start analysis"
+      }
+    },
+    "executionOrder": "Execution Order",
+    "agentCount": "agents",
+    "usingResources": "Using Resources",
+    "configurationOverview": "Configuration Overview",
+    "basicConfiguration": "Basic Configuration",
+    "executionPlan": "Execution Plan",
+    "estimatedCost": "Estimated Cost",
+    "realtimePreview": "Realtime Preview",
+    "technicalAnalystRole": "Analyze price trends and technical indicators",
+    "fundamentalAnalystRole": "Evaluate financial status and valuation",
+    "initializeConfig": "Initialize Configuration",
+    "loadAnalysisParams": "Load analysis parameters",
+    "dataFetching": "Data Fetching",
+    "fetchFromDataSource": "Fetch necessary data from sources",
+    "generateReport": "Generate Report",
+    "integrateResults": "Integrate analysis results",
+    "orbitTitle": "Collaboration Orbit",
+    "slow": "Slow",
+    "normal": "Normal",
+    "fast": "Fast",
+    "coordinationCenter": "Coordination Center",
+    "innerOrbit": "Inner Orbit",
+    "middleOrbit": "Middle Orbit",
+    "outerOrbit": "Outer Orbit",
+    "configurator": "Configurator",
+    "parameterSettings": "Parameter Settings",
+    "accuracy": "Accuracy",
+    "signalStrength": "Signal Strength",
+    "strong": "Strong",
+    "valuation": "Valuation Analysis",
+    "marketSentiment": "Market Sentiment",
+    "riskAnalysis": "Risk Analysis",
+    "riskAssessment": "Risk Assessment",
+    "aggregator": "Aggregator",
+    "resultIntegration": "Result Integration",
+    "reportGeneration": "Report Generation",
+    "outputReport": "Output Report",
+    "dataSharing": "Data Sharing",
+    "orbitStatus": "Orbit Status",
+    "dataFlow": "Data Flow",
+    "activeFlows": "Active Flows",
+    "collaborations": "Collaborations",
+    "executionStats": "Execution Stats",
+    "circuitBoard": "Circuit Board View"
+  },
+  "flowEditor": {
+    "title": "Flow Editor",
+    "classicMode": "Classic Mode",
+    "flowMode": "Flow Mode",
+    "editor": "Editor",
+    "executions": "Executions"
+  },
+  "agents": {
+    "technical": "Technical Analyst",
+    "fundamental": "Fundamental Analyst",
+    "sentiment": "Sentiment Analyst",
+    "risk": "Risk Analyst",
+    "active": "active",
+    "title": "Agent Status"
+  },
+  "stop": "Stop Analysis",
+  "enableScope": "Enable this analysis scope",
+  "depth": "Depth",
+  "agents": {
+    "technical": "Technical Analyst",
+    "fundamental": "Fundamental Analyst",
+    "sentiment": "Sentiment Analyst",
+    "risk": "Risk Analyst",
+    "active": "active",
+    "title": "Agent Status"
+  },
+  "resources": {
+    "financialReportsApi": "Financial Reports API"
+  },
+  "nodeTypes": {
+    "agent": "Agent",
+    "tool": "Tool",
+    "start": "Start",
+    "end": "End"
+  },
+  "executionFlow": "Execution Flow",
+  "flowNodes": {
+    "startNode": "Target",
+    "marketType": "Market Type",
+    "timeRange": "Time Range",
+    "analysisDepth": "Analysis Depth",
+    "analysisResult": "Analysis Result",
+    "dataSource": "Data Source",
+    "analysisTool": "Analysis Tool",
+    "priceDataSource": "Price Data",
+    "technicalIndicators": "Technical Indicators",
+    "financialData": "Financial Data",
+    "historicalDatabase": "Historical DB",
+    "socialData": "Social Data",
+    "sentimentAnalysis": "Sentiment Analysis",
+    "blockchainData": "Blockchain Data",
+    "addressAnalysis": "Address Analysis",
+    "collaboration": "Collaboration",
+    "modelConfig": "Model Config",
+    "agentTitles": {
+      "technical": "Technical Analyst",
+      "fundamental": "Fundamental Analyst",
+      "sentiment": "Sentiment Analyst",
+      "risk": "Risk Analyst",
+      "macro": "Macro Analyst",
+      "default": "Analyst"
+    },
+    "agentDescriptions": {
+      "technical": "Charts, indicators, patterns",
+      "fundamental": "Finance, valuation, earnings",
+      "sentiment": "News, social, market mood",
+      "risk": "Risk assessment, hedging",
+      "macro": "Economy, policy analysis"
+    }
+  },
+  "tools": {
+    "crypto_price": "Crypto Price Data",
+    "indicators": "Technical Indicators",
+    "market_data": "Real-time Market Data",
+    "historical_data": "Historical Price Data",
+    "market_metrics": "Global Market Metrics",
+    "trending": "Trending Coins",
+    "fear_greed": "Fear & Greed Index",
+    "finnhub_news": "FinnHub Crypto News",
+    "reddit_sentiment": "Reddit Crypto Sentiment",
+    "sentiment_batch": "Batch Sentiment Analysis"
+  },
+  "dataSources": {
+    "yahoo_finance": "Yahoo Finance",
+    "coingecko": "CoinGecko",
+    "finnhub": "FinnHub",
+    "reddit": "Reddit",
+    "alternative.me": "Alternative.me"
+  },
+  "config": {
+    "unconfigured": "Unconfigured",
+    "unselected": "Not Selected",
+    "tools": "Tools",
+    "data": "Data",
+    "buttons": {
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "reset": "Reset",
+      "selectAll": "Select All",
+      "configure": "Configure {scope}"
+    }
+  },
+  "dynamicAnalysis": {
+    "title": "Dynamic Analysis",
+    "pageTitle": "Dynamic Analysis",
+    "description": "Intelligent multi-agent collaboration analysis"
+  },
+  "collaboration": {
+    "pageTitle": "Collaboration"
+  },
+  "console": {
+    "labels": {
+      "market": "Market",
+      "target": "Target",
+      "model": "Model",
+      "depth": "Depth",
+      "time": "Time",
+      "none": "Not Selected"
+    },
+    "boot": {
+      "processorInit": "Processor {model} initializing...",
+      "loadingParams": "Loading analysis parameters"
+    },
+    "module": {
+      "loadingBlockchain": "Loading blockchain connectors",
+      "loadingPrediction": "Loading prediction markets API",
+      "initProbability": "Initializing probability engine",
+      "activated": "{module} activated",
+      "preparing": "Preparing {module}"
+    },
+    "scope": {
+      "enabled": "{scope} enabled",
+      "disabled": "{scope} disabled",
+      "selected": "{count} analysis modules selected"
+    },
+    "config": {
+      "opening": "Opening configuration for {scope}",
+      "saved": "Saved configuration for {scope}",
+      "depthSet": "Analysis depth set to Level {level}",
+      "estimatedTime": "Estimated processing time: {time}s"
+    },
+    "tool": {
+      "opening": "Opening tool/MCP selector",
+      "selected": "Selected {tool}"
+    },
+    "start": "Initiating analysis sequence",
+    "stop": "Analysis terminated by user",
+    "complete": "Analysis finished successfully",
+    "stats": "Processed {count} data points",
+    "report": {
+      "totalProcessed": "Total processed: {count} units",
+      "efficiency": "Efficiency: {percent}%"
+    },
+    "target": {
+      "loading": "Loading {symbol}",
+      "connectingChain": "Connecting to blockchain networks",
+      "fetchingMarket": "Fetching prediction market data"
+    },
+    "ai": {
+      "initializing": "Initializing {model}",
+      "temperature": "Model temperature: {temp}"
+    },
+    "system": "SYSTEM",
+    "chain": "CHAIN",
+    "market": "MARKET",
+    "load": "LOAD",
+    "boot": "BOOT"
+  },
+  "messages": {
+    "ready": "When.Trade intelligent analysis system is ready",
+    "initialized": "All analysis teams initialized",
+    "start": "Starting analysis",
+    "completed": "Analysis completed",
+    "startFailed": "Failed to start analysis",
+    "checkNetwork": "Please check network connection",
+    "llmDetected": "Detected available LLM provider, using {provider} ({model}) for real analysis",
+    "llmError": "LLM provider detection exception",
+    "checkConfig": "Please check LLM configuration or contact administrator",
+    "noProvider": "No available LLM provider detected",
+    "configProvider": "Please configure LLM provider and retry",
+    "stopped": "Analysis stopped",
+    "creatingTask": "Creating analysis task...",
+    "taskCreated": "Analysis task created: {taskId}",
+    "stageWorking": "{stage} is working...",
+    "reportGenerated": "Analysis report generated, click to view details"
+  },
+  "report": {
+    "placeholders": {
+      "technical": "Technical analysis data not yet generated...",
+      "fundamental": "Fundamental analysis data not yet generated...",
+      "sentiment": "Sentiment analysis data not yet generated...",
+      "recommendation": "Recommendation..."
+    }
+  },
+  "tools": {
+    "messages": {
+      "configUpdated": "Configuration updated",
+      "executionFailed": "Execution failed",
+      "executionSuccess": "Execution successful",
+      "executionCancelled": "Execution cancelled",
+      "cacheHit": "Cache hit",
+      "retryWaiting": "Retrying, please wait..."
+    }
+  },
+  "config": {
+    "title": "Analysis Configuration",
+    "aiTitle": "AI Configuration",
+    "scopes": "Analysis Scopes",
+    "complete": "Configuration Complete",
+    "pending": "Pending Configuration",
+    "labels": {
+      "marketType": "Market Type",
+      "analysisTarget": "Analysis Target",
+      "provider": "Provider",
+      "model": "Model",
+      "analysisDepth": "Analysis Depth",
+      "notSet": "Not Set",
+      "timeRange": "Time Range",
+      "noScopesSelected": "No analysis scopes selected"
+    },
+    "tools": "Tools",
+    "data": "Data",
+    "unconfigured": "Unconfigured",
+    "unselected": "Not Selected",
+    "checklist": {
+      "selectTarget": "• Select analysis target",
+      "selectScopes": "• Select analysis scopes",
+      "setDepth": "• Set analysis depth"
+    }
+  },
+  "stream": {
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "done": "Analysis completed!",
+    "seeReport": "View complete analysis report",
+    "thinking": "Agent is thinking",
+    "waiting": "Waiting for analysis to start...",
+    "hintStart": "Select configuration and click \"Start Analysis\"..."
+  },
+  "phases": {
+    "data": "Data Analysis",
+    "research": "Investment Research",
+    "trading": "Trading Strategy",
+    "risk": "Risk Assessment",
+    "portfolio": "Portfolio Management",
+    "probability": "Probability Calculation",
+    "strategy": "Strategy Development",
+    "decision": "Decision Execution",
+    "unknown": "Unknown Phase"
+  },
+  "status": {
+    "analyzing": "Analyzing",
+    "completed": "Completed",
+    "ready": "Ready",
+    "waiting": "Waiting",
+    "running": "Running"
+  },
+  "depthNumbers": {
+    "1": "Basic",
+    "2": "Standard",
+    "3": "Deep",
+    "4": "Professional",
+    "5": "Ultimate"
+  },
+  "timeRanges": {
+    "1d": "1 Day",
+    "1w": "1 Week",
+    "1m": "1 Month",
+    "1y": "1 Year"
+  },
+  "configMessages": {
+    "fetchConfigFailed": "Failed to fetch agent team configuration, using local configuration"
+  },
+  "teams": {
+    "analyst": "Analysis",
+    "research": "Research",
+    "trading": "Trading",
+    "risk": "Risk",
+    "portfolio": "Portfolio",
+    "probability": "Probability",
+    "strategy": "Strategy",
+    "decision": "Decision"
+  }
+}

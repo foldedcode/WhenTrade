@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>When.Trade - AI驱动的投资研究平台</title>
+    <!-- 引入 Proto Mono 字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Proto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- 引入 Pixelarticons -->
+    <link href="https://unpkg.com/pixelarticons@1.8.1/css/pixelarticons.css" rel="stylesheet">
+    <script>
+      // Web3Auth polyfills - 必须在最早的时候设置
+      if (typeof global === 'undefined') {
+        window.global = window;
+      }
+      
+      // 创建 fs 对象 - 所有方法必须是真正的函数，不能是箭头函数
+      window.fs = {
+        open: function() {},
+        close: function() {},
+        read: function() {},
+        write: function() {},
+        stat: function() {},
+        lstat: function() {},
+        fstat: function() {},
+        readFile: function() {},
+        writeFile: function() {},
+        readdir: function() {},
+        mkdir: function() {},
+        rmdir: function() {},
+        unlink: function() {},
+        rename: function() {},
+        chmod: function() {},
+        chown: function() {},
+        utimes: function() {},
+        realpath: function() {},
+        mkdtemp: function() {},
+        writeFileSync: function() {},
+        readFileSync: function() { return '' },
+        existsSync: function() { return false },
+        createReadStream: function() {
+          return {
+            on: function() {},
+            once: function() {},
+            pipe: function() {},
+            destroy: function() {},
+            close: function() {}
+          }
+        },
+        createWriteStream: function() {
+          return {
+            on: function() {},
+            once: function() {},
+            write: function() {},
+            end: function() {},
+            destroy: function() {}
+          }
+        }
+      };
+      
+      // 确保所有 fs 方法都可以被 bind
+      Object.keys(window.fs).forEach(function(key) {
+        if (typeof window.fs[key] === 'function') {
+          const originalMethod = window.fs[key];
+          window.fs[key] = function() {
+            return originalMethod.apply(this, arguments);
+          };
+          window.fs[key].bind = Function.prototype.bind;
+        }
+      });
+      
+      if (typeof process === 'undefined') {
+        window.process = {
+          env: { NODE_ENV: 'production' },
+          version: 'v16.0.0',
+          versions: { node: '16.0.0' },
+          binding: function(name) {
+            if (name === 'fs') {
+              // 返回 fs 对象的副本，确保所有方法都有 bind
+              const fsCopy = {};
+              Object.keys(window.fs).forEach(function(key) {
+                if (typeof window.fs[key] === 'function') {
+                  fsCopy[key] = window.fs[key];
+                }
+              });
+              return fsCopy;
+            }
+            if (name === 'fs_event_wrap') {
+              const FSEvent = function() {}
+              FSEvent.prototype.start = function() {}
+              FSEvent.prototype.close = function() {}
+              return { FSEvent }
+            }
+            if (name === 'constants') {
+              return {
+                fs: {
+                  F_OK: 0,
+                  R_OK: 4,
+                  W_OK: 2,
+                  X_OK: 1
+                }
+              }
+            }
+            return {
+              open: () => {},
+              close: () => {},
+              read: () => {},
+              write: () => {},
+              FSEvent: function() {
+                this.start = () => {}
+                this.close = () => {}
+              }
+            }
+          },
+          cwd: function() { return '/' },
+          nextTick: function(fn) { setTimeout(fn, 0) },
+          platform: 'browser',
+          on: () => {},
+          once: () => {},
+          off: () => {},
+          removeListener: () => {},
+          removeAllListeners: () => {},
+          emit: () => {},
+          prependListener: () => {},
+          prependOnceListener: () => {},
+          listeners: () => [],
+          umask: () => 0
+        };
+      }
+    </script>
+    <!-- Web3Auth 样式覆盖 - 最高优先级 -->
+    <style>
+      /* 强制修复 Web3Auth iframe 位置 */
+      iframe[id*="walletIframe"] {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: 440px !important;
+        border-radius: 24px !important;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+      }
+      
+      /* 修复遮罩背景 */
+      .w3a--modal-curtain {
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        backdrop-filter: blur(4px) !important;
+        position: fixed !important;
+        inset: 0 !important;
+        cursor: pointer !important;
+      }
+      
+      /* 确保样式优先级最高 */
+      body iframe[style*="position: fixed"] {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Teleport 目标 for modals -->
+    <div id="teleport-modal"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html> 

@@ -1,0 +1,36 @@
+{
+  "openai": {
+    "name": "OpenAI",
+    "description": "领先的AI研究公司，GPT系列模型",
+    "models": {
+      "gpt-4o": "最新的GPT-4 Omni模型，支持多模态",
+      "gpt-4o-mini": "轻量级GPT-4o，更快更便宜",
+      "gpt-4-turbo": "GPT-4 Turbo模型，128K上下文"
+    }
+  },
+  "google": {
+    "name": "Google", 
+    "description": "谷歌AI服务，Gemini系列模型",
+    "models": {
+      "gemini-1.5-pro": "谷歌最强大的AI模型，支持超长上下文",
+      "gemini-1.5-flash": "快速轻量的Gemini模型"
+    }
+  },
+  "deepseek": {
+    "name": "DeepSeek",
+    "description": "深度求索AI，高性价比推理模型",
+    "models": {
+      "deepseek-chat": "通用对话模型，性价比极高",
+      "deepseek-coder": "专业代码生成和分析模型"
+    }
+  },
+  "kimi": {
+    "name": "Moonshot Kimi",
+    "description": "月之暗面AI，超长上下文对话模型",
+    "models": {
+      "moonshot-v1-8k": "标准上下文模型，适合日常对话",
+      "moonshot-v1-32k": "中等上下文模型，适合文档分析",
+      "moonshot-v1-128k": "超长上下文模型，适合复杂任务"
+    }
+  }
+}

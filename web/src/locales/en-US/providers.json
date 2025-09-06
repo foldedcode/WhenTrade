@@ -1,0 +1,36 @@
+{
+  "openai": {
+    "name": "OpenAI",
+    "description": "Leading AI research company, GPT models",
+    "models": {
+      "gpt-4o": "Latest GPT-4 Omni model with multimodal support",
+      "gpt-4o-mini": "Lightweight GPT-4o, faster and cheaper",
+      "gpt-4-turbo": "GPT-4 Turbo model with 128K context"
+    }
+  },
+  "google": {
+    "name": "Google",
+    "description": "Google AI services, Gemini models",
+    "models": {
+      "gemini-1.5-pro": "Google's most powerful AI model with ultra-long context",
+      "gemini-1.5-flash": "Fast and lightweight Gemini model"
+    }
+  },
+  "deepseek": {
+    "name": "DeepSeek",
+    "description": "DeepSeek AI, cost-effective reasoning models",
+    "models": {
+      "deepseek-chat": "General conversation model with excellent cost-performance",
+      "deepseek-coder": "Professional code generation and analysis model"
+    }
+  },
+  "kimi": {
+    "name": "Moonshot Kimi", 
+    "description": "Moonshot AI, ultra-long context dialogue models",
+    "models": {
+      "moonshot-v1-8k": "Standard context model for daily conversations",
+      "moonshot-v1-32k": "Medium context model for document analysis",
+      "moonshot-v1-128k": "Ultra-long context model for complex tasks"
+    }
+  }
+}

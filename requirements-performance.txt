@@ -1,0 +1,23 @@
+# 性能监控相关依赖包
+
+# 系统资源监控
+psutil>=5.9.0
+
+# 异步任务处理
+redis>=4.5.0
+
+# AWS S3备份支持
+boto3>=1.26.0
+botocore>=1.29.0
+
+# 进程池支持
+concurrent-futures>=3.1.1
+
+# 内存分析（可选）
+memory-profiler>=0.61.0
+
+# 性能分析（可选）
+py-spy>=0.3.14
+
+# 安装命令：
+# pip install -r requirements-performance.txt

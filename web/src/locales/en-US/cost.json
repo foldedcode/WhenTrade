@@ -1,0 +1,473 @@
+{
+  "title": "Cost Control",
+  "pageTitle": "Cost Control",
+  "subtitle": "Intelligent Cost Monitoring & Optimization",
+  "todayCost": "Today's Cost",
+  "monthlyCost": "Monthly Cost",
+  "totalTokens": "Total Tokens",
+  "averageCostPerToken": "Average Cost per 1K Tokens",
+  "potentialSavings": "Potential Savings",
+  "optimizationsPending": "optimizations pending",
+  "budget": "Budget",
+  "tabs": {
+    "usage": "Token Usage",
+    "budget": "Budget Management",
+    "optimization": "Optimization Tips",
+    "reports": "Cost Reports"
+  },
+  "dashboard": {
+    "title": "Cost Control Dashboard",
+    "overview": "Cost Overview",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "change": "Change",
+    "totalSpent": "Total Spent",
+    "avgPerAnalysis": "Avg per Analysis",
+    "efficiency": "Cost Efficiency",
+    "savings": "Monthly Savings",
+    "budget": "Budget",
+    "used": "Used",
+    "remaining": "Remaining",
+    "overspent": "Overspent",
+    "onTrack": "On Track",
+    "nearLimit": "Near Limit"
+  },
+  "metrics": {
+    "todayCost": "Today's Cost",
+    "monthlyCost": "Monthly Cost",
+    "remainingBudget": "Remaining Budget",
+    "efficiencyRating": "Efficiency Rating",
+    "singleAnalysisCost": "Cost per Analysis",
+    "budgetUsageRate": "Budget Usage Rate",
+    "costTrendAnalysis": "Cost Trend Analysis"
+  },
+  "timePeriods": {
+    "7days": "7 Days",
+    "30days": "30 Days",
+    "90days": "90 Days"
+  },
+  "tokenUsage": {
+    "title": "Token Usage Analysis",
+    "totalTokens": "Total Tokens",
+    "inputTokens": "Input Tokens",
+    "outputTokens": "Output Tokens",
+    "efficiency": "Usage Efficiency",
+    "vsLastPeriod": "vs Last Period",
+    "ofTotal": "of Total",
+    "usageTrend": "Usage Trend",
+    "modelDistribution": "Model Distribution",
+    "efficiencyRanking": "Efficiency Ranking",
+    "allModels": "All Models",
+    "timeframes": {
+      "1h": "1 Hour",
+      "24h": "24 Hours", 
+      "7d": "7 Days",
+      "30d": "30 Days"
+    }
+  },
+  "efficiencyRatings": {
+    "excellent": "Excellent",
+    "good": "Good",
+    "average": "Average",
+    "poor": "Poor"
+  },
+  "ui": {
+    "optimizationTips": "Optimization Tips",
+    "recentTransactions": "Recent Transactions",
+    "todayTransactions": "{count} transactions today",
+    "savingAmount": "Save: ${amount}"
+  },
+  "optimization": {
+    "title": "Smart Optimization Suggestions",
+    "totalSavingsPotential": "Total Savings Potential",
+    "implementAllSuggestions": "Implementing all suggestions can save",
+    "reduction": "Cost Reduction",
+    "allImpacts": "All Impacts",
+    "refresh": "Refresh Suggestions",
+    "impacts": {
+      "high": "High Impact",
+      "medium": "Medium Impact",
+      "low": "Low Impact"
+    },
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "potentialSavings": "Potential Savings",
+    "percentage": "Savings Percentage",
+    "timeframe": "Timeframe",
+    "timeframes": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "implementationSteps": "Implementation Steps",
+    "showDetails": "Show Details",
+    "hideDetails": "Hide Details",
+    "implement": "Implement Now",
+    "ignore": "Ignore",
+    "share": "Share",
+    "implemented": "Implemented",
+    "implementedOn": "Implemented on",
+    "noSuggestions": "No optimization suggestions",
+    "allOptimized": "Your cost control is already excellent!",
+    "checkAgain": "Check Again",
+    "minutes": "minutes",
+    "hours": "hours",
+    "categories": {
+      "modelSelection": "Model Selection",
+      "apiOptimization": "API Optimization",
+      "performance": "Performance",
+      "general": "General"
+    },
+    "steps": {
+      "analyzeUsage": "Analyze usage patterns",
+      "identifySimpleTasks": "Identify simple tasks",
+      "updateModelStrategy": "Update model strategy",
+      "monitorPerformance": "Monitor performance",
+      "groupRequests": "Group requests",
+      "implementBatching": "Implement batching",
+      "testBatchSize": "Test batch size",
+      "deployChanges": "Deploy changes",
+      "identifyCacheable": "Identify cacheable content",
+      "setupCache": "Setup cache",
+      "configureTTL": "Configure TTL",
+      "verifyCaching": "Verify caching",
+      "default": "Follow suggested steps"
+    }
+  },
+  "achievements": {
+    "title": "Achievement System",
+    "level": "Level",
+    "experience": "Experience",
+    "nextLevel": "Next Level",
+    "maxLevel": "Max Level Reached",
+    "levelBenefits": "Level Benefits",
+    "completed": "Completed",
+    "badges": "Badges",
+    "currentStreak": "Current Streak",
+    "totalPoints": "Total Points",
+    "best": "Best",
+    "rank": "Rank",
+    "outOf": "/ {total}",
+    "categories": {
+      "all": "All",
+      "gettingStarted": "Getting Started",
+      "efficiency": "Efficiency",
+      "budgetManagement": "Budget Management",
+      "optimization": "Optimization",
+      "consistency": "Consistency"
+    },
+    "rarity": {
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary"
+    },
+    "progress": "Progress",
+    "exp": "EXP",
+    "badge": "Badge",
+    "track": "Track",
+    "share": "Share",
+    "completedOn": "Completed on",
+    "noAchievements": "No achievements yet",
+    "startAnalyzing": "Start analyzing to unlock achievements"
+  },
+  "challenges": {
+    "title": "Budget Challenges",
+    "active": "Active",
+    "completed": "Completed",
+    "joined": "Joined",
+    "participants": "participants",
+    "join": "Join Challenge",
+    "details": "View Details",
+    "progress": "Progress",
+    "timeRemaining": "Time Remaining",
+    "reward": "Reward",
+    "target": "Target",
+    "ended": "Ended",
+    "endingSoon": "Ending Soon",
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "expert": "Expert"
+    },
+    "types": {
+      "daily": "Daily Challenge",
+      "weekly": "Weekly Challenge",
+      "monthly": "Monthly Challenge",
+      "custom": "Custom"
+    }
+  },
+  "budget": {
+    "title": "Budget Management",
+    "dailyLimit": "Daily Budget Limit",
+    "monthlyLimit": "Monthly Budget Limit",
+    "currentUsage": "Current Usage",
+    "dailyProgress": "Daily Budget Progress",
+    "monthlyProgress": "Monthly Budget Progress",
+    "alertSettings": "Alert Settings",
+    "alertThreshold": "Alert Threshold",
+    "alertThresholdHint": "Send alert when reaching this percentage of budget",
+    "enableAlerts": "Enable Alerts",
+    "enableAlertsHint": "Receive notifications when approaching or exceeding budget",
+    "updateError": "Failed to update budget",
+    "saveSuccess": "Settings saved successfully",
+    "saveError": "Failed to save settings"
+  },
+  "alerts": {
+    "title": "Cost Alerts",
+    "dailyBudget": "Daily Budget",
+    "monthlyBudget": "Monthly Budget",
+    "usage": "Usage",
+    "history": "Alert History",
+    "noHistory": "No alert history",
+    "rules": "Alert Rules",
+    "budgetExceeded": "Budget Exceeded Alert",
+    "budgetExceededHint": "Alert when cost exceeds budget",
+    "nearBudget": "Near Budget Alert",
+    "nearBudgetHint": "Alert when cost approaches budget threshold",
+    "unusualSpike": "Unusual Spike Alert",
+    "unusualSpikeHint": "Alert when detecting unusually high cost usage",
+    "dailyExceeded": "Daily budget exceeded",
+    "dailyWarning": "Daily budget usage high",
+    "dailyNormal": "Daily budget usage normal",
+    "monthlyExceeded": "Monthly budget exceeded",
+    "monthlyWarning": "Monthly budget usage high",
+    "monthlyNormal": "Monthly budget usage normal",
+    "dailyBudgetExceededMessage": "Daily budget exceeded: ${amount} / ${budget}",
+    "dailyBudgetWarningMessage": "Daily budget usage at {percentage}%",
+    "monthlyBudgetExceededMessage": "Monthly budget exceeded: ${amount} / ${budget}",
+    "monthlyBudgetWarningMessage": "Monthly budget usage at {percentage}%"
+  },
+  "reports": {
+    "title": "Cost Reports",
+    "lastWeek": "Last Week",
+    "lastMonth": "Last Month",
+    "lastQuarter": "Last Quarter",
+    "custom": "Custom",
+    "export": "Export Report",
+    "totalCost": "Total Cost",
+    "totalTokens": "Total Tokens",
+    "avgPerDay": "Daily Average",
+    "mostUsedModel": "Most Used Model",
+    "ofUsage": "of usage",
+    "efficiency": "Efficiency",
+    "budgetUtilization": "Budget Utilization",
+    "costTrend": "Cost Trend",
+    "modelDistribution": "Model Distribution",
+    "detailedData": "Detailed Data",
+    "date": "Date",
+    "cost": "Cost",
+    "tokens": "Tokens",
+    "requests": "Requests",
+    "primaryModel": "Primary Model",
+    "dailyCost": "Daily Cost"
+  },
+  "breakdown": {
+    "title": "Cost Breakdown",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "byModel": "By Model",
+    "byFeature": "By Feature",
+    "trend": "Trend",
+    "requests": "requests",
+    "features": {
+      "analysis": "Analysis",
+      "chat": "Chat",
+      "research": "Research",
+      "tools": "Tools"
+    },
+    "dailyCost": "Daily Cost"
+  },
+  "recommendations": {
+    "title": "Model Recommendations",
+    "model": "Model",
+    "inputPrice": "Input Price",
+    "outputPrice": "Output Price",
+    "quality": "Quality",
+    "speed": "Speed",
+    "recommended": "Recommended For",
+    "current": "Current",
+    "complex": "Complex Tasks",
+    "general": "General Tasks",
+    "simple": "Simple Tasks",
+    "smartSuggestions": "Smart Suggestions",
+    "estimatedSavings": "Estimated Savings",
+    "month": "month",
+    "apply": "Apply",
+    "selectionStrategy": "Model Selection Strategy",
+    "strategies": {
+      "balanced": "Balanced Mode",
+      "balancedHint": "Balance between cost and quality",
+      "costFirst": "Cost First",
+      "costFirstHint": "Prioritize low-cost models",
+      "qualityFirst": "Quality First",
+      "qualityFirstHint": "Prioritize high-quality models"
+    },
+    "strategyUpdated": "Strategy updated",
+    "switchToGPT35": "Switch to GPT-3.5",
+    "switchToGPT35Desc": "For most tasks, GPT-3.5-Turbo provides sufficient quality at a lower cost",
+    "optimizeUsage": "Optimize Usage",
+    "optimizeUsageDesc": "Selecting the right model based on task complexity can save significant costs"
+  },
+  "common": {
+    "save": "Save",
+    "saving": "Saving..."
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "costEfficiency": "Cost Efficiency Board",
+    "tokenOptimization": "Token Optimization Board",
+    "budgetAdherence": "Budget Adherence Board",
+    "overallScore": "Overall Score Board",
+    "rank": "Rank",
+    "score": "Score",
+    "trend": "Trend",
+    "up": "Up",
+    "down": "Down",
+    "stable": "Stable",
+    "you": "You",
+    "timeframes": {
+      "daily": "Today",
+      "weekly": "This Week",
+      "monthly": "This Month", 
+      "allTime": "All Time"
+    }
+  },
+  "badges": {
+    "title": "Badge Collection",
+    "earned": "Badge Earned",
+    "locked": "Locked",
+    "favorite": "Set as Featured",
+    "share": "Share Badge",
+    "earnedOn": "Earned on",
+    "rarity": {
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary"
+    }
+  },
+  "notifications": {
+    "achievement": "Achievement Unlocked",
+    "levelUp": "Level Up",
+    "badge": "Badge Earned",
+    "challenge": "Challenge Completed",
+    "optimization": "Optimization Suggestion",
+    "markAllRead": "Mark All as Read",
+    "noNotifications": "No notifications"
+  },
+  "gamification": {
+    "title": "Gamification System",
+    "stats": "Statistics",
+    "settings": "Settings",
+    "enableNotifications": "Enable Notifications",
+    "enableAnimations": "Enable Animations",
+    "enableSounds": "Enable Sound Effects",
+    "notificationSettings": "Notification Settings",
+    "achievementNotifications": "Achievement Notifications",
+    "badgeAnimations": "Badge Animations",
+    "soundEffects": "Sound Effects",
+    "displaySettings": "Display Settings",
+    "showLeaderboard": "Show Leaderboard",
+    "showChallenges": "Show Challenges",
+    "saveSettings": "Save Settings",
+    "multipliers": {
+      "experience": "Experience Multiplier",
+      "points": "Points Multiplier"
+    }
+  },
+  "budgetControl": {
+    "dailyLimit": "Daily Budget Limit",
+    "monthlyLimit": "Monthly Budget Limit",
+    "budgetWarning": "Budget Warning",
+    "dailyBudgetOver80": "Daily budget usage over 80%",
+    "monthlyBudgetOver90": "Monthly budget usage over 90%",
+    "editDailyBudgetTitle": "Edit Daily Budget Limit",
+    "editDailyBudgetLabel": "Set the daily cost budget limit",
+    "editMonthlyBudgetTitle": "Edit Monthly Budget Limit",
+    "editMonthlyBudgetLabel": "Set the monthly cost budget limit"
+  },
+  "optimizationTips": {
+    "useSmallerModel": {
+      "title": "Use Smaller Models",
+      "description": "Consider using gpt-4o-mini for simple analysis"
+    },
+    "batchRequests": {
+      "title": "Batch Requests",
+      "description": "Combine multiple analyses to reduce API calls"
+    },
+    "optimizeDepth": {
+      "title": "Optimize Analysis Depth",
+      "description": "Reduce analysis depth for routine checks"
+    }
+  },
+  "transactionDescription": {
+    "analysis": "{model} Analysis: {symbol}"
+  },
+  "userLevels": {
+    "level1": {
+      "name": "Novice Analyst",
+      "description": "Starting AI investment analysis journey"
+    },
+    "level2": {
+      "name": "Apprentice Researcher", 
+      "description": "Mastering basic analysis skills"
+    },
+    "level3": {
+      "name": "Professional Analyst",
+      "description": "Equipped with professional analysis capabilities"
+    },
+    "level4": {
+      "name": "Senior Expert",
+      "description": "Cost control and efficiency optimization expert"
+    },
+    "level5": {
+      "name": "Investment Master",
+      "description": "Master in AI investment analysis field"
+    }
+  },
+  "notifications": {
+    "optimizationImplemented": {
+      "title": "Optimization Suggestion Implemented!",
+      "message": "You have successfully implemented cost optimization suggestion"
+    },
+    "suggestionShared": {
+      "title": "Cost Optimization Suggestion",
+      "shareTemplate": "💡 Cost optimization suggestion: {{title}}\nPotential savings: ${{amount}} ({{percentage}}%)\n\n{{description}}\n\n#WhenTrade #CostOptimization"
+    },
+    "copiedToClipboard": {
+      "title": "Copied to Clipboard",
+      "message": "Suggestion content copied, can be shared with others"
+    },
+    "achievementTracked": {
+      "title": "Started Tracking Achievement",
+      "message": "This achievement has been added to tracking list"
+    },
+    "achievementShared": {
+      "title": "Achievement Share",
+      "completed": "🎉 I just unlocked achievement: {{name}}!\n{{description}}\n\n#WhenTrade #Achievement",
+      "tracking": "🎯 I'm tracking achievement: {{name}}\n{{description}}\nProgress: {{progress}}%\n\n#WhenTrade #Achievement"
+    },
+    "settingsSaved": {
+      "title": "Settings Saved",
+      "message": "Your gamification settings have been successfully saved"
+    }
+  },
+  "recent": {
+    "title": "Recent Analyses",
+    "subtitle": "Real-time cost tracking",
+    "depth": "Depth",
+    "empty": "No analysis records yet"
+  },
+  "cards": {
+    "modelBilling": "Model Billing",
+    "usedSuffix": "used",
+    "noApiConfigured": "No available APIs detected, please configure the corresponding keys in the backend."
+  }
+} 

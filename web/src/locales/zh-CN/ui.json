@@ -1,0 +1,7 @@
+{
+  "dropdown": {
+    "placeholder": "请选择",
+    "searchPlaceholder": "搜索选项...",
+    "emptyText": "暂无匹配选项"
+  }
+}

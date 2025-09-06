@@ -1,0 +1,123 @@
+{
+  "pageTitle": "Tools Management",
+  "title": "Tools",
+  "description": "Manage and connect your tools",
+  "installed": "installed",
+  "connected": "Connected",
+  "notConnected": "Not Connected",
+  "provider": "Provider",
+  "lastUsed": "Last Used",
+  "justNow": "Just now",
+  "hoursAgo": "{count} hours ago",
+  "daysAgo": "{count} days ago",
+  "noTools": "No Tools",
+  "noToolsDescription": "You haven't installed any tools yet. Check out the tool marketplace!",
+  "browseMarket": "Browse Marketplace",
+  "tabs": {
+    "myTools": "My Tools",
+    "mcpConnections": "MCP Connections",
+    "marketplace": "Tool Marketplace"
+  },
+  "filter": {
+    "all": "All",
+    "builtin": "Built-in",
+    "mcp": "MCP Tools",
+    "custom": "Custom",
+    "marketplace": "Marketplace"
+  },
+  "status": {
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "error": "Error",
+    "connecting": "Connecting"
+  },
+  "tool": {
+    "name": "Tool Name",
+    "type": "Type",
+    "status": "Status",
+    "lastUsed": "Last Used",
+    "version": "Version",
+    "permissions": "Permissions",
+    "configuration": "Configuration",
+    "statistics": "Statistics",
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "configure": "Configure",
+    "update": "Update",
+    "viewDetails": "View Details"
+  },
+  "permissions": {
+    "read": "Read",
+    "write": "Write",
+    "execute": "Execute",
+    "admin": "Admin"
+  },
+  "statistics": {
+    "usageCount": "Usage Count",
+    "totalCost": "Total Cost",
+    "avgResponseTime": "Avg Response Time",
+    "lastUsed": "Last Used"
+  },
+  "mcp": {
+    "title": "MCP Server Connections",
+    "server": "Server",
+    "url": "Server URL",
+    "availableTools": "Available Tools",
+    "lastSync": "Last Sync",
+    "sync": "Sync",
+    "connect": "Connect Server",
+    "disconnect": "Disconnect",
+    "addServer": "Add Server"
+  },
+  "marketplace": {
+    "recommendations": "Recommended Tools",
+    "basedOn": "Based on your usage",
+    "rating": "Rating",
+    "installs": "Installs",
+    "price": "Price",
+    "free": "Free",
+    "viewInMarket": "View in Marketplace",
+    "install": "Install"
+  },
+  "actions": {
+    "add": "Add Tool",
+    "remove": "Remove",
+    "edit": "Edit",
+    "test": "Test Connection"
+  },
+  "success": {
+    "connected": "Tool connected successfully",
+    "disconnected": "Tool disconnected",
+    "configured": "Configuration updated",
+    "permissionsUpdated": "Permissions updated",
+    "mcpConnected": "MCP server connected",
+    "mcpDisconnected": "MCP server disconnected",
+    "syncCompleted": "Sync completed, found {count} tools"
+  },
+  "errors": {
+    "connectionFailed": "Connection failed",
+    "configFailed": "Configuration failed",
+    "permissionDenied": "Permission denied",
+    "toolNotFound": "Tool not found",
+    "mcpConnectionFailed": "MCP server connection failed",
+    "syncFailed": "Sync failed"
+  },
+  "empty": {
+    "tools": "No tools added yet",
+    "mcp": "No MCP servers connected",
+    "addFirst": "Add your first tool"
+  },
+  "names": {
+    "finnhub_news": "FinnHub News",
+    "reddit_sentiment": "Reddit Sentiment",
+    "sentiment_batch": "Batch Sentiment",
+    "crypto_price": "Crypto Price",
+    "indicators": "Technical Indicators", 
+    "market_data": "Market Data",
+    "historical_data": "Historical Data",
+    "market_metrics": "Market Metrics",
+    "trending": "Trending Coins",
+    "fear_greed": "Fear & Greed Index",
+    "batch_execution": "Batch Execution"
+  }
+}

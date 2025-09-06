@@ -1,0 +1,27 @@
+{
+  "names": {
+    "market": "Market Analyst",
+    "social": "Social Media Analyst",
+    "news": "News Analyst",
+    "fundamentals": "Fundamentals Analyst",
+    "bull": "Bull Researcher",
+    "bear": "Bear Researcher",
+    "manager": "Research Manager",
+    "trader": "Trader",
+    "risky": "Risky Analyst",
+    "safe": "Safe Analyst",
+    "neutral": "Neutral Analyst",
+    "judge": "Risk Judge",
+    "portfolio": "Portfolio Manager"
+  },
+  "stageNumbers": {
+    "analyst": "I",
+    "research": "II",
+    "trading": "III",
+    "risk": "IV",
+    "portfolio": "V",
+    "probability": "III",
+    "strategy": "IV",
+    "decision": "V"
+  }
+}

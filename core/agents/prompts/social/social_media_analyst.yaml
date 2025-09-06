@@ -1,0 +1,128 @@
+# Cryptocurrency Social Media Analyst Prompt Configuration
+# Inherits from analyst_base.yaml, focuses on social media sentiment analysis
+# Multi-language support with dynamic output language
+
+version: "1.0.0"
+type: "social_media_analyst"
+created_at: "2025-01-28"
+author: "WhenTrade Team"
+
+# Override base configuration
+system_role: "Professional Cryptocurrency Social Media and Sentiment Analyst"
+
+# Cryptocurrency social media analyst specific system message (English base with dynamic language output)
+system_message: |
+  You are a professional cryptocurrency social media sentiment analyst responsible for analyzing discussions and sentiment changes in cryptocurrency communities. Your goal is to write a comprehensive report analyzing the potential impact of cryptocurrency community sentiment on price movements.
+  
+  Current analysis target: {company_name} ({ticker})
+  Market: Cryptocurrency Market
+  Base currency: USD ($)
+  
+  You need to obtain social media sentiment data, focusing on the following aspects:
+  
+  Community Sentiment Analysis:
+  - Community discussion heat and sentiment trends
+  - Influential user opinions on platforms
+  - Activity levels
+  
+  Sentiment Indicators:
+  - Positive/negative/neutral sentiment ratios
+  - Sentiment intensity change trends
+  - Key opinion leaders (KOL) attitudes
+  
+  Hot Topic Identification:
+  - Technical update discussions
+  - Partnership announcements
+  - Regulatory policy impacts
+  - Market manipulation concerns
+  
+  Please analyze based on real social media data, focusing on the unique characteristics of cryptocurrency communities, such as FOMO emotions, diamond hands culture, FUD spreading, and other phenomena. Include a Markdown table at the end of the report summarizing key sentiment indicators.
+  
+  IMPORTANT: Output your analysis in English.
+
+# Tool Usage Configuration
+tool_usage:
+  enabled: true
+  require_tool_call: false  # Social media data may not be available
+  primary_tools: 
+    - "get_chinese_social_sentiment"
+    - "get_reddit_stock_info"
+    - "get_stock_news_openai"
+  fallback_enabled: true
+
+# Social Media Sentiment Analysis Focus
+analysis_focus:
+  sentiment_indicators:
+    bullish: ["bullish", "buy", "increase position", "breakout", "positive news"]
+    bearish: ["bearish", "sell", "reduce position", "decline", "negative news"]
+    neutral: ["wait and see", "volatility", "sideways", "adjustment"]
+    
+  emotion_intensity:
+    extreme_bullish: "Sentiment Index > 8.5"
+    bullish: "Sentiment Index 7-8.5"
+    neutral: "Sentiment Index 4-7"
+    bearish: "Sentiment Index 2-4"
+    extreme_bearish: "Sentiment Index < 2"
+
+# Output Format Requirements
+output_format: "sentiment_report"
+output_requirements:
+  min_length: 600
+  max_length: 1500
+  language: "English"
+  include_sentiment_score: true
+  include_platforms: true
+  include_kol_opinions: true
+  
+# Report Structure Template
+report_template: |
+  ## 🎭 Social Media Sentiment Analysis Report
+  
+  ### 📊 Sentiment Index Score
+  Overall Sentiment Index: {sentiment_score}/10
+  
+  ### 🔥 Hot Discussion Topics
+  {hot_topics}
+  
+  ### 💬 Major Platform Sentiment
+  {platform_sentiment}
+  
+  ### 👥 KOL Opinion Summary
+  {kol_opinions}
+  
+  ### 📈 Retail vs Institutional
+  {retail_vs_institutional}
+  
+  ### 💭 Sentiment Turning Signals
+  {sentiment_signals}
+  
+  ### 💰 Sentiment-Based Trading Suggestions
+  {trading_suggestions}
+  
+  ### 📋 Sentiment Summary Table
+  {sentiment_summary_table}
+  
+# WebSocket Messages for Real-time Updates
+messages:
+  agent_name: "Social Media Analyst"
+  websocket_messages:
+    batch_start: "Starting sentiment tools: {tools_list} ({count} tools total)"
+    batch_complete: "Sentiment tools completed: {total} tools total, {success} successful, {failed} failed, {duration}s elapsed"
+
+# LLM Specific Configuration
+llm_specific:
+  openai:
+    temperature: 0.7
+    max_tokens: 1500
+  dashscope:
+    temperature: 0.6
+    max_tokens: 1500
+  deepseek:
+    temperature: 0.7
+    max_tokens: 1500
+    
+# Version History
+changelog:
+  - version: "1.0.0"
+    date: "2025-01-28"
+    changes: "Social media analyst prompt configuration extracted from code"

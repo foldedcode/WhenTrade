@@ -1,0 +1,24 @@
+{
+  "title": "Agent Collaboration Analysis",
+  "dataCollection": "Data Collection",
+  "independentAnalysis": "Independent Analysis", 
+  "viewpointDebate": "Viewpoint Debate",
+  "consensusFormation": "Consensus Formation",
+  "confidence": "Confidence",
+  "thinkingProcess": "Thinking Process",
+  "consensusResult": "Consensus Result",
+  "comprehensiveRating": "Comprehensive Rating",
+  "averageConfidence": "Average Confidence",
+  "keyFindings": "Key Findings",
+  "investmentAdvice": "Investment Advice",
+  "standby": "On Standby...",
+  "simple": {
+    "title": "Agent Collaboration Demo (Simplified)",
+    "useOriginal": "Use Original...",
+    "startAnalysis": "Start Analysis",
+    "refreshAnalysis": "Refresh Analysis",
+    "taskId": "Task ID",
+    "selectedTarget": "Selected Target",
+    "refreshTime": "Refresh Time"
+  }
+}
