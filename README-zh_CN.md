@@ -368,21 +368,6 @@ npm test  # 前端测试
 
 <div align="center">
 
-### 🎬 在线演示
-
-<table>
-<tr>
-<td align="center">
-<img src="docs/media/demos/demo1.gif" width="400" alt="WhenTrade 演示1 - 实时分析"><br>
-<em>实时多智能体分析</em>
-</td>
-<td align="center">
-<img src="docs/media/demos/demo2.gif" width="400" alt="WhenTrade 演示2 - 投资研究"><br>
-<em>投资研究与风险评估</em>
-</td>
-</tr>
-</table>
-
 ### 🖥️ 产品界面
 
 <table>

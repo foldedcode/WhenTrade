@@ -368,21 +368,6 @@ npm test  # Frontend tests
 
 <div align="center">
 
-### 🎬 Live Demo
-
-<table>
-<tr>
-<td align="center">
-<img src="docs/media/demos/demo1.gif" width="400" alt="WhenTrade Demo 1 - Real-time Analysis"><br>
-<em>Real-time Multi-Agent Analysis</em>
-</td>
-<td align="center">
-<img src="docs/media/demos/demo2.gif" width="400" alt="WhenTrade Demo 2 - Investment Research"><br>
-<em>Investment Research & Risk Assessment</em>
-</td>
-</tr>
-</table>
-
 ### 🖥️ Product Interface
 
 <table>
