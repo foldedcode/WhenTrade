@@ -46,19 +46,19 @@ When.Trade is an **open-source AI-powered investment analysis platform** that re
 Building upon the innovative foundation laid by **[TradingAgents](https://github.com/TauricResearch/TradingAgents)**, this project implements a sophisticated ecosystem where specialized AI agents work together to:
 
 - 🔍 **Analyze** complex market data from multiple sources
-- 💭 **Debate** investment strategies through Bull vs Bear perspectives  
+- 💭 **Debate** investment strategies through Bull vs Bear perspectives
 - ⚖️ **Assess** comprehensive risk scenarios
 - 📊 **Generate** actionable investment recommendations
 
 ## 🚀 Key Features
 
-| Feature | Description | Benefits |
-|---------|-------------|----------|
-| ⚡ **Real-time Analysis** | WebSocket-based live data streaming and instant results | Up-to-the-minute market insights |
-| 🧠 **Multiple LLM Support** | OpenAI, Anthropic, DeepSeek, Kimi, and other providers | Flexibility and redundancy in AI reasoning |
-| 📊 **Unified Data Interface** | Integrated multiple data sources with automatic failover | Reliable data access and consistency |
-| 🎯 **Advanced Risk Management** | Multi-perspective risk assessment and scenario analysis | Enhanced portfolio protection |
-| 🔄 **LangGraph Orchestration** | Complex analysis workflows managed through state graphs | Scalable and maintainable agent coordination |
+| Feature                         | Description                                              | Benefits                                     |
+| ------------------------------- | -------------------------------------------------------- | -------------------------------------------- |
+| ⚡ **Real-time Analysis**       | WebSocket-based live data streaming and instant results  | Up-to-the-minute market insights             |
+| 🧠 **Multiple LLM Support**     | OpenAI, Anthropic, DeepSeek, Kimi, and other providers   | Flexibility and redundancy in AI reasoning   |
+| 📊 **Unified Data Interface**   | Integrated multiple data sources with automatic failover | Reliable data access and consistency         |
+| 🎯 **Advanced Risk Management** | Multi-perspective risk assessment and scenario analysis  | Enhanced portfolio protection                |
+| 🔄 **LangGraph Orchestration**  | Complex analysis workflows managed through state graphs  | Scalable and maintainable agent coordination |
 
 ## 🏗️ Architecture
 
@@ -71,40 +71,40 @@ graph TB
         WS[🔌 WebSocket Client]
         ST[📦 Pinia State Management]
     end
-    
+
     subgraph "Backend API Layer"
         API[⚡ FastAPI Server]
         WSS[🔌 WebSocket Server]
         RT[📊 Real-time Engine]
     end
-    
+
     subgraph "Multi-Agent System"
         GRAPH[🎭 LangGraph Orchestrator]
-        
+
         subgraph "Analysis Agents"
             MA[📈 Market Analyst]
             NA[📰 News Analyst]
             SA[💬 Social Analyst]
         end
-        
+
         subgraph "Research Agents"
             BR[🐂 Bull Researcher]
             BEAR[🐻 Bear Researcher]
         end
-        
+
         subgraph "Decision Agents"
             TR[💰 Trader]
             RM[⚖️ Risk Manager]
             PM[📋 Portfolio Manager]
         end
     end
-    
+
     subgraph "Data Layer"
         DB[(🗄️ PostgreSQL)]
         REDIS[(⚡ Redis Cache)]
         EXT[🌐 External APIs]
     end
-    
+
     UI --> API
     WS --> WSS
     API --> GRAPH
@@ -131,25 +131,25 @@ graph LR
         V[Views]
         S[Stores]
     end
-    
+
     subgraph "⚙️ Service Layer"
         BL[Business Logic]
         WF[Workflows]
         VA[Validation]
     end
-    
+
     subgraph "🔌 Adapter Layer"
         LLM[LLM Adapters]
         API_A[API Adapters]
         DATA[Data Adapters]
     end
-    
+
     subgraph "🔧 Port Layer"
         INTF[Interfaces]
         CONT[Contracts]
         TYPES[Types]
     end
-    
+
     C --> BL
     V --> BL
     S --> BL
@@ -171,22 +171,22 @@ sequenceDiagram
     participant DataAgents
     participant ResearchAgents
     participant DecisionAgents
-    
+
     User->>WebSocket: Start Analysis Request
     WebSocket->>Orchestrator: Initialize Analysis
-    
+
     Note over Orchestrator: Phase 1: Data Collection
     Orchestrator->>DataAgents: Gather Market Data
     DataAgents-->>Orchestrator: Analysis Results
-    
+
     Note over Orchestrator: Phase 2: Investment Debate
     Orchestrator->>ResearchAgents: Bull vs Bear Debate
     ResearchAgents-->>Orchestrator: Debate Conclusions
-    
+
     Note over Orchestrator: Phase 3: Decision Making
     Orchestrator->>DecisionAgents: Risk & Portfolio Analysis
     DecisionAgents-->>Orchestrator: Final Recommendations
-    
+
     Orchestrator->>WebSocket: Stream Results
     WebSocket->>User: Real-time Updates
 ```
@@ -197,34 +197,34 @@ sequenceDiagram
 
 ### 🐍 Backend Technologies
 
-| Category | Technology | Version | Purpose |
-|----------|------------|---------|---------|
-| 🚀 **Framework** | FastAPI | 0.109+ | High-performance async API |
-| 🧠 **AI/ML** | LangChain + LangGraph | Latest | Multi-agent orchestration |
-| 🗄️ **Database** | PostgreSQL | 15+ | Primary data storage |
-| ⚡ **Cache** | Redis | 7+ | High-speed caching |
-| 🔄 **Queue** | Celery | 5.3+ | Background task processing |
-| 🧪 **Testing** | pytest | 7.4+ | Comprehensive testing suite |
+| Category         | Technology            | Version | Purpose                     |
+| ---------------- | --------------------- | ------- | --------------------------- |
+| 🚀 **Framework** | FastAPI               | 0.109+  | High-performance async API  |
+| 🧠 **AI/ML**     | LangChain + LangGraph | Latest  | Multi-agent orchestration   |
+| 🗄️ **Database**  | PostgreSQL            | 15+     | Primary data storage        |
+| ⚡ **Cache**     | Redis                 | 7+      | High-speed caching          |
+| 🔄 **Queue**     | Celery                | 5.3+    | Background task processing  |
+| 🧪 **Testing**   | pytest                | 7.4+    | Comprehensive testing suite |
 
 ### 🎨 Frontend Technologies
 
-| Category | Technology | Version | Purpose |
-|----------|------------|---------|---------|
-| ⚛️ **Framework** | Vue.js | 3.3+ | Reactive user interface |
-| 📘 **Language** | TypeScript | 5.6+ | Type-safe development |
-| ⚡ **Build Tool** | Vite | 7.0+ | Fast development and builds |
-| 🎨 **Styling** | Tailwind CSS | Latest | Utility-first CSS framework |
-| 📊 **State** | Pinia | Latest | Type-safe state management |
-| 📈 **Charts** | Chart.js | 4.4+ | Financial data visualization |
+| Category          | Technology   | Version | Purpose                      |
+| ----------------- | ------------ | ------- | ---------------------------- |
+| ⚛️ **Framework**  | Vue.js       | 3.3+    | Reactive user interface      |
+| 📘 **Language**   | TypeScript   | 5.6+    | Type-safe development        |
+| ⚡ **Build Tool** | Vite         | 7.0+    | Fast development and builds  |
+| 🎨 **Styling**    | Tailwind CSS | Latest  | Utility-first CSS framework  |
+| 📊 **State**      | Pinia        | Latest  | Type-safe state management   |
+| 📈 **Charts**     | Chart.js     | 4.4+    | Financial data visualization |
 
 ### 🤖 LLM Integrations
 
-| Provider | Models | Features |
-|----------|--------|-----------|
-| 🤖 **OpenAI** | GPT-4, GPT-3.5-turbo | Tool calling, reasoning |
-| 🌐 **Google** | Gemini Pro, Gemini | Multimodal, efficient reasoning |
-| 🇨🇳 **DeepSeek** | DeepSeek | High performance, cost-effective |
-| 🌙 **Kimi** | Moonshot-Kimi | Real-time data processing |
+| Provider        | Models               | Features                         |
+| --------------- | -------------------- | -------------------------------- |
+| 🤖 **OpenAI**   | GPT-4, GPT-3.5-turbo | Tool calling, reasoning          |
+| 🌐 **Google**   | Gemini Pro, Gemini   | Multimodal, efficient reasoning  |
+| 🇨🇳 **DeepSeek** | DeepSeek             | High performance, cost-effective |
+| 🌙 **Kimi**     | Moonshot-Kimi        | Real-time data processing        |
 
 </div>
 
@@ -235,12 +235,12 @@ sequenceDiagram
 <details>
 <summary>📋 System Requirements</summary>
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| **Python** | 3.9+ | 3.11+ |
-| **Node.js** | 16+ | 18+ |
-| **PostgreSQL** | 15+ | 16+ |
-| **Redis** | 7+ | 7+ |
+| Component      | Minimum | Recommended |
+| -------------- | ------- | ----------- |
+| **Python**     | 3.9+    | 3.11+       |
+| **Node.js**    | 16+     | 18+         |
+| **PostgreSQL** | 15+     | 16+         |
+| **Redis**      | 7+      | 7+          |
 
 </details>
 
@@ -328,7 +328,7 @@ cd web && npm run dev
 conda activate whentrade
 uvicorn core.main:app --reload --host 0.0.0.0 --port 8000
 
-# Terminal 2: Frontend  
+# Terminal 2: Frontend
 cd web
 npm run dev
 ```
@@ -343,12 +343,12 @@ python -m uvicorn core.main:app --host 0.0.0.0 --port 8000
 
 ### 🔗 Access Points
 
-| Service | URL | Description |
-|---------|-----|-------------|
-| 🖥️ **Frontend** | [http://localhost:3000](http://localhost:3000) | Main application interface |
-| 📡 **API Server** | [http://localhost:8000](http://localhost:8000) | Backend API endpoint |
-| 📚 **API Docs** | [http://localhost:8000/docs](http://localhost:8000/docs) | Interactive API documentation |
-| 🔍 **API Redoc** | [http://localhost:8000/redoc](http://localhost:8000/redoc) | Alternative API documentation |
+| Service           | URL                                                        | Description                   |
+| ----------------- | ---------------------------------------------------------- | ----------------------------- |
+| 🖥️ **Frontend**   | [http://localhost:3000](http://localhost:3000)             | Main application interface    |
+| 📡 **API Server** | [http://localhost:8000](http://localhost:8000)             | Backend API endpoint          |
+| 📚 **API Docs**   | [http://localhost:8000/docs](http://localhost:8000/docs)   | Interactive API documentation |
+| 🔍 **API Redoc**  | [http://localhost:8000/redoc](http://localhost:8000/redoc) | Alternative API documentation |
 
 ### ✅ Verification
 
@@ -367,21 +367,6 @@ npm test  # Frontend tests
 ## 📸 Screenshots
 
 <div align="center">
-
-### 🎬 Live Demo
-
-<table>
-<tr>
-<td align="center">
-<img src="docs/media/demos/demo1.gif" width="400" alt="WhenTrade Demo 1 - Real-time Analysis"><br>
-<em>Real-time Multi-Agent Analysis</em>
-</td>
-<td align="center">
-<img src="docs/media/demos/demo2.gif" width="400" alt="WhenTrade Demo 2 - Investment Research"><br>
-<em>Investment Research & Risk Assessment</em>
-</td>
-</tr>
-</table>
 
 ### 🖥️ Product Interface
 
@@ -403,10 +388,10 @@ npm test  # Frontend tests
 
 ### 🎬 Product Features
 
-- **Real-time Multi-Agent Analysis** - Collaborative AI agents working together
-- **Professional Investment Insights** - Bull vs Bear research debates  
-- **Comprehensive Risk Assessment** - Multi-perspective scenario analysis
-- **Modern Web Interface** - Vue.js 3 with responsive design
+**Real-time Multi-Agent Analysis** - Collaborative AI agents working together
+**Professional Investment Insights** - Bull vs Bear research debates
+**Comprehensive Risk Assessment** - Multi-perspective scenario analysis
+**Modern Web Interface** - Vue.js 3 with responsive design
 
 </div>
 
@@ -419,7 +404,7 @@ when.trade/                         # 📁 Project Root
 │   │   ├── 📄 base.py              # Agent Base Classes (⚠️ 1,344 lines)
 │   │   ├── 📊 analysts/            # Market Analysis Agents
 │   │   │   ├── market_analyst.py   # Technical & Price Analysis
-│   │   │   ├── news_analyst.py     # News Sentiment Analysis  
+│   │   │   ├── news_analyst.py     # News Sentiment Analysis
 │   │   │   └── fundamentals_analyst.py # Fundamental Analysis
 │   │   ├── 🔬 researchers/         # Investment Research Agents
 │   │   │   ├── bull_researcher.py  # Bullish Case Research
@@ -478,24 +463,24 @@ when.trade/                         # 📁 Project Root
 
 ### 📊 Key Metrics
 
-| Category | Count | Notes |
-|----------|-------|-------|
-| **Python Files** | 150+ | Backend implementation |
-| **TypeScript Files** | 197 | Frontend implementation |
-| **Total Lines of Code** | 50,000+ | Estimated project size |
-| **Large Files** | 6 | Files >1,000 lines (see warnings) |
-| **Test Coverage** | 80%+ | Comprehensive test suite |
+| Category                | Count   | Notes                             |
+| ----------------------- | ------- | --------------------------------- |
+| **Python Files**        | 150+    | Backend implementation            |
+| **TypeScript Files**    | 197     | Frontend implementation           |
+| **Total Lines of Code** | 50,000+ | Estimated project size            |
+| **Large Files**         | 6       | Files >1,000 lines (see warnings) |
+| **Test Coverage**       | 80%+    | Comprehensive test suite          |
 
 ### ⚠️ Large File Navigation
 
 For optimal development experience, use symbol-based navigation for these files:
 
-| File | Lines | Navigation Strategy |
-|------|-------|-------------------|
-| `agents/base.py` | 1,344 | Use class-based navigation |
-| `agents/utils/agent_utils.py` | 1,602 | Use function-based search |
+| File                           | Lines | Navigation Strategy           |
+| ------------------------------ | ----- | ----------------------------- |
+| `agents/base.py`               | 1,344 | Use class-based navigation    |
+| `agents/utils/agent_utils.py`  | 1,602 | Use function-based search     |
 | `api/v1/routes/analysis_ws.py` | 2,510 | Use endpoint-based navigation |
-| `dataflows/interface.py` | 1,624 | Use method-based search |
+| `dataflows/interface.py`       | 1,624 | Use method-based search       |
 
 ## ⭐ Star History
 
@@ -511,23 +496,15 @@ For optimal development experience, use symbol-based navigation for these files:
 
 ### 🛠️ Technology Partners
 
-| Technology | Contribution |
-|------------|--------------|
-| **[LangChain](https://langchain.com)** | Multi-agent orchestration framework |
+| Technology                                  | Contribution                         |
+| ------------------------------------------- | ------------------------------------ |
+| **[LangChain](https://langchain.com)**      | Multi-agent orchestration framework  |
 | **[FastAPI](https://fastapi.tiangolo.com)** | High-performance async web framework |
-| **[Vue.js](https://vuejs.org)** | Reactive frontend framework |
-| **[PostgreSQL](https://postgresql.org)** | Robust database system |
-| **[Redis](https://redis.io)** | High-speed caching solution |
-
-### 👥 Community
-
-Special thanks to all contributors who have helped shape this project.
+| **[Vue.js](https://vuejs.org)**             | Reactive frontend framework          |
+| **[PostgreSQL](https://postgresql.org)**    | Robust database system               |
+| **[Redis](https://redis.io)**               | High-speed caching solution          |
 
 </div>
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ### 📢 Disclaimer
 
@@ -537,6 +514,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 > - Perform thorough due diligence before any investment decisions
 > - Past performance does not guarantee future results
 > - Authors are not responsible for any financial losses
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
